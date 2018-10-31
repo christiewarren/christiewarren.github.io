@@ -224,7 +224,7 @@ body{
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
-    height: 130%;    
+    height: 25px;    
     margin-left: 40px;
 }
 .hamburger{
