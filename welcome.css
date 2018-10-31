@@ -13,14 +13,19 @@
     grid-template: auto / repeat(20,1fr);
     position: relative;
     box-shadow: 0px 2px 5px rgba(0,0,0,.5);
-    
     }
     #welcome-message{
         grid-column: 2 / 20;
         align-self: center;
-        padding-bottom: 50px;
+        padding-bottom: 75px;
         border-bottom: rgba(256,256,256,.4) solid thin;
     }
+    
+    .welcome-text{
+    font-size: 150%;
+
+}
+    
     .welcome-menu{
         grid-column: 2 / 20;
         text-align: center;
@@ -107,6 +112,11 @@
     position: relative;
     box-shadow: 0px 2px 5px rgba(0,0,0,.5);
 }
+    
+    .welcome-text{
+    font-size: 180%;
+}
+    
 #welcome-message{
     grid-column: 2 / 12;
     align-self: center;
@@ -246,7 +256,6 @@ body{
 }
 .welcome-text{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 180%;
     color: #282828;
     margin: 0;
 }
