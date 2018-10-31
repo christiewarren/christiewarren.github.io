@@ -1,0 +1,108 @@
+<html lang="en">
+    <head>
+       <!-- Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      <title>Christie Warren | Welcome</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+      <link rel="stylesheet" href="welcome.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main>
+            <span id="top"></span>
+            <section id="welcome-container">
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="index.html">
+                            <img src="cew-logo-white.png" class="nav-logo">
+                        </a>
+                    </div>
+                    
+                </nav>
+                <article id="welcome">
+                    <h2 id="welcome-message" class="welcome-text">
+                        hi there!<br><br>
+                        i'm Christie. i believe in creating unique and enjoyable digital experiences for each and every user.
+                    </h2>
+                    <div class="welcome-menu">
+                        <li><a href="#top">HOME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                        <li><a href="about.html">ABOUT ME / RESUME</a></li>
+                    </div>
+                    <a href="#projects">
+                        <img class="scroll-arrow" src="scroll-arrow.png">
+                    </a>
+                    <span id="projects"></span>
+                </article>
+                 <p class="project-section-title">Recent Projects</p>
+                <!--<img class="prof-pic" src="prof-pic.png">-->
+                <article id="lionplanner" class="experience-card">
+                    <div class="lp-ex-card-img">
+                        <img src="LP-macbook.png">
+                    </div>
+                    <div class="lp-ex-card-text">
+                        <h3>LionPlanner</h3>
+                        <h5>digital product design, UI/UX</h5>
+                        <h4>Academic planning, simpler.</h4>
+                        <a href="lionplanner.html"><button id="lp-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
+                    </div> 
+                    
+                </article>
+                <article id="roddy" class="experience-card">
+                    <div class="rd-ex-card-img">
+                        <img src="roddy-macbook.png">
+                    </div>
+                    <div class="rd-ex-card-text">
+                        <h3>Roddy Restoration and Remodeling</h3>
+                        <h5>web design, UI/UX, identity &amp; branding</h5>
+                        <h4>Construction you can trust.</h4>
+                        <button id="rd-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button>
+                    </div>
+                </article>
+            </section>
+            <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+            </footer>
+        </main>
+        
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+        </script>    
+        
+    </body>
+</html>

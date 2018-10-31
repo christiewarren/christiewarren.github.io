@@ -1,0 +1,96 @@
+<html lang="en">
+    <head>
+       <!-- Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      <title>Christie Warren | About / Resume</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+      <link rel="stylesheet" href="welcome.css">
+      <link rel="stylesheet" href="lionplanner.css">
+      <link rel="stylesheet" href="photography.css">
+      <link rel="stylesheet" href="about.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main>
+            <section id="about-container">
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="index.html">
+                            <img src="cew-logo-white.png" class="nav-logo">
+                        </a>
+                        <img src="hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="index.html">PROJECTS</a></li>
+                                <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="#">ABOUT ME / RESUME</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+                <section class="photography-header">
+                    <p class="photography-title">About Me</p>
+                </section>
+                                <img src="profile.png" class="profile-img">
+
+                <p class="about-text"><b>Hey again, thanks for stopping by!</b><br><br><b class="project-section-title">Who Am I?
+                </b><br>
+                I'm a product designer (UI, UX, and everything in between) from Schwenksville, PA (a suburb near Philly). I study Graphic Design at Penn State, University Park, and I'm in my third year here. I'm a huge fan of <a target="_blank" href="https://www.youtube.com/watch?v=en5_JrcSTcU">John Mulaney</a> (take a few minutes to watch that, you deserve a good laugh), chick pea-based snacks, and sunflowers.
+                <br><br>
+                <b class="project-section-title">What do I do?</b><br>
+                Classes, freelance, and LionPlanner keep me pretty busy. But when I <em>do</em> have free time, I love rock climbing (bouldering), <a href="photography.html">photography</a>, petting my dogs and cats, and learning as many new things as I can. Right now, I'm working to learn Javascript and JQuery so that I can make my sites more interesting and pleasant to interact&nbsp;with. Oh, and sleep. I try to do that sometimes.
+                <br><br>
+                <b class="project-section-title">What do I stand for?</b><br>Technology is an essential part of nearly everyone's lives these days. My thought is this: designing and developing websites and software that care about their users and strive to make one little interaction a bit more enjoyable holds immense power in making the entire human experience a whole lot better.<br><br>I was recently in a very nicely-kept hotel bathroom, and it occurred to me how appreciated I felt that they took the time to make even the bathroom pleasant. I want users to feel appreciated, and so I try to pay extra attention to the less-glamorous aspects of their experience.
+                </p>
+                <img src="Christina-Warren-Resume.png" id="resume">
+                <a href="Christina-Warren-Resume-recent.pdf" download target="_blank" class="download-container">
+	               <button class="download-btn">Download PDF</button>
+                </a>
+            </section>
+            <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+            </footer>
+        </main>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>    
+    </body>
+<html>
+    
