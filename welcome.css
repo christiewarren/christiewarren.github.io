@@ -105,7 +105,7 @@
     background: #ffdf63;
     background: linear-gradient(306deg, rgba(201,16,255,1) 0%, rgba(255,200,0,1) 90%);
     grid-column: 1 / 21;
-    height: 90vh;
+    height: 70vh;
     z-index: 1;
     display: grid;
     grid-template: auto / repeat(20,1fr);
