@@ -296,6 +296,7 @@ body{
     grid-column: 1 / 21;
     position: sticky;
     top: 0px;
+    padding-right: 22px;
     background: white;    
     box-shadow: 0px 3px 3px rgba(0,0,0,.1);
 }
@@ -438,6 +439,7 @@ body{
 .pain-points-text{
     font-size: 120%;
     margin: auto;
+    line-height: 1.8;
 }
 
 .solution-title{
