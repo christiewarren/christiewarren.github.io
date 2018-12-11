@@ -1,0 +1,222 @@
+body{
+    background: #f7f3ed;
+}
+.school-header{
+    background: rgb(226,0,249);
+    background: linear-gradient(315deg, rgba(226,0,249,1) 10%, rgba(98,0,167,1) 83%);
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 5%;
+    height: 100vh;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+}
+
+.project-grid{
+    grid-column: 10 / 10;
+    display: grid;
+    grid-template: repeat(3,300px) / repeat(2,300px);
+    grid-gap: 50px;
+}
+
+.school-project{
+    background: rgb(226,0,249);
+    position: relative;
+    cursor: pointer;
+}
+
+#animals{
+    background-image: url(../images/squirrel_Final.png);
+    background-size: cover;
+}
+
+#study-abroad{
+    background-image: url(../images/south-africa-poster.jpg);
+    background-size: cover;
+}
+
+#alphabet{
+    background-image: url(../images/unintentional-letters.jpg);
+    background-size: cover;
+}
+
+#pattern{   
+    background-image: url(../images/pattern.jpg);
+    background-size: cover;
+}
+
+#portrait{
+    background-image: url(../images/type-portrait-22.png);
+    background-size: cover;
+}
+
+#sock{
+    background-image: url(../images/the_sock.jpg);
+    background-size: cover;
+}
+
+.photo-description-container{
+    border-bottom: none;
+    border-top: dotted #e6e6e6 3px;
+    padding-top: 150px;
+    padding-bottom: none;
+}
+
+.project-section-title{
+    color: rgb(102, 22, 168)
+}
+
+.school-project .project-text{
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0,0,0,.5);
+    width: 290px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: .3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.school-project:hover .project-text{
+    opacity: 1;
+}
+
+.school-info{
+    grid-column: 2 / 20;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    font-size: 100%;
+    line-height: 1.8;
+    padding: 30px;
+    /*border: dotted #f2f2f2 3px;*/
+    align-self: baseline;
+    color: #4a4a4c;    
+    background: #f7f3ed;
+    margin-top: -100px;
+}
+
+@media screen and (max-width: 813px){
+    .project-grid{
+    grid-template: repeat(6,300px) / repeat(1,300px);
+    }
+
+}
+
+@media screen and (min-width: 814px) and (max-width: 1221px){
+    .project-grid{
+    grid-template: repeat(3,300px) / repeat(2,300px);
+    }
+
+}
+
+@media screen and (min-width: 1221px) {
+    .project-grid{
+    grid-template: repeat(2,300px) / repeat(3,300px);
+    }
+
+}
+
+
+
+
+.animal-wrapper{
+    display: grid;
+    grid-template: auto / repeat(20,1fr);
+    grid-gap: 50px;
+}
+
+.project-title{
+    grid-column: 4 / -1;
+    padding-top: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: darkturquoise;
+}
+
+#center{
+    grid-column: 4 / 18;
+    width: 100%;
+}
+
+#sock-img{
+    grid-column: 8 / 14;
+    width: 100%;
+}
+
+#pattern-title{
+    text-decoration-color: blueviolet;
+
+}
+
+#sock-title{
+    text-decoration-color: #af0046;
+
+}
+
+#portrait-title{
+    text-decoration-color: #f4bb00;
+}
+
+#abroad-title{
+    text-decoration-color: dimgrey;
+}
+
+#alphabet-title{
+    text-decoration-color: deeppink;
+}
+
+.about-project{
+    grid-column: 7 / 15;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#portrait-img{
+    grid-column: 6 / 16;
+    width: 100%;
+}
+
+#squirrel{
+    grid-column: 4 / 11;
+    width: 100%;
+}
+
+#cow{
+    grid-column: 11 / 18;
+    width: 100%;
+}
+
+#left{
+   grid-column: 4 / 11;
+    width: 100%;
+}
+
+#right{
+    grid-column: 11 / 18;
+    width: 100%;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 300;
+    line-height: 250%;
+    transition: all .2s;
+}
+
+.menu-list a:hover {
+    border-bottom: 5px solid white;
+}
+
+.menu-list li {
+    list-style: none;
+    text-align: right;
+    margin-right: 30px;
+}

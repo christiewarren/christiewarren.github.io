@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | School Projects</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="styles/school.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">  
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main class="animal-wrapper">
+            <span id="top"></span>
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+<!--I wasn't too sure how I would put the third image on this page, because i usually display it vertically, but I thought the text would look strange next to the vertical image. I ended up making it a #center image, so that it takes up the whole width.-->
+            <h1 id="pattern-title" class="project-title">Typographic Patterns</h1>
+            <img id="left" src="images/pattern.jpg" alt="pattern" title="pattern">
+            <img id="right" src="images/congested.jpg" alt="congestion" title="congestion">
+            <img id="center" src="images/rhythm.jpg" alt="rhythm" title="rhythm">
+            <div class="about-project">
+                <p>These pieces were each meant to convey a different word: (in order) pattern, congestion, and rhythm. The designs all needed to be composed of typographic elements, which made it even more challenging. My favorite of these pieces is probably the first one for pattern, which is ironic because I made this very last minute since I was unhappy with the original&nbsp;design.
+                </p>
+            </div>
+        </main>
+        <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+        </footer>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>
+    </body>
+</html>

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <!-- Bootstrap meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
       <title>Christie Warren | Welcome</title>
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
-      <link rel="stylesheet" href="welcome.css">
+      <link rel="stylesheet" href="Welcome/styles/welcome.css">
         <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
         
         <!--Favicon-->
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Welcome/images/favicon-16x16.png">
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Material Icons  -->
@@ -26,11 +24,12 @@
                 <nav class="main-nav">
                     <div class="nav-content menu">
                         <a href="index.html">
-                            <img src="cew-logo-white.png" class="nav-logo">
+                            <img src="Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
                         </a>
                     </div>
                     
                 </nav>
+<!--I chose to use article tags on this page because I feel that this welcome area and the project area below it can stand on their own apart from each other. This page is probably the one I spent the longest on coding-wise, because it took a very long time to get all of the aspects to be responsive and still look decent on smaller screens. I had to troubleshoot a bunch in the project section because the images gave me trouble since they have a shadow in the actual image, which makes them larger than they appear. As I create more projects I'd like to add to this page to make it a bit more robust.-->
                 <article id="welcome">
                     <h2 id="welcome-message" class="welcome-text">
                         hi there!<br><br>
@@ -39,11 +38,13 @@
                     <div class="welcome-menu">
                         <li><a href="#top">HOME</a></li>
                         <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="photography.html">PHOTOGRAPHY</a></li>
-                        <li><a href="about.html">ABOUT ME / RESUME</a></li>
+                        <li><a href="Photography/photography.html">PHOTOGRAPHY</a></li>
+                        
+                        <li><a href="About/about.html">ABOUT ME / RESUME</a></li>
+                    
                     </div>
                     <a href="#projects">
-                        <img class="scroll-arrow" src="scroll-arrow.png">
+                        <img class="scroll-arrow" src="Welcome/images/scroll-arrow.png" alt="scroll" title="scroll">
                     </a>
                     <span id="projects"></span>
                 </article>
@@ -51,28 +52,29 @@
                 <!--<img class="prof-pic" src="prof-pic.png">-->
                 <article id="lionplanner" class="experience-card">
                     <div class="lp-ex-card-img">
-                        <img src="LP-macbook.png">
+                        <img src="Projects/images/LP-macbook.png" alt="lionplanner" title="lionplanner">
                     </div>
                     <div class="lp-ex-card-text">
                         <h3>LionPlanner</h3>
                         <h5>digital product design, UI/UX</h5>
                         <h4>Academic planning, simpler.</h4>
-                        <a href="lionplanner.html"><button id="lp-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
+                        <a href="Projects/lionplanner.html"><button id="lp-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
                     </div> 
                     
                 </article>
                 <article id="roddy" class="experience-card">
                     <div class="rd-ex-card-img">
-                        <img src="roddy-macbook.png">
+                        <img src="Projects/images/roddy-macbook.png" alt="roddy restoration" title="roddy restoration">
                     </div>
                     <div class="rd-ex-card-text">
                         <h3>Roddy Restoration and Remodeling</h3>
                         <h5>web design, UI/UX, identity &amp; branding</h5>
                         <h4>Construction you can trust.</h4>
-                        <button id="rd-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button>
+                        <a href="Projects/roddy.html"><button id="rd-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
                     </div>
                 </article>
             </section>
+<!--For the footer information, I decided to use a table actually, because tables are a super convenient way to organize information quickly. I wanted all the lines to vertically and horizontally line up, and the table helped me do that very simply.-->
             <footer class="contact-container">
                 <table class="contact-table" cellspacing="20">
                     <tr>

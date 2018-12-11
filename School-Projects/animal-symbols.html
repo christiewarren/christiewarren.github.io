@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | School Projects</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="styles/school.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">  
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main class="animal-wrapper">
+            <span id="top"></span>
+           
+                
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+<!--This page was pretty simple, since there isn't too much information on it, but I did run into one issue where the side menu wasn't formatting correctly. I realized I had unlinked the CSS file that formats that menu, so it was an easy fix!-->
+            <h1 class="project-title">Animal Symbols</h1>
+            <img id="squirrel" src="images/squirrel_Final.png" alt="squirrel symbol" title="squirrel symbol">
+            <img id="cow" src="images/cow_Final%20copy.png" alt="cow symbol" title="cow symbol">
+            <div class="about-project">
+                <p>The goal of this project was to create symbols of animals that were simple enough that they could be used almost as logos, but detailed enough to be easily recognizable as the animal. The symbols also needed to be created using two differing styles while still being made with vector work.</p>
+            </div>
+        </main>
+        <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+        </footer>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>
+    </body>
+</html>

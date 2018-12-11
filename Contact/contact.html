@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | About / Resume</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Projects/styles/lionplanner.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="../About/styles/about.css">
+      <link rel="stylesheet" href="styles/contact.css">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main> 
+            <section id="about-container">
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="../School-Projects/school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+                <p class="about-text" style="border-bottom: none; padding-top: 100px; text-align: center"><b class="project-section-title">Don't be shy! 
+                </b><br>
+                </p>
+<!--This page did cause me some trouble, because I have a table in my footer, so when I tried to create another table for contact, it kept following the format of the footer table. I had to figure out what exactly I needed to add back into the css to make it work, and that took some troubleshooting for what can be added to a table format.-->
+                <table class="lg-contact-table" cellspacing="0">
+                    <tr>
+                        <th class="contact-row" colspan="2"><p>My many forms of contact:</p></th>
+                    </tr>
+                    <tr>
+                        <th class="contact-row"scope="row">email:</th> <td class="contact-row">cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th class="contact-row"scope="row">instagram:</th> <td class="contact-row"><a href="https://www.instagram.com/christie.warren/" target="_blank">@christie.warren</a></td>
+                    </tr>
+                    <tr>
+                        <th class="contact-row"scope="row">vsco:</th> <td class="contact-row"><a href="https://www.instagram.com/christie.warren/" target="_blank"><a href="https://vsco.co/crustable/images/1" target="_blank">crustable</a></a></td>
+                    </tr>
+                    <tr>
+                        <th class="contact-row"scope="row">twitter:</th> <td class="contact-row"><a href="https://www.instagram.com/christie.warren/" target="_blank"><a href="https://twitter.com/christieewarren" target="_blank">@christieewarren</a></a></td>
+                    </tr>
+                    <tr>
+                        <th class="contact-row"scope="row">linkedin:</th> 
+                        <td class="contact-row"><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+                <form class="contact-form">
+                    <h5 style="margin-bottom: 50px">...or message me here!</h5>
+                    <input type="text" placeholder="name"><br><br>
+                    <input type="email" placeholder="email"><br><br>
+                    <textarea rows="10"  placeholder="message"></textarea><br><br>
+                    <input class="submit-btn" type="submit" value="Submit">
+                </form>
+                
+            </section>
+            <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+            </footer>
+        </main>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>    
+    </body>
+<html>
+    

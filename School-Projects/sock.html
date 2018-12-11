@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | School Projects</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="styles/school.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">  
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main class="animal-wrapper">
+            <span id="top"></span>
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+<!--On this page the images were originally pdfs so I spent a bit trying to figure out why they weren't showing up. With some googling, I found that I should export them as jpegs instead, and then they worked perfectly!-->
+            <h1 id="sock-title" class="project-title">The Sock</h1>
+            <img id="sock-img" src="images/the_sock.jpg" alt="sock book folded" title="sock book folded">
+            <img id="sock-img" src="images/the_sock_02.jpg" alt="sock book unfolded" title="sock book unfolded">
+            <img id="sock-img" src="images/sock-layout.jpg" alt="sock page 1" title="sock page 1">
+            <img id="sock-img" src="images/sock-layout2.jpg" alt="sock page 2" title="sock page 2">
+            <img id="sock-img" src="images/sock-layout3.jpg" alt="sock page 3" title="sock page 3">
+            <img id="sock-img" src="images/sock-layout4.jpg" alt="sock page 4" title="sock page 4">
+            <img id="sock-img" src="images/sock-layout5.jpg" alt="sock page 5" title="sock page 5">
+            <img id="sock-img" src="images/sock-layout6.jpg" alt="sock page 6" title="sock page 6">
+            <img id="sock-img" src="images/sock-layout7.jpg" alt="sock page 7" title="sock page 7">
+            <div class="about-project">
+                <p>This was the final project of my first year in graphic design, due the same week as our portfolio review to get accepted into the program. Needless to say it was quite a stressful week, but I'm really proud of the outcome of the project. I feel like this demonstrates my style fairly well in that it's really simple and fun to look through. I also loved adding the physical touch of the drawer, which I made by making an origami box and covering it with thin pieces of wood.</p>
+            </div>
+        </main>
+        <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+        </footer>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>
+    </body>
+</html>

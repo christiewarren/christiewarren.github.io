@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | School Projects</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="styles/school.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">  
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main class="animal-wrapper">
+            <span id="top"></span>
+                <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            <h1 id="portrait-title" class="project-title">Typographic Portrait</h1>
+            <img id="portrait-img" src="images/type-portrait-22.png" alt="type portrait" title="type portrait">
+<!--Since this page only has one image and some text it was super simple! The image originally had a white background, so I actually decided to add a background to the image in illustrator. This way it looks more like a completed piece and adds some color to the page.-->
+            <div class="about-project">
+                <p>This typography required me to create a self portrait using characters all from the same font. It was a challenge not only to pick a font had characteristics good for making a portrait, but also to choose the right strokes to fit my face and try to make it actually look like&nbsp;myself.</p>
+            </div>
+        </main>
+        <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+        </footer>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>
+    </body>
+</html>

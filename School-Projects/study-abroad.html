@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | School Projects</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:300, 400,400i,700,700i" rel="stylesheet">
+        
+      <link rel="stylesheet" href="../Welcome/styles/welcome.css">
+      <link rel="stylesheet" href="../Photography/styles/photography.css">
+      <link rel="stylesheet" href="styles/school.css">
+        <link href="https://fonts.googleapis.com/css?family=Neuton:400i" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="../Welcome/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Welcome/images/favicon-16x16.png">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Material Icons  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <main class="animal-wrapper">
+            <span id="top"></span>
+               <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">HOME</a></li>
+                                <li><a href="../index.html">PROJECTS</a></li>
+                                <li><a href="../Photography/photography.html">PHOTOGRAPHY</a></li>
+                                <li><a href="school-projects.html">SCHOOL PROJECTS</a></li>
+                                <li><a href="../About/about.html">ABOUT ME / RESUME</a></li>
+                                <li><a href="../Contact/contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+<!--Again, this was a fairly straightforward page. I decided to use the h1 tag for the title because it should stand apart from the images and be the first thing seen on the page, since it's the title of the whole project.-->
+            <h1 id="abroad-title" class="project-title">Beauty Abroad</h1>
+            <img id="left" src="images/thailand.jpg" alt="thailand poster" title="thailand poster">
+            <img id="right" src="images/croatia.jpg" alt="croatia poster" title="croatia poster">
+            <img id="left" src="images/south-africa-poster.jpg" alt="south africa poster" title="south africa poster">
+            <img id="right" src="images/spain.jpg" alt="spain poster" title="spain poster">
+            <img id="left" src="images/japan.jpg" alt="japan poster" title="japan poster">
+            <div id="right" class="about-project">
+                <p>For this project, our class was actually lucky enough to have the real clients of Global Penn State, who run all of the marketing for Study Abroad programs. We were presented with a few objectives to pick from, and the one I chose was to advertise less common countries to study in. The medium we used to create the posters was completely open ended, and I chose to photograph flowers and then image trace them in Illustrator to create a painted&nbsp;affect.</p>
+            </div>
+        </main>
+        <footer class="contact-container">
+                <table class="contact-table" cellspacing="20">
+                    <tr>
+                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="contact-labels">linkedin:</th> 
+                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
+                    </tr>
+                </table>
+        </footer>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script>
+    </body>
+</html>
