@@ -130,13 +130,14 @@ a{
 }
 
 .project-title{
-    grid-column: 4 / -1;
-    padding-top: 100px;
+    grid-column: 4 / 18;
+    margin-top: 100px;
     font-family: 'Ubuntu', sans-serif;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: darkturquoise;
+    background: darkturquoise;
+    color: #282828;
+    padding: 20px;
 }
+
 
 #center{
     grid-column: 4 / 18;
@@ -154,26 +155,26 @@ a{
 }
 
 #sock-title{
-    text-decoration-color: #af0046;
+    background: rgb(225, 99, 95);
 
 }
 
 #portrait-title{
-    text-decoration-color: #f4bb00;
+    background: rgb(251, 183, 83);
 }
 
 #abroad-title{
-    text-decoration-color: dimgrey;
+    background: rgba(96, 105, 67, .8)
 }
 
 #alphabet-title{
-    text-decoration-color: deeppink;
+    background: rgb(245, 19, 115);
 }
 
 .about-project{
     grid-column: 7 / 15;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Text', serif;
 }
 
 
