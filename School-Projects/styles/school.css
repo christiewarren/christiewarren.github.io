@@ -126,11 +126,18 @@ a{
 .animal-wrapper{
     display: grid;
     grid-template: auto / repeat(20,1fr);
-    grid-gap: 50px;
+    grid-gap: 3%;
+}
+
+.sock-wrapper{
+    display: grid;
+    grid-template: auto / repeat(20,1fr);
+    grid-gap: 0px;
+    
 }
 
 .project-title{
-    grid-column: 4 / 18;
+    grid-column: 3 / 19;
     margin-top: 100px;
     font-family: 'Ubuntu', sans-serif;
     background: darkturquoise;
@@ -140,14 +147,13 @@ a{
 
 
 #center{
-    grid-column: 4 / 18;
+    grid-column: 5 / 17;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-#sock-img{
-    grid-column: 8 / 14;
-    width: 100%;
-}
+
 
 #pattern-title{
     text-decoration-color: blueviolet;
@@ -175,6 +181,7 @@ a{
     grid-column: 7 / 15;
     text-align: center;
     font-family: 'Crimson Text', serif;
+    margin-bottom: 50px;
 }
 
 
@@ -184,23 +191,39 @@ a{
 }
 
 #squirrel{
-    grid-column: 4 / 11;
+    grid-column: 3 / 11;
     width: 100%;
 }
 
 #cow{
-    grid-column: 11 / 18;
+    grid-column: 11 / 19;
     width: 100%;
 }
 
 #left{
-   grid-column: 4 / 11;
+   grid-column: 3 / 11;
     width: 100%;
+    
 }
 
 #right{
-    grid-column: 11 / 18;
+    grid-column: 11 / 19;
     width: 100%;
+}
+
+#sock-left{
+    grid-column: 5 / 11;
+    width: 100%;
+}
+
+#sock-right{
+    grid-column: 11 / 17;
+    width: 100%;
+}
+
+.sock-img{
+    border: 1px solid lightgrey;
+    margin: 10px;
 }
 
 .menu-list a {
