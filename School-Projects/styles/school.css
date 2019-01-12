@@ -136,6 +136,14 @@ a{
     
 }
 
+.abroad-wrapper{
+    display: grid;
+    grid-template: auto / repeat(20,1fr);
+    grid-gap: 40px;
+    
+}
+
+
 .project-title{
     grid-column: 3 / 19;
     margin-top: 100px;
@@ -221,10 +229,22 @@ a{
     width: 100%;
 }
 
+
 .sock-img{
     border: 1px solid lightgrey;
     margin: 10px;
 }
+
+#abroad-left{
+    grid-column: 5 / 11;
+    width: 100%;
+}
+
+#abroad-right{
+    grid-column: 11 / 17;
+    width: 100%;
+}
+
 
 .menu-list a {
     color: #fff;
