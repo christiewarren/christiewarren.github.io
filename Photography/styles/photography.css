@@ -24,9 +24,9 @@
 }
 
 body{
-    background: #d4d6db;
     margin: 0;
     background: #f7f3ed;
+    background: white;
 }
 
 .main-nav{
@@ -110,7 +110,7 @@ background: linear-gradient(122deg, rgba(27,255,182,1) 0%, rgba(0,140,255,1) 100
 
 
 .photo-info{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Text', serif;
     text-align: left;
     font-size: 100%;
     line-height: 1.8;
@@ -118,7 +118,7 @@ background: linear-gradient(122deg, rgba(27,255,182,1) 0%, rgba(0,140,255,1) 100
     /*border: dotted #f2f2f2 3px;*/
     align-self: baseline;
     color: #4a4a4c;    
-    background: #f7f3ed;
+    
 }
 
 .project-section-title{

@@ -1,5 +1,5 @@
 body{
-    background: #f7f3ed;
+    
 }
 .school-header{
     background: rgb(226,0,249);
@@ -95,7 +95,7 @@ a{
     /*border: dotted #f2f2f2 3px;*/
     align-self: baseline;
     color: #4a4a4c;    
-    background: #f7f3ed;
+
     margin-top: -100px;
 }
 

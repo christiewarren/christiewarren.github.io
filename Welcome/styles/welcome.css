@@ -1,6 +1,6 @@
 
 body{
-    background: #f7f3ed;
+    background: white;
 }
 @media screen and (max-width: 767px){
     
@@ -37,7 +37,6 @@ body{
 
     
     #lionplanner{   
-        background: #f7f3ed;
         grid-column: 2 / 20;
         grid-row: 26 / 43;
         padding-bottom: 120px;
@@ -76,7 +75,6 @@ body{
         }
     
     #roddy{   
-        background: #f7f3ed;
         grid-column: 2 / 20;
         grid-row: 47 / 64;
         padding-top: 0px;
@@ -147,7 +145,6 @@ body{
     }
     
     #lionplanner{
-        background: #f7f3ed;
         grid-column: 4 /18;
         grid-row: 26 /41;
         padding-left: 40px;
@@ -181,7 +178,6 @@ body{
         }
     
     #roddy{
-        background: #f7f3ed;
         grid-column: 4 /18;
         grid-row: 45 /60;
         padding-right: 40px;
@@ -210,8 +206,6 @@ body{
 body{
     margin: 0px;
     transition: all 1s ease;
-    background: #d4d6db;
-    background: #f7f3ed;
 }
 
 .main-nav{
@@ -325,11 +319,9 @@ h5{
     align-content: space-around;
     position: relative;
     color: #4a4a4c;    
-    background: #f7f3ed;
 }
 #roddy{
     color: #4a4a4c;    
-   background: #f7f3ed;
 }
 
 .lp-ex-card-text{

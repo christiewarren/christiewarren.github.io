@@ -282,6 +282,7 @@ body{
     background: #d4d6db;
     margin: 0px;
     background: #f7f3ed;
+    background: white;
 }
 
 #lp-container{
@@ -390,7 +391,7 @@ body{
 }
 
 .description-text{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Text', serif;
     text-align: center;
     font-size: 100%;
     line-height: 140%;
@@ -398,13 +399,11 @@ body{
     margin-top: 150px;;
     /*border: dotted #f2f2f2 3px;*/
     color: #4a4a4c;    
-    background: #f7f3ed;
-    box-shadow: inset 1px 1px 6px rgba(0,0,0,.6);
 }
 
 .problem-text{
     font-weight: 400;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Text', serif;
     color: #4a4a4c;
     font-size: 110%; 
     margin-top: 0px;
@@ -417,7 +416,7 @@ body{
 
 .img-caption{
     font-weight: 400;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Crimson Text', serif;
     text-align: center;
     color: #4a4a4c;
     font-size: 100%; 
