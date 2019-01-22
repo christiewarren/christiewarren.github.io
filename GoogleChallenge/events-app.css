@@ -1,0 +1,43 @@
+body{
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 1.58;
+    margin: 0;
+    margin-bottom: 150px;
+}
+
+p, h1, h2, h3, h4, h5{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h2{
+    margin-top: 100px;
+}
+
+h3, h4{
+    margin-top: 40px;
+}
+
+b{
+    color: #23c3e2;
+}
+
+p{
+    margin-top: 45px;
+}
+
+.small-text{
+    font-size: 14px; 
+    opacity: .5; 
+}
+
+ol{
+  padding-left: 30%;
+    padding-right: 30%;  
+}
+
+li{
+    margin-bottom: 20px;
+}
