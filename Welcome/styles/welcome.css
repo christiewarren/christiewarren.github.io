@@ -6,15 +6,15 @@ body{
     
     #welcome{
     padding: 60px;
-    background: #ffdf63;
-    background: linear-gradient(306deg, rgba(201,16,255,1) 0%, rgba(255,200,0,1) 90%);
+    /*background: #ffdf63;
+    background: linear-gradient(306deg, rgba(201,16,255,1) 0%, rgba(255,200,0,1) 90%);*/
     grid-column: 1 / 21;
     grid-row: 2 / 21;
     z-index: 1;
     display: grid;
     grid-template: auto / repeat(20,1fr);
     position: relative;
-    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    /*box-shadow: 0px 2px 5px rgba(0,0,0,.5);*/
     }
     #welcome-message{
         grid-column: 2 / 20;
@@ -45,7 +45,7 @@ body{
     .project-section-title{
         grid-column: 3 / 19;
         grid-row: 22;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Noto Serif SC', serif;
         text-align: left;
         font-size: 200%;
         font-weight: 700;
@@ -59,9 +59,9 @@ body{
     
     .lp-ex-card-text{
         grid-column: 2 / 20;
-        padding: 65px;
+        padding: 55px;
         background: #0c5bb0;
-        background: linear-gradient(126deg, rgba(7,0,129,1) 0%, rgba(0,123,255,1) 100%);
+        
     }
     
     .google-ex-card-text{
@@ -103,7 +103,7 @@ body{
         grid-column: 2 / 20;
         padding: 45px;
         background: #E96324;
-        background: linear-gradient(126deg, rgba(233,99,36,1) 0%, rgba(255,154,0,1) 100%);
+        
     }
     
     .rd-ex-card-img{
@@ -121,15 +121,15 @@ body{
 @media screen and (min-width: 767px){
     #welcome{
     padding: 60px;
-    background: #ffdf63;
-    background: linear-gradient(306deg, rgba(201,16,255,1) 0%, rgba(255,200,0,1) 90%);
+    /*background: #ffdf63;
+    background: linear-gradient(306deg, rgba(201,16,255,1) 0%, rgba(255,200,0,1) 90%);*/
     grid-column: 1 / 21;
     height: 70vh;
     z-index: 1;
     display: grid;
     grid-template: auto / repeat(20,1fr);
     position: relative;
-    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    /*box-shadow: 0px 2px 5px rgba(0,0,0,.5);*/
 }
     
     .welcome-text{
@@ -151,7 +151,7 @@ body{
     .project-section-title{
         grid-column: 4 / 18;
         grid-row: 22;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Noto Serif SC', serif;
         text-align: left;
         font-size: 200%;
         font-weight: 700;
@@ -171,8 +171,7 @@ body{
     }
     
     .lp-ex-card-text{
-        background: #23c3e2;
-        background: linear-gradient(126deg, rgba(7,0,129,1) 0%, rgba(0,123,255,1) 100%);
+        background: #0c5bb0; 
         grid-column: 1 / 11;
         padding: 30%;
         grid-row: 1 / 3;
@@ -180,7 +179,7 @@ body{
     }
     
     .google-ex-card-text{
-        background: #0c5bb0;
+        background: #23c3e2;
     }
     
     .lp-ex-card-img{
@@ -227,7 +226,7 @@ body{
     
     .rd-ex-card-text{
         background: #E96324;
-        background: linear-gradient(126deg, rgba(233,99,36,1) 0%, rgba(255,154,0,1) 100%);
+        
         grid-column: 11 / 21;
         padding: 25%;
         align-self: center;
@@ -250,7 +249,7 @@ body{
 }
 
 .main-nav{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     color: #b3b3b3;
     z-index: 200;
     width: 100%;
@@ -292,38 +291,41 @@ body{
     
 }
 .welcome-text{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     color: #282828;
+    font-weight: 200;
     margin: 0;
 }
 
 h2{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     font-size: 200%;
     color: white;
     margin: 0px;
 }
 
 h3{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     font-size: 150%;
+    padding-bottom: 20px;
     color: white;
     margin: 0px;
 }
 
 h4{
-    font-family: 'Neuton', serif;
-    font-size: 140%;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 110%;
     color: white;
-    margin-top: 1%;
+    margin-top: 10px;
     margin-bottom: 1%;
     font-weight: 100;
 }
 
 h5{
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
     background: #282828;
+    font-weight: 100;
     padding: 8px;
     margin: 0px;
 
@@ -337,12 +339,12 @@ h5{
     font-weight: 700;
     line-height: 250%;
     transition: all .2s;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', serif;
 
 }
 
 .welcome-menu a:hover {
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid #282828;
 }
 
 .welcome-menu li {
@@ -420,7 +422,7 @@ h5{
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: -25;
+    bottom: -25px;
     left: 42%;
     box-shadow:  0px 0px 30px rgba(0,0,0,.3);
     color: white;
@@ -499,7 +501,7 @@ h5{
 }
 
 .contact-table{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     color: #f2f2f2;
     margin-right: -10px;
 }
@@ -515,7 +517,7 @@ td a{
 }
 
 .contact-title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     font-size: 200%;
     font-weight: 700;
     z-index: 2;
