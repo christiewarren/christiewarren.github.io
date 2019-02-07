@@ -67,8 +67,6 @@ body{
 
 
 .project-header{
-    background: #E96324;
-    background: linear-gradient(126deg, rgba(233,99,36,1) 0%, rgba(255,154,0,1) 100%);
 }
 
 .project-section-title{
@@ -121,4 +119,8 @@ td a{
     color: #f2f2f2;         
     margin-right: auto;
     text-align: center;
+}
+
+.tagline{
+    color: #E96324;
 }

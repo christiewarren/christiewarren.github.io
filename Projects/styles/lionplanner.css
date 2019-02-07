@@ -291,7 +291,7 @@ body{
 }
 
 .main-nav{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     color: #b3b3b3;
     z-index: 200;
     width: 100%;
@@ -326,10 +326,10 @@ body{
 }
 
 .project-title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     font-size: 150%;
     font-weight: 700;
-    color: white;
+    color: #282828;
     margin: auto; 
     border: dotted thin rgba(256, 256, 256, .2);
     padding: 25px;
@@ -338,9 +338,9 @@ body{
 }
 
 .tagline{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     font-size: 100%;
-    color: white;
+    color: #0c5bb0;
     margin: auto;
     margin-top: -1px;
     border: dotted thin rgba(256, 256, 256, .2);
@@ -353,9 +353,9 @@ body{
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 5%;
-    background: rgb(2,0,36);
+    /*background: rgb(2,0,36);
     background: linear-gradient(126deg, rgba(7,0,129,1) 0%, rgba(0,123,255,1) 100%);
-    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0px 2px 5px rgba(0,0,0,.5);*/
 }
 
 .description-container{
@@ -378,20 +378,20 @@ body{
 }
 
 .project-section-title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: left;
     font-size: 200%;
     font-weight: 700;
     z-index: 2;
     margin-top: 200px;
-    color: rgba(0,123,255,1);
+    color: #0c5bb0;
     width: 90%;
     margin-right: auto;
     text-align: left;
 }
 
 .description-text{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: center;
     font-size: 100%;
     line-height: 140%;
@@ -403,31 +403,31 @@ body{
 
 .problem-text{
     font-weight: 400;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif SC', sans-serif;
     color: #4a4a4c;
     font-size: 110%; 
     margin-top: 0px;
     margin-bottom: 50px;
     line-height: 1.8;
     width: 90%;
-    border-left: solid 2px rgba(0,123,255,1);
+    border-left: solid 2px #0c5bb0;
     padding-left: 20px;
 }
 
 .img-caption{
     font-weight: 400;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: center;
     color: #4a4a4c;
     font-size: 100%; 
 }
 
 .pain-points{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: left;
     font-size: 100%; 
     margin-top: 150px;
-    background: rgba(0,123,255,1);
+    background: #0c5bb0;
     color: white;
 }
 
@@ -446,7 +446,7 @@ body{
 
 .solution-title{
     grid-column: 1 / -1;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: center;
     font-size: 180%;
     color: #4a4a4c;
@@ -462,11 +462,11 @@ body{
 }
 
 .future{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: center;
     font-size: 100%; 
     margin-top: 150px;
-    background: rgba(0,123,255,1);
+    background: #0c5bb0;
     color: white;
 }
 
@@ -530,7 +530,7 @@ body{
 }
 
 .contact-table{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     color: #f2f2f2;
     margin-right: -10px;
 }
@@ -546,7 +546,7 @@ td a{
 }
 
 .contact-title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
     font-size: 200%;
     font-weight: 700;
     z-index: 2;

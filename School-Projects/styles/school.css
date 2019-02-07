@@ -2,13 +2,10 @@ body{
     
 }
 .school-header{
-    background: rgb(226,0,249);
-    background: linear-gradient(315deg, rgba(226,0,249,1) 10%, rgba(98,0,167,1) 83%);
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 5%;
     height: 100vh;
-    box-shadow: 0px 2px 5px rgba(0,0,0,.5);
 }
 
 .project-grid{
@@ -16,6 +13,11 @@ body{
     display: grid;
     grid-template: repeat(3,300px) / repeat(2,300px);
     grid-gap: 50px;
+}
+
+.tagline{
+    font-family: 'Noto Serif SC', sans-serif;
+    color: rgb(102, 22, 168);
 }
 
 .school-project{
@@ -87,7 +89,7 @@ a{
 
 .school-info{
     grid-column: 2 / 20;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif SC', sans-serif;
     text-align: left;
     font-size: 100%;
     line-height: 1.8;
@@ -147,8 +149,7 @@ a{
 .project-title{
     grid-column: 3 / 19;
     margin-top: 100px;
-    font-family: 'Ubuntu', sans-serif;
-    background: darkturquoise;
+    font-family: 'Noto Serif SC', sans-serif;
     color: #282828;
     padding: 20px;
 }
@@ -169,26 +170,22 @@ a{
 }
 
 #sock-title{
-    background: rgb(225, 99, 95);
 
 }
 
 #portrait-title{
-    background: rgb(251, 183, 83);
 }
 
 #abroad-title{
-    background: rgba(96, 105, 67, .8)
 }
 
 #alphabet-title{
-    background: rgb(245, 19, 115);
 }
 
 .about-project{
     grid-column: 7 / 15;
     text-align: center;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif SC', sans-serif;
     margin-bottom: 50px;
 }
 
