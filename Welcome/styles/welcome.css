@@ -140,7 +140,7 @@ body{
     grid-column: 2 / 12;
     align-self: center;
     padding-right: 80px;
-    border-right: rgba(256,256,256,.4) solid thin;
+    border-right: #d8d8d8 solid thin;
 }
 .welcome-menu{
     grid-column: 14 / 20;
