@@ -8,9 +8,29 @@
     
     <link href="events-app.css" type="text/css" rel="stylesheet">
       <title>Event Discovery App</title>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       
     </head>
-    <body> 
+    <body>
+        <nav class="main-nav">
+                    <div class="nav-content menu">
+                        <a href="../index.html">
+                            <img src="../Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
+                        </a>
+                        <img src="../Welcome/images/hamburger.png" class="hamburger menu-toggle">
+                        <nav class="menu-side">
+                            <ul class="menu-list">
+                                <li><a href="../index.html">home</a></li>
+                                <li><a href="../index.html">projects</a></li>
+                                <li><a href="../Photography/photography.html">photography</a></li>
+                                <li><a href="../School-Projects/school-projects.html">school projects</a></li>
+                                <li><a href="../About/about.html">about me / resume</a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
         <header>
             <img src="website-imgs/banner.png" width="100%">
         </header>
@@ -102,5 +122,26 @@
                 
             </article>
         </main>
+        <script>
+            (function() {
+              var body = $('body');
+              $('.menu-toggle').bind('click', function(){
+                body.toggleClass('menu-open');
+                return false;
+              });
+            })();
+            
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var position = $($(this).attr("href")).offset().top;
+
+                $("body, html").animate({
+                    scrollTop: position
+                }, 400, 'linear');
+            });
+            
+
+        </script> 
     </body>
 </html>
