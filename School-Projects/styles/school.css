@@ -261,3 +261,35 @@ a{
     text-align: right;
     margin-right: 30px;
 }
+
+.main-nav{
+    font-family: 'Noto Serif SC', sans-serif;
+    color: #b3b3b3;
+    z-index: 200;
+    width: 100%;
+    padding: 20px;
+    height: 20px;
+    grid-column: 1 / 21;
+    position: fixed;
+    top: 0;
+}
+.nav-content{
+    position: relative;
+    width: 100%;
+}
+.nav-logo{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    margin-left: 20px;
+}
+.hamburger{
+    vertical-align: middle;
+    height: 120%;
+    cursor: pointer;
+    position: absolute;
+    right: 30;
+    z-index: 300;
+    
+}
