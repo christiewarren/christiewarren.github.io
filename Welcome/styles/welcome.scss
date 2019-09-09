@@ -1,0 +1,134 @@
+
+$brightPurple: rgb(102,110,253);
+$dkGray: rgba(0,0,0,.7);
+$lexend: 'Lexend Deca', sans-serif;
+$barlow: 'Barlow', sans-serif;
+
+body{
+    border: 12px solid $brightPurple;
+    margin: 0px;
+    padding-bottom: 200px;
+}
+
+nav{
+    height: 64px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 55px;
+
+    a{
+        color: $dkGray;
+        font-family: $lexend; 
+        margin: 45px 20px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover{
+            color: $brightPurple;
+        }
+    }
+}
+
+#welcome{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 180px;
+    height: max-content;
+}
+
+.welcomeText{
+    font-family: $lexend;
+    color: $dkGray;
+
+    
+    h2{
+        font-size: 120%;
+    }
+    h3{
+        font-size: 100%;
+        line-height: 1.6;
+    }
+    h4{
+        font-size: 80%;
+    }
+}
+
+.christie{
+    background: $brightPurple;
+    font-family: $barlow;
+    font-weight: 100;
+    padding: 2px 5px;
+    color: white;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+
+.scrollBtn{
+    font-family: $barlow;
+    font-weight: 600;
+    color: $brightPurple;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 120px 0px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project{
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    width: 65%;
+    margin: auto;
+    overflow-X: hidden;
+    min-height: 300px;
+    color: $dkGray;
+    box-shadow: inset 0px 0px 15px rgba(0,0,0,.08);
+
+    h5{
+        font-weight: 300;
+        font-family: $barlow;
+        font-size: 75%;
+        margin-top: 0px;
+    }
+}
+
+.projectTop{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 90px;
+    padding-left: 55px;
+    font-weight: 700;
+
+    &:hover{
+    transform: translateX(280px);
+    transition: .6s ease-in-out;
+    }
+}
+
+.revu{
+    .projectTop{
+        background: #3597EC;
+    }
+}
+
+.revuLogo{
+    width: 160px;
+}
+
+

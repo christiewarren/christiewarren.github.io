@@ -8,9 +8,7 @@
       
       <link rel="stylesheet" href="Welcome/styles/welcome.css">
         
-        
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,600,900" rel="stylesheet">
-        
+                
         <!--Favicon-->
         <link rel="icon" type="image/png" sizes="32x32" href="Welcome/images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Welcome/images/favicon-16x16.png">
@@ -20,91 +18,30 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <main>
-            <span id="top"></span>
-            <section id="welcome-container">
-                <nav class="main-nav">
-                    <div class="nav-content menu">
-                        <a href="index.html">
-                            <img src="Welcome/images/cew-logo-white.png" class="nav-logo" alt="logo" title="logo">
-                        </a>
-                    </div>
-                    
-                </nav>
-
-                <article id="welcome">
-                    <h2 id="welcome-message" class="welcome-text">
-                        Hi there!<br><br>
-                        I'm Christie. I believe in creating unique and enjoyable digital experiences for each and every user.
-                    </h2>
-                    <div class="welcome-menu">
-                        <li><a href="#top">home</a></li>
-                        <li><a href="#projects">work</a></li>
-                        <li><a href="Photography/photography.html">photography</a></li>
-                        <li><a href="School-Projects/school-projects.html">school projects</a></li>
-                        <li><a href="About/about.html">about me / resume</a></li>
-                    
-                    </div>
-                    <a href="#projects">
-                        <img class="scroll-arrow" src="Welcome/images/scroll-arrow.png" alt="scroll" title="scroll">
-                    </a>
-                    <span id="projects"></span>
-                </article>
-                 <p class="project-section-title">Recent Work</p>
-                <!--<img class="prof-pic" src="prof-pic.png">-->
-                <article id="lionplanner" class="experience-card">
-                    <div class="lp-ex-card-img">
-                        <img src="Projects/images/LP-macbook.png" alt="lionplanner" title="lionplanner">
-                    </div>
-                    <div class="lp-ex-card-text">
-                        <h3>LionPlanner</h3>
-                        <h5>digital product design, UI/UX</h5>
-                        <h4>Academic planning, simpler.</h4>
-                        <a href="Projects/lionplanner.html"><button id="lp-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
-                    </div> 
-                    
-                </article>
-                <article id="roddy" class="experience-card">
-                    <div class="rd-ex-card-img">
-                        <img src="Projects/images/roddy-macbook.png" alt="roddy restoration" title="roddy restoration">
-                    </div>
-                    <div class="rd-ex-card-text">
-                        <h3>Roddy Restoration and Remodeling</h3>
-                        <h5>web design, UI/UX, identity &amp; branding</h5>
-                        <h4>Construction you can trust.</h4>
-                        <a href="Projects/roddy.html"><button id="rd-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
-                    </div>
-                </article>
-                <article id="google" class="experience-card">
-                    <div class="google-ex-card-img">
-                        <img src="GoogleChallenge/website-imgs/events.png" alt="events app" title="events app">
-                    </div>
-                    <div class="lp-ex-card-text google-ex-card-text">
-                        <h3>Google Design Exercise</h3>
-                        <h5>UX Research, Mobile Design</h5>
-                        <h4>College events found easily.</h4>
-                        <a href="GoogleChallenge/events-app.html"><button id="google-more-btn"><i class="material-icons" style="font-size: 36px">chevron_right</i></button></a>
-                    </div> 
-                    
-                </article>
-            </section>
-
-            <footer class="contact-container">
-                <table class="contact-table" cellspacing="20">
-                    <tr>
-                        <th colspan="2" class="contact-title"><p>Say Hi!</p></th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="contact-labels">email:</th> <td>cewarren801@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="contact-labels">linkedin:</th> 
-                        <td><a href="https://www.linkedin.com/in/christina-warren/" target="_blank">Christie Warren</a></td>
-                    </tr>
-                </table>
-            </footer>
-        </main>
-        
+        <span id="top"></span>
+        <nav>
+            <div class="navContent">
+                <a>work</a>
+                <a>about</a>
+            </div>
+        </nav>
+        <section id="welcome">
+            <div class="welcomeText">
+                <h2>Hi there, I'm <span class="christie">Christie!</span></h2>
+                <h3>I’m a UI/UX designer studying graphic design<br>and striving to grow my front end skillset.</h3> 
+                <h4>Thanks for stopping by, and welcome!</h4> 
+            </div>
+        </section>
+        <a class="scrollBtn" href="#projects">work &darr;</a>
+        <section id="projects">
+            <div class="revu project">
+                <div class="projectTop">                
+                    <img class="revuLogo" src="Welcome/images/revuLogo.png">
+                    <h5>UI/UX Design, Pitch Presentation</h5>
+                </div>
+            </div>
+        </span>
+                 
         <script>
             (function() {
               var body = $('body');
