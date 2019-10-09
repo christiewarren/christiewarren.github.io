@@ -3,6 +3,11 @@ $brightPurple: rgb(102,110,253);
 $dkGray: rgba(0,0,0,.7);
 $lexend: 'Lexend Deca', sans-serif;
 $barlow: 'Barlow', sans-serif;
+$revuBlue: #3597EC;
+$lpBlue: rgb(12, 91, 176);
+$waGray: rgb(70, 74, 87);
+$eventTeal: #35adc4;
+
 
 body{
     border: 12px solid $brightPurple;
@@ -152,22 +157,22 @@ nav{
 }
 
 .revu{
-    background: #3597EC;
+    background: $revuBlue;
     //background: linear-gradient(135deg, rgba(53,151,236,0.6488970588235294) 0%, rgba(53,151,236,1) 62%);
 }
 
 .lionplanner{
-    background: rgb(12, 91, 176);
+    background: $lpBlue;
     //background: linear-gradient(135deg, rgba(12,91,176,0.75) 0%, rgba(12,91,176,1) 62%);
 }
 
 .westArete{
-    background: rgb(70, 74, 87);
+    background: $waGray;
     //background: linear-gradient(135deg, rgba(70,74,87,0.75) 0%, rgba(70,74,87,1) 62%);
 }
 
 .eventApp{
-    background: #35adc4;
+    background: $eventTeal;
     //background: linear-gradient(135deg, rgba(70,74,87,0.75) 0%, rgba(70,74,87,1) 62%);
 }
 

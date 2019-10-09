@@ -1,0 +1,493 @@
+$brightPurple: rgb(102,110,253);
+$dkGray: rgba(0,0,0,.7);
+$lexend: 'Lexend Deca', sans-serif;
+$barlow: 'Barlow', sans-serif;
+$revuBlue: #3597EC;
+$lpBlue: rgb(12, 91, 176);
+$waGray: rgb(70, 74, 87);
+$eventTeal: #35adc4;
+$ltGray: rgba(0,0,0,.025);
+
+body{
+    padding-bottom: 0px;
+}
+
+#revu, #lionPlanner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    height: max-content;
+}
+
+.projectIntro{
+    font-family: $lexend;
+    color: $dkGray;
+    margin-bottom: 100px;
+
+    
+    h2{
+        font-size: 120%;
+        color: $lpBlue;
+    }
+    h3{
+        font-size: 100%;
+        line-height: 1.6;
+        
+    }
+    h4{
+        font-size: 80%;
+    }
+}
+
+.projectTags{
+    display: flex;
+}
+
+.projectTag{
+    background: $lpBlue;
+    font-family: $barlow;
+    font-weight: 400;
+    padding: 4px 8px;
+    color: white;
+    margin: 5px 10px 5px 0px;
+    border-radius: 4px;
+    font-size: 80%;
+    
+}
+
+.projectDetails{
+    font-family: $lexend;
+    color: $dkGray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h4{
+        font-family: $barlow;
+        font-size: 110%;
+        font-weight: 400;
+        opacity: .5;
+        margin-top: 120px;
+    }
+
+    h5{
+        font-size: 100%;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        line-height: 1.5;
+        font-family: $lexend;
+        font-weight: 400;
+    }
+}
+
+.addInfo{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 25px;
+    flex-wrap: wrap;
+}
+
+.info{
+    max-width: 450px;
+    width: 48%;
+    min-width: 250px;
+}
+
+.introImgWrap{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 55px;
+    box-sizing: border-box;
+    align-items: center;
+
+    .introImg{
+        width: 50%;
+
+        &:first-child{
+            width: 30%;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.teamMember{
+    display: flex;
+    flex-wrap: wrap;
+
+    .name{
+        color: $lpBlue;
+    }
+
+    h5{
+        margin: 8px 12px 0px 0px;
+    }
+}
+
+.problemStatement{
+    width: 100%;
+    padding: 85px 200px;
+    background: $lpBlue;
+    color: white;
+    box-sizing: border-box;
+    font-family: $barlow;
+    margin-top: 150px;
+
+    h4{
+        margin-top: 0px;
+        font-weight: 200;
+        opacity: 1;
+    }
+
+    h3{
+        font-weight: 400;
+    }
+}
+
+.probList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.probListItem{
+    margin: 0px 20px;
+    width: 20%;
+    min-width: 180px;
+
+    h5{
+        font-family: $barlow;
+    }
+
+    h4{
+        opacity: 1;
+        color: $lpBlue;
+        width: max-content;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        font-size: 100%;
+        font-family: $lexend;
+    }
+
+}
+
+.users, .features, .goals, .conclusion, .process{
+    h3{
+        width: 100%;
+        text-align: center;
+        margin: 150px 0px 40px 0px;
+        text-transform: lowercase;
+        font-family: $barlow;
+        font-size: 150%;
+        font-weight: 200;
+    }
+}
+
+.userList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+
+}
+
+.userListItem{
+    background: $ltGray;
+    padding: 25px 45px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4{
+        margin-top: 0px;
+        opacity: 1;
+        font-family: $lexend;
+    }
+
+    h5{
+        font-family: $barlow;
+    }
+}
+
+.needs{
+    font-family: $barlow;
+    padding: 20px;
+    margin-top: 25px;
+    color: $lpBlue;
+    font-weight: 500;
+
+    p{
+        margin-top: 0;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+.goalsList{
+    display: flex;
+    width: 100%;
+    padding: 85px 50px;
+    background: $lpBlue;
+    color: white;
+    box-sizing: border-box;
+    font-family: $barlow;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 120px;
+
+}
+
+.goalsListItem{
+    padding: 25px 45px;
+    width: 25%;
+
+    h4{
+        margin-top: 0px;
+        opacity: 1;
+        font-family: $lexend;
+    }
+
+    h5{
+        font-family: $barlow;
+    }
+}
+
+.featuresList{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+}
+
+.featuresListItems{
+    width: 25%;
+    min-width: 250px;
+
+    h4{
+        margin-top: 40px;
+        color: $lpBlue;
+        opacity: 1;
+    }
+}
+
+.featureHighlight{
+    background: $ltGray;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 35px;
+}
+
+.fullScreenshot{
+    width: 50%;
+    height: auto;
+    min-width: 550px;
+    margin: 50px 25px;
+
+
+    img{
+        width: 100%;
+    }
+}
+
+.smScreenshot{
+    display: flex;
+    width: 60%;
+    height: auto;
+    min-width: 550px;
+    justify-content: space-around;
+    min-height: max-content;
+
+    .smImgWrap{
+        width: 45%;
+    }
+}
+
+.smImgWrap{
+    img{
+        width: 100%;
+    }
+}
+
+.question{
+    width: 100%;
+    padding: 85px 200px;
+    background: $lpBlue;
+    color: white;
+    box-sizing: border-box;
+    font-family: $barlow;
+    margin-top: 150px;
+
+    h4{
+        opacity: 1;
+        margin-top: 0px;
+        font-family: $lexend;
+    }
+
+    h5{
+        font-family: $barlow;
+    }
+}
+
+.survey{
+    .featuresList{
+        background: $ltGray;
+        margin-top: 0px;
+        align-items: center;
+    }
+}
+
+.pageFeatures{
+    margin-top: 0px;
+    .featuresListItems{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .featuresListItem{
+            width: 45%;
+            max-width: 500px;
+            min-width: 350px;
+            margin: 20px;
+        }
+    }
+}
+
+.numLabel{
+    display: inline-block;
+    padding: 1px 7px 3px 8px;
+    background: $lpBlue;
+    color: white;
+    border-radius: 35px;
+    margin-right: 4px;
+}
+
+.fullScreenImg{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.conclusion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 25px 80px;
+    background: $lpBlue;
+    margin-top: 100px;
+    color: white; 
+    align-items: center;
+}
+
+.conclusionText{
+    width: 35%;
+    min-width: 350px;
+    height: max-content;
+
+    h5{
+        font-family: $barlow;
+        color: white;
+    }
+    h4{
+        font-family: $lexend;
+        color: white;
+        opacity: 1;
+        margin-top: 60px;
+        font-size: 100%;
+    }
+}
+
+
+.teamImg{
+    width: 30%;
+    position: relative;
+    min-width: 350px;
+    padding: 20px;
+    margin-top: 50px;
+
+    h5{
+        font-family: $barlow;
+    }
+    
+    img{
+        width: 100%;
+        filter: contrast(120%) saturate(0);
+        border-radius: 4px;
+        position: relative;
+        z-index: 0;
+    }
+}
+
+.backToTop{
+    text-decoration: none;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    font-family: $barlow;
+    color: white;
+}
+
+.userSpan{
+    font-family: $barlow;
+    background-color: $ltGray;
+    padding: 0px 4px;
+}
+
+.problemSolved{
+    font-family: $barlow;
+    background-color: $ltGray;
+    padding: 0px 4px;
+}
+
+
+.croppedScreenshot{
+    width: 50%;
+    min-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tinyImgWrap{
+    width: 50%;
+    min-width: 400px;
+    margin-top: 40px;
+    img{
+        width: 100%;
+    }
+}
+
+.imgGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        margin-top: 50px;
+        min-width: 450px;
+        object-fit: cover;
+        width: 40%;
+    }
+}
+
+.processText{
+    width: 80%;
+}
+
+.skill{
+    color: $revuBlue;
+    font-family: $barlow;
+}
