@@ -1,7 +1,11 @@
 body {
   border: 10px solid #666efd;
   margin: 0px;
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh; }
 
 @keyframes slideInLeft {
   0% {
@@ -34,8 +38,7 @@ main {
 nav {
   height: 64px;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 55px; }
+  justify-content: flex-end; }
   nav a {
     color: rgba(0, 0, 0, 0.7);
     font-family: "Barlow", sans-serif;
@@ -65,7 +68,9 @@ nav {
     font-size: 120%; }
   .welcomeText h3 {
     font-size: 100%;
-    line-height: 1.6; }
+    line-height: 1.6;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400; }
   .welcomeText h4 {
     font-size: 80%; }
 
@@ -209,5 +214,79 @@ nav {
 
   .projectScreenWrap {
     width: 100%; } }
+#resume {
+  width: 100%;
+  padding-top: 150px;
+  height: max-content;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  #resume img {
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.025); }
+
+.downloadResume {
+  border-radius: 4px;
+  background-color: #666efd;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  border: none;
+  font-size: 100%;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: opacity 1s; }
+  .downloadResume:hover {
+    opacity: .8; }
+
+.downloadBtnWrap {
+  margin-top: 45px;
+  cursor: pointer; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  color: #666efd;
+  font-family: "Barlow", sans-serif;
+  padding: 45px 25px;
+  bottom: 0;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  footer span {
+    margin: 10px 10px 0px; }
+  footer a {
+    color: #666efd; }
+
+@media screen and (max-width: 430px) {
+  .navContent a {
+    margin: 20px 8px; }
+
+  .navLinks {
+    font-size: 85%; }
+
+  .homeLink {
+    font-size: 140%;
+    padding: 4px 8px; }
+
+  .navContent {
+    padding: 0px 15px; } }
+@media screen and (max-width: 532px) {
+  .project {
+    width: 85%; }
+
+  .projectScreenWrap {
+    min-width: auto; } }
+@media screen and (max-width: 885px) {
+  #resume {
+    padding-top: 75px; }
+    #resume img {
+      width: 80%; } }
 
 /*# sourceMappingURL=welcome.css.map */

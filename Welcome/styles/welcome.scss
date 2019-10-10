@@ -7,12 +7,17 @@ $revuBlue: #3597EC;
 $lpBlue: #0e68c7;
 $waPurple: #3e50c2;
 $eventTeal: #35adc4;
+$ltGray: rgba(0,0,0,.025);
 
 
 body{
     border: 10px solid $brightPurple;
     margin: 0px;
     padding-bottom: 200px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 @keyframes slideInLeft {
@@ -61,7 +66,6 @@ nav{
     height: 64px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 55px;
 
     a{
         color: $dkGray;
@@ -102,6 +106,8 @@ nav{
     h3{
         font-size: 100%;
         line-height: 1.6;
+        font-family: $barlow;
+        font-weight: 400;
     }
     h4{
         font-size: 80%;
@@ -295,4 +301,114 @@ nav{
     .projectScreenWrap{
         width: 100%;
     }
+}
+
+
+// RESUME
+
+#resume{
+    width: 100%;
+    padding-top: 150px;
+    height: max-content;
+    font-family: $lexend;
+    color: $dkGray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        width: 50%;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0px 4px 26px $ltGray;
+    }
+}
+
+.downloadResume{
+    border-radius: 4px;
+    background-color: $brightPurple;
+    color: white;
+    font-family: $barlow;
+    font-weight: 400;
+    border: none;
+    font-size: 100%;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: opacity 1s;
+
+    &:hover{
+        opacity: .8;
+        
+    }
+}
+
+.downloadBtnWrap{
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    color: $brightPurple;
+    font-family: $barlow;
+    padding: 45px 25px;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    span{
+        margin: 10px 10px 0px;
+
+    }
+
+    a{
+        color: $brightPurple;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .navContent{
+        a{
+            margin: 20px 8px;
+        }
+    }
+
+    .navLinks{
+        font-size: 85%;
+    }
+
+    .homeLink{
+        font-size: 140%;
+        padding: 4px 8px;
+    }
+
+    .navContent{
+        padding: 0px 15px;
+    }
+
+}
+
+@media screen and (max-width: 532px){
+    .project{
+        width: 85%;
+    }
+
+    .projectScreenWrap{
+        min-width: auto;
+    }
+
+}
+
+@media screen and (max-width: 885px){
+    #resume{
+    padding-top: 75px;
+
+    img{
+       width: 80%;
+    }
+}
 }

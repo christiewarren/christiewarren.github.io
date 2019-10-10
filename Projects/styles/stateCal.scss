@@ -8,9 +8,6 @@ $waPurple: #3e50c2;
 $eventTeal: #35adc4;
 $ltGray: rgba(0,0,0,.025);
 
-body{
-    padding-bottom: 0px;
-}
 
 #revu, #lionPlanner{
     width: 100%;
@@ -24,6 +21,7 @@ body{
     font-family: $lexend;
     color: $dkGray;
     margin-bottom: 100px;
+    width: 60%;
 
     
     h2{
@@ -43,6 +41,7 @@ body{
 
 .projectTags{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .projectTag{
@@ -54,7 +53,8 @@ body{
     margin: 5px 10px 5px 0px;
     border-radius: 4px;
     font-size: 80%;
-    
+    word-wrap: break-word;
+    white-space: pre;
 }
 
 .projectDetails{
@@ -506,4 +506,72 @@ body{
 
 .fullText{
     width: 50%;
+}
+
+
+
+@media screen and (max-width: 532px){
+    .info{
+        max-width: auto;
+        min-width: 250px;
+        width: 100%;
+    }
+
+    .goalsList{
+        padding: 45px 45px;
+    }
+
+    .teamImg{
+        min-width: auto;
+        width: 80%;
+    }
+
+    .conclusionText{
+        min-width: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 647px){
+    .fullScreenshot{
+        min-width: auto;
+        width: 80%;
+    }
+
+    .smScreenshot{
+        min-width: auto;
+    }
+
+    .probListItem{
+        width: 80%;
+    }
+
+    .featureHighlight{
+        padding: 25px;
+    }
+
+}
+
+@media screen and (max-width: 838px){
+    .problemStatement, .question{
+        padding: 45px 45px;
+    }
+
+}
+
+@media screen and (max-width: 921px){
+    .userList{
+        justify-content: center;
+    }
+
+    .userListItem{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1205px){
+    .goalsListItem{
+        width: 80%;
+    }
 }

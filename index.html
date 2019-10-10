@@ -25,6 +25,7 @@
                 <div class="navLinks">
                     <a href="#projects">work</a>
                     <a href="About/about.html">about</a>
+                    <a href="Resume/resume.html">resume</a>
             </div>
             </div>
         </nav>
@@ -84,26 +85,12 @@
                     </div>
                 </a>
             </section>
-                    
-            <script>
-                (function() {
-                var body = $('body');
-                $('.menu-toggle').bind('click', function(){
-                    body.toggleClass('menu-open');
-                    return false;
-                });
-                })();
-                
-                $("a[href^='#']").click(function(e) {
-                    e.preventDefault();
-
-                    var position = $($(this).attr("href")).offset().top;
-
-                    $("body, html").animate({
-                        scrollTop: position
-                    }, 400, 'linear');
-                });
-            </script>    
         </main>
+        <footer>
+            <span><b>say hey!</b></span>
+            <span><a href="https://www.linkedin.com/in/christina-warren" target="_blank">Linkedin</a></span>
+            <span>cewarren801@gmail.com</span>
+            <span>610.389.3406</span>
+        </footer>
     </body>
 </html>

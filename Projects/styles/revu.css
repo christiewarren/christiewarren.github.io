@@ -1,6 +1,3 @@
-body {
-  padding-bottom: 0px; }
-
 #revu, #lionPlanner {
   width: 100%;
   display: flex;
@@ -11,7 +8,8 @@ body {
 .projectIntro {
   font-family: "Lexend Deca", sans-serif;
   color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  width: 60%; }
   .projectIntro h2 {
     font-size: 120%;
     color: #3597EC; }
@@ -24,7 +22,8 @@ body {
     font-size: 80%; }
 
 .projectTags {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .projectTag {
   background: #3597EC;
@@ -34,7 +33,9 @@ body {
   color: white;
   margin: 5px 10px 5px 0px;
   border-radius: 4px;
-  font-size: 80%; }
+  font-size: 80%;
+  word-wrap: break-word;
+  white-space: pre; }
 
 .projectDetails {
   font-family: "Lexend Deca", sans-serif;
@@ -204,6 +205,9 @@ body {
     color: #3597EC;
     opacity: 1; }
 
+.featuresListItem {
+  margin-bottom: 25px; }
+
 .featureHighlight {
   background: rgba(0, 0, 0, 0.025);
   width: 100%;
@@ -334,5 +338,51 @@ body {
   font-family: "Barlow", sans-serif;
   background-color: rgba(0, 0, 0, 0.025);
   padding: 0px 4px; }
+
+@media screen and (max-width: 532px) {
+  .info {
+    max-width: auto;
+    min-width: 250px;
+    width: 100%; }
+
+  .goalsList {
+    padding: 45px 45px; }
+
+  .teamImg {
+    min-width: auto;
+    width: 80%; }
+
+  .conclusionText {
+    min-width: auto;
+    width: 80%; }
+
+  .pageFeatures .featuresListItems .featuresListItem {
+    min-width: auto;
+    width: 85%; } }
+@media screen and (max-width: 647px) {
+  .fullScreenshot {
+    min-width: auto;
+    width: 80%; }
+
+  .smScreenshot {
+    min-width: auto; }
+
+  .probListItem {
+    width: 80%; }
+
+  .featureHighlight {
+    padding: 25px; } }
+@media screen and (max-width: 838px) {
+  .problemStatement, .question {
+    padding: 45px 45px; } }
+@media screen and (max-width: 921px) {
+  .userList {
+    justify-content: center; }
+
+  .userListItem {
+    width: 80%; } }
+@media screen and (max-width: 1205px) {
+  .goalsListItem {
+    width: 80%; } }
 
 /*# sourceMappingURL=revu.css.map */
