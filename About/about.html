@@ -17,36 +17,20 @@
         <span id="top"></span>
         <nav>
             <div class="navContent">
-                <a href="#projects">work</a>
-                <a>about</a>
+                <a href="../index.html" class="homeLink christie">C</a>
+                <div class="navLinks">
+                    <a href="../index.html#projects">work</a>
+                    <a href="About/about.html">about</a>
+                </div>
             </div>
+        </nav>
+        <main>
             <section id="about">
                 <div class="christieMtnWrap">
                     <img src="images/christie-mountain.jpg">
                 </div>
             </section>
-        </nav>
-        <script>
-            (function() {
-              var body = $('body');
-              $('.menu-toggle').bind('click', function(){
-                body.toggleClass('menu-open');
-                return false;
-              });
-            })();
-            
-            $("a[href^='#']").click(function(e) {
-                e.preventDefault();
-
-                var position = $($(this).attr("href")).offset().top;
-
-                $("body, html").animate({
-                    scrollTop: position
-                }, 400, 'linear');
-            });
-            
-
-        </script>    
+        </main>
     </body>
 <html>
     

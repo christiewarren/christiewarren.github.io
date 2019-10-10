@@ -14,7 +14,7 @@ body {
   margin-bottom: 100px; }
   .projectIntro h2 {
     font-size: 120%;
-    color: #0e68c7; }
+    color: #35adc4; }
   .projectIntro h3 {
     font-size: 100%;
     line-height: 1.6;
@@ -27,7 +27,7 @@ body {
   display: flex; }
 
 .projectTag {
-  background: #0e68c7;
+  background: #35adc4;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   padding: 4px 8px;
@@ -64,8 +64,7 @@ body {
   flex-wrap: wrap; }
 
 .info {
-  max-width: 450px;
-  width: 48%;
+  width: 75%;
   min-width: 250px; }
 
 .introImgWrap {
@@ -79,8 +78,6 @@ body {
   align-items: center; }
   .introImgWrap .introImg {
     width: 50%; }
-    .introImgWrap .introImg:first-child {
-      width: 30%; }
     .introImgWrap .introImg img {
       width: 100%; }
 
@@ -88,14 +85,14 @@ body {
   display: flex;
   flex-wrap: wrap; }
   .teamMember .name {
-    color: #0e68c7; }
+    color: #35adc4; }
   .teamMember h5 {
     margin: 8px 12px 0px 0px; }
 
 .problemStatement {
   width: 100%;
   padding: 85px 200px;
-  background: #0e68c7;
+  background: #35adc4;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -120,17 +117,17 @@ body {
     font-family: "Barlow", sans-serif; }
   .probListItem h4 {
     opacity: 1;
-    color: #0e68c7;
+    color: #35adc4;
     width: max-content;
     border-radius: 4px;
     margin-bottom: 5px;
     font-size: 100%;
     font-family: "Lexend Deca", sans-serif; }
 
-.users h3, .features h3, .goals h3, .conclusion h3, .process h3 {
+.users h3, .features h3, .goals h3, .conclusion h3, .process h3, .research h3 {
   width: 100%;
   text-align: center;
-  margin: 150px 0px 40px 0px;
+  margin: 100px 0px 40px 0px;
   text-transform: lowercase;
   font-family: "Barlow", sans-serif;
   font-size: 150%;
@@ -139,7 +136,7 @@ body {
 .userList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 120px; }
 
 .userListItem {
@@ -160,7 +157,7 @@ body {
   font-family: "Barlow", sans-serif;
   padding: 20px;
   margin-top: 25px;
-  color: #0e68c7;
+  color: #35adc4;
   font-weight: 500; }
   .needs p {
     margin-top: 0; }
@@ -171,7 +168,7 @@ body {
   display: flex;
   width: 100%;
   padding: 85px 50px;
-  background: #0e68c7;
+  background: #35adc4;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -192,7 +189,7 @@ body {
 .featuresList {
   display: flex;
   justify-content: space-around;
-  margin-top: 120px;
+  margin-top: 80px;
   flex-wrap: wrap;
   padding: 25px;
   align-items: center; }
@@ -202,7 +199,7 @@ body {
   min-width: 250px; }
   .featuresListItems h4 {
     margin-top: 40px;
-    color: #0e68c7;
+    color: #35adc4;
     opacity: 1; }
 
 .featureHighlight {
@@ -227,7 +224,7 @@ body {
   justify-content: space-around;
   min-height: max-content; }
   .smScreenshot .smImgWrap {
-    width: 45%; }
+    width: 100%; }
 
 .smImgWrap img {
   width: 100%; }
@@ -235,7 +232,7 @@ body {
 .question {
   width: 100%;
   padding: 85px 200px;
-  background: #0e68c7;
+  background: #35adc4;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -269,7 +266,7 @@ body {
 .numLabel {
   display: inline-block;
   padding: 1px 7px 3px 8px;
-  background: #0e68c7;
+  background: #35adc4;
   color: white;
   border-radius: 35px;
   margin-right: 4px; }
@@ -286,10 +283,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0px 25px 80px;
-  background: #0e68c7;
+  background: #35adc4;
   margin-top: 100px;
-  color: white;
-  align-items: center; }
+  color: white; }
 
 .conclusionText {
   width: 35%;
@@ -368,4 +364,14 @@ body {
   color: #3597EC;
   font-family: "Barlow", sans-serif; }
 
-/*# sourceMappingURL=lp.css.map */
+.research .fullScreenshot {
+  width: 65%; }
+.research .featuresListItems {
+  width: 25%; }
+.research .featuresList {
+  margin-top: 25px; }
+
+.fullText {
+  width: 50%; }
+
+/*# sourceMappingURL=stateCal.css.map */

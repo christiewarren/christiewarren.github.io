@@ -14,7 +14,7 @@ body {
   margin-bottom: 100px; }
   .projectIntro h2 {
     font-size: 120%;
-    color: #0e68c7; }
+    color: #3e50c2; }
   .projectIntro h3 {
     font-size: 100%;
     line-height: 1.6;
@@ -23,11 +23,15 @@ body {
   .projectIntro h4 {
     font-size: 80%; }
 
+.title2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400; }
+
 .projectTags {
   display: flex; }
 
 .projectTag {
-  background: #0e68c7;
+  background: #3e50c2;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   padding: 4px 8px;
@@ -79,8 +83,6 @@ body {
   align-items: center; }
   .introImgWrap .introImg {
     width: 50%; }
-    .introImgWrap .introImg:first-child {
-      width: 30%; }
     .introImgWrap .introImg img {
       width: 100%; }
 
@@ -88,14 +90,14 @@ body {
   display: flex;
   flex-wrap: wrap; }
   .teamMember .name {
-    color: #0e68c7; }
+    color: #3e50c2; }
   .teamMember h5 {
     margin: 8px 12px 0px 0px; }
 
 .problemStatement {
   width: 100%;
   padding: 85px 200px;
-  background: #0e68c7;
+  background: #3e50c2;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -120,14 +122,14 @@ body {
     font-family: "Barlow", sans-serif; }
   .probListItem h4 {
     opacity: 1;
-    color: #0e68c7;
+    color: #3e50c2;
     width: max-content;
     border-radius: 4px;
     margin-bottom: 5px;
     font-size: 100%;
     font-family: "Lexend Deca", sans-serif; }
 
-.users h3, .features h3, .goals h3, .conclusion h3, .process h3 {
+.users h3, .features h3, .goals h3, .conclusion h3 {
   width: 100%;
   text-align: center;
   margin: 150px 0px 40px 0px;
@@ -160,7 +162,7 @@ body {
   font-family: "Barlow", sans-serif;
   padding: 20px;
   margin-top: 25px;
-  color: #0e68c7;
+  color: #3e50c2;
   font-weight: 500; }
   .needs p {
     margin-top: 0; }
@@ -171,7 +173,7 @@ body {
   display: flex;
   width: 100%;
   padding: 85px 50px;
-  background: #0e68c7;
+  background: #3e50c2;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -194,28 +196,25 @@ body {
   justify-content: space-around;
   margin-top: 120px;
   flex-wrap: wrap;
-  padding: 25px;
-  align-items: center; }
+  padding: 25px; }
 
 .featuresListItems {
   width: 25%;
   min-width: 250px; }
   .featuresListItems h4 {
     margin-top: 40px;
-    color: #0e68c7;
+    color: #3e50c2;
     opacity: 1; }
 
 .featureHighlight {
   background: rgba(0, 0, 0, 0.025);
   width: 100%;
-  box-sizing: border-box;
-  padding-bottom: 35px; }
+  box-sizing: border-box; }
 
 .fullScreenshot {
-  width: 50%;
+  width: 60%;
   height: auto;
-  min-width: 550px;
-  margin: 50px 25px; }
+  min-width: 550px; }
   .fullScreenshot img {
     width: 100%; }
 
@@ -227,7 +226,7 @@ body {
   justify-content: space-around;
   min-height: max-content; }
   .smScreenshot .smImgWrap {
-    width: 45%; }
+    width: 100%; }
 
 .smImgWrap img {
   width: 100%; }
@@ -235,7 +234,7 @@ body {
 .question {
   width: 100%;
   padding: 85px 200px;
-  background: #0e68c7;
+  background: #3e50c2;
   color: white;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
@@ -248,7 +247,6 @@ body {
     font-family: "Barlow", sans-serif; }
 
 .survey .featuresList {
-  background: rgba(0, 0, 0, 0.025);
   margin-top: 0px;
   align-items: center; }
 
@@ -269,7 +267,7 @@ body {
 .numLabel {
   display: inline-block;
   padding: 1px 7px 3px 8px;
-  background: #0e68c7;
+  background: #3e50c2;
   color: white;
   border-radius: 35px;
   margin-right: 4px; }
@@ -286,10 +284,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0px 25px 80px;
-  background: #0e68c7;
+  background: #3e50c2;
   margin-top: 100px;
-  color: white;
-  align-items: center; }
+  color: white; }
 
 .conclusionText {
   width: 35%;
@@ -338,34 +335,4 @@ body {
   background-color: rgba(0, 0, 0, 0.025);
   padding: 0px 4px; }
 
-.croppedScreenshot {
-  width: 50%;
-  min-width: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.tinyImgWrap {
-  width: 50%;
-  min-width: 400px;
-  margin-top: 40px; }
-  .tinyImgWrap img {
-    width: 100%; }
-
-.imgGroup {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .imgGroup img {
-    margin-top: 50px;
-    min-width: 450px;
-    object-fit: cover;
-    width: 40%; }
-
-.processText {
-  width: 80%; }
-
-.skill {
-  color: #3597EC;
-  font-family: "Barlow", sans-serif; }
-
-/*# sourceMappingURL=lp.css.map */
+/*# sourceMappingURL=westArete.css.map */

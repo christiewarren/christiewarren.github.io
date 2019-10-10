@@ -21,77 +21,89 @@
         <span id="top"></span>
         <nav>
             <div class="navContent">
-                <a href="#projects">work</a>
-                <a href="About/about.html">about</a>
+                <a href="#" class="homeLink christie">C</a>
+                <div class="navLinks">
+                    <a href="#projects">work</a>
+                    <a href="About/about.html">about</a>
+            </div>
             </div>
         </nav>
-        <section id="welcome">
-            <div class="welcomeText">
-                <h2>Hi there, I'm <span class="christie">Christie!</span></h2>
-                <h3>I’m a UI/UX designer studying graphic design<br>and striving to grow my front end skillset.</h3> 
-                <h4>Thanks for stopping by, and welcome!</h4> 
-            </div>
-        </section>
-        <a class="scrollBtn" href="#projects">work &darr;</a>
-        <section id="projects">
-            <div class="project revu">   
-                <div class="projectTitleWrap">
-                    <img class="revuLogo" src="Welcome/images/revuLogo.png">
-                    <h5>UI/UX Design, JSX Prototyping, <br>Pitch Presentation</h5>
+        <main>
+            <section id="welcome">
+                <div class="welcomeText">
+                    <h2>Hi there, I'm <span class="christie">Christie!</span></h2>
+                    <h3>I’m a UI/UX designer studying graphic design<br>and striving to grow my front end skillset.</h3> 
+                    <h4>Thanks for stopping by, and welcome!</h4> 
                 </div>
-                <div class="projectScreenWrap">
-                    <img class="projectScreen" src="Welcome/images/revuScreen.png">
-                </div>  
-            </div>
-            <div class="project westArete">   
-                <div class="projectTitleWrap">
-                    <img class="waLogo" src="Welcome/images/waLogo.png">
-                    <h4>UI/UX Internship</h4>
-                    <h5>UI/UX Design, XD Prototyping, Client Work</h5>
-                </div>
-                <div class="projectScreenWrap">
-                    <img class="projectScreen" src="Welcome/images/reelScreen.png">
-                </div>  
-            </div>
-            <div class="project lionplanner">   
-                <div class="projectTitleWrap">
-                    <img class="lpLogo" src="Welcome/images/lpLogo.png">
-                    <h5>UI/UX Design, HTML/CSS Prototyping, <br>Pitch Presentation</h5>
-                </div>
-                <div class="projectScreenWrap">
-                    <img class="projectScreen" src="Welcome/images/lpScreen.png">
-                </div>  
-            </div>
-            <div class="project eventApp">   
-                    <div class="projectTitleWrap">
-                        <img class="eventLogo" src="Welcome/images/eventLogo.png">
-                        <h5>User Research, UI/UX Design</h5>
+            </section>
+            <a class="scrollBtn" href="#projects">work &darr;</a>
+            <section id="projects">
+                <a href="Projects/revu.html">
+                    <div class="project revu">   
+                        <div class="projectTitleWrap">
+                            <img class="revuLogo" src="Welcome/images/revuLogo.png">
+                            <h5>UI/UX Design, JSX Prototyping, <br>Pitch Presentation</h5>
+                        </div>
+                        <div class="projectScreenWrap">
+                            <img class="projectScreen" src="Welcome/images/revuScreen.png">
+                        </div>  
                     </div>
-                    <div class="projectScreenWrap">
-                        <img class="projectScreen" src="Welcome/images/eventScreen.png">
-                    </div>  
-            </div>
-        </section>
-                 
-        <script>
-            (function() {
-              var body = $('body');
-              $('.menu-toggle').bind('click', function(){
-                body.toggleClass('menu-open');
-                return false;
-              });
-            })();
-            
-            $("a[href^='#']").click(function(e) {
-                e.preventDefault();
+                </a>
+                <a href="Projects/westArete.html">
+                    <div class="project westArete">   
+                        <div class="projectTitleWrap">
+                            <img class="waLogo" src="Welcome/images/waLogo.png">
+                            <h4>UI/UX Internship</h4>
+                            <h5>UI/UX Design, XD Prototyping, Client Work</h5>
+                        </div>
+                        <div class="projectScreenWrap">
+                            <img class="projectScreen" src="Welcome/images/reelScreen.png">
+                        </div>  
+                    </div>
+                </a>
+                <a href="Projects/lionplanner.html">
+                    <div class="project lionplanner">   
+                        <div class="projectTitleWrap">
+                            <img class="lpLogo" src="Welcome/images/lpLogo.png">
+                            <h5>UI/UX Design, HTML/CSS Prototyping, <br>Pitch Presentation</h5>
+                        </div>
+                        <div class="projectScreenWrap">
+                            <img class="projectScreen" src="Welcome/images/lpScreen.png">
+                        </div>  
+                    </div>
+                </a>
+                <a href="Projects/stateCal.html">
+                    <div class="project eventApp">   
+                            <div class="projectTitleWrap">
+                                <img class="eventLogo" src="Welcome/images/eventLogo.png">
+                                <h5>User Research, UI/UX Design</h5>
+                            </div>
+                            <div class="projectScreenWrap">
+                                <img class="projectScreen" src="Welcome/images/eventScreen.png">
+                            </div>  
+                    </div>
+                </a>
+            </section>
+                    
+            <script>
+                (function() {
+                var body = $('body');
+                $('.menu-toggle').bind('click', function(){
+                    body.toggleClass('menu-open');
+                    return false;
+                });
+                })();
+                
+                $("a[href^='#']").click(function(e) {
+                    e.preventDefault();
 
-                var position = $($(this).attr("href")).offset().top;
+                    var position = $($(this).attr("href")).offset().top;
 
-                $("body, html").animate({
-                    scrollTop: position
-                }, 400, 'linear');
-            });
-        </script>    
-        
+                    $("body, html").animate({
+                        scrollTop: position
+                    }, 400, 'linear');
+                });
+            </script>    
+        </main>
     </body>
 </html>

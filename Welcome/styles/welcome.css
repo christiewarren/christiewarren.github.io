@@ -1,7 +1,35 @@
 body {
-  border: 12px solid #666efd;
+  border: 10px solid #666efd;
   margin: 0px;
   padding-bottom: 200px; }
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+main {
+  animation: .8s ease-in-out slideUp; }
+
+.navContent {
+  width: 100%;
+  padding: 0px 25px 0px 45px; }
 
 nav {
   height: 64px;
@@ -10,12 +38,18 @@ nav {
   padding-right: 55px; }
   nav a {
     color: rgba(0, 0, 0, 0.7);
-    font-family: "Lexend Deca", sans-serif;
+    font-family: "Barlow", sans-serif;
     margin: 45px 20px;
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 115%; }
     nav a:hover {
       color: #666efd; }
+
+.navLinks {
+  float: right;
+  animation: .75s ease-in-out slideInRight; }
 
 #welcome {
   width: 100%;
@@ -72,6 +106,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  #projects a {
+    text-decoration: none; }
 
 .project h4 {
   font-weight: 400;
@@ -103,7 +139,7 @@ nav {
   font-weight: 700;
   width: 75%;
   margin: auto;
-  margin-top: 160px;
+  margin-top: 140px;
   min-height: 400px;
   transition: transform .3s ease-in-out, padding .5s ease-in-out, opacity .3s ease-in-out; }
   .project:hover {
@@ -116,10 +152,10 @@ nav {
   background: #3597EC; }
 
 .lionplanner {
-  background: #0c5bb0; }
+  background: #0e68c7; }
 
 .westArete {
-  background: #464a57; }
+  background: #3e50c2; }
 
 .eventApp {
   background: #35adc4; }
@@ -158,6 +194,14 @@ nav {
 .projectScreen {
   display: inline-block;
   width: 100%; }
+
+.homeLink {
+  float: left;
+  font-size: 180%;
+  padding: 4px 10px;
+  animation: .75s ease-in-out slideInLeft; }
+  .homeLink:hover {
+    color: white; }
 
 @media screen and (max-width: 1157px) {
   .projectTitleWrap {

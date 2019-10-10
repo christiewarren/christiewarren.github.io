@@ -17,7 +17,9 @@ body {
     color: #3597EC; }
   .projectIntro h3 {
     font-size: 100%;
-    line-height: 1.6; }
+    line-height: 1.6;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400; }
   .projectIntro h4 {
     font-size: 80%; }
 
@@ -85,6 +87,8 @@ body {
 .teamMember {
   display: flex;
   flex-wrap: wrap; }
+  .teamMember .name {
+    color: #3597EC; }
   .teamMember h5 {
     margin: 8px 12px 0px 0px; }
 
