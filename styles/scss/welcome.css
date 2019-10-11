@@ -9,6 +9,9 @@ body {
   box-sizing: border-box;
   min-height: 100vh; }
 
+a {
+  text-decoration: none; }
+
 @keyframes slideInLeft {
   0% {
     opacity: 0;
@@ -94,8 +97,10 @@ nav {
   width: max-content;
   display: block;
   margin: 120px auto;
+  cursor: pointer;
   border-bottom: 2px solid white;
-  position: relative; }
+  position: relative;
+  z-index: 100; }
   .scrollBtn:after {
     content: '';
     position: absolute;
@@ -104,16 +109,17 @@ nav {
     width: 0px;
     height: 2px;
     background: #666efd;
-    transition: width .2s ease-in-out; }
+    transition: width .2s ease-in-out;
+    z-index: 1; }
   .scrollBtn:hover:after {
     width: 48px;
     transition: width .2s ease-in-out; }
 
-#projects {
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #projects a {
+  .projects a {
     text-decoration: none; }
 
 .project h4 {

@@ -22,6 +22,10 @@ body{
     min-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+}
+
 @keyframes slideInLeft {
     0% {
       opacity: 0;
@@ -135,8 +139,10 @@ nav{
     width: max-content;
     display: block;
     margin: 120px auto;
+    cursor: pointer;
     border-bottom: 2px solid white;
     position: relative;
+    z-index: 100;
 
     &:after{
         content: '';
@@ -147,6 +153,7 @@ nav{
         height: 2px;
         background: $brightPurple;
         transition: width .2s ease-in-out;
+        z-index: 1;
     }
 
     &:hover:after{
@@ -156,7 +163,7 @@ nav{
     
 }
 
-#projects{
+.projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
