@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Barlow';
-  src: url(https://fonts.googleapis.com/css?family=Barlow&display=swap); }
-@font-face {
-  font-family: 'Lexend Deca';
-  src: url(https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap); }
 body {
   border: 10px solid #666efd;
   margin: 0px;
