@@ -262,14 +262,13 @@ $mentorBlue: #162534;
 }
 
 .imgWrap{
-    display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: center;
     padding-top: 45px;
     flex-wrap: wrap;
 
     img{
-        width: 50%;
+        width: 100%!important;
         margin-bottom: 45px;
     }
 }
@@ -615,6 +614,10 @@ $mentorBlue: #162534;
     }
 
     .userListItem{
+        width: 80%;
+    }
+
+    .imgWrap{
         width: 80%;
     }
 
