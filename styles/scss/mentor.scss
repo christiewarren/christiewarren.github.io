@@ -107,7 +107,7 @@ $mentorBlue: #162534;
     align-items: center;
 
     .introImg{
-        width: 50%;
+        width: 80%;
 
         img{
             width: 100%;
@@ -194,6 +194,7 @@ $mentorBlue: #162534;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
 
     img{
         width: 50%;
@@ -228,6 +229,7 @@ $mentorBlue: #162534;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
 
     img{
         width: 50%;
@@ -264,6 +266,7 @@ $mentorBlue: #162534;
     width: 100%;
     justify-content: center;
     padding-top: 45px;
+    flex-wrap: wrap;
 
     img{
         width: 50%;
@@ -596,6 +599,14 @@ $mentorBlue: #162534;
         padding: 45px 45px;
     }
 
+    p, h4, ul, ol{
+        width: 80%!important;
+    }
+
+    .introImg{
+            width: 95%;
+    }
+
 }
 
 @media screen and (max-width: 921px){
@@ -613,4 +624,11 @@ $mentorBlue: #162534;
     .goalsListItem{
         width: 80%;
     }
+
+    .researchImg, .planningImg, .introImg{
+        img{
+            width: 80%;
+        }
+    }
+
 }

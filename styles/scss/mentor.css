@@ -78,7 +78,7 @@
   box-sizing: border-box;
   align-items: center; }
   .introImgWrap .introImg {
-    width: 50%; }
+    width: 80%; }
     .introImgWrap .introImg img {
       width: 100%; }
 
@@ -138,7 +138,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .researchImg img {
     width: 50%;
     filter: saturate(0);
@@ -162,7 +163,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .planningImg img {
     width: 50%;
     margin-bottom: 45px;
@@ -187,7 +189,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding-top: 45px; }
+  padding-top: 45px;
+  flex-wrap: wrap; }
   .imgWrap img {
     width: 50%;
     margin-bottom: 45px; }
@@ -432,7 +435,13 @@
     padding: 25px; } }
 @media screen and (max-width: 838px) {
   .problemStatement, .question {
-    padding: 45px 45px; } }
+    padding: 45px 45px; }
+
+  p, h4, ul, ol {
+    width: 80% !important; }
+
+  .introImg {
+    width: 95%; } }
 @media screen and (max-width: 921px) {
   .userList {
     justify-content: center; }
@@ -441,6 +450,9 @@
     width: 80%; } }
 @media screen and (max-width: 1205px) {
   .goalsListItem {
+    width: 80%; }
+
+  .researchImg img, .planningImg img, .introImg img {
     width: 80%; } }
 
 /*# sourceMappingURL=mentor.css.map */
