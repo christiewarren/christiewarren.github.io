@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Christie Warren | Mentor Up</title>
+      
+      <link rel="stylesheet" href="../styles/css/welcome.css">
+      <link rel="stylesheet" href="../styles/scss/mentor.css">
+
+      <style>
+            @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+        </style>
+
+        <script type="text/javascript" src="../script.js"></script>
+
+    
+    </head>
+    <body>
+        <span id="scroll"></span>
+        <nav>
+            <div class="navContent">
+                <a href="../index.html" class="homeLink christie">C</a>
+                <div class="navLinks">
+                    <a href="../index.html#projects">work</a>
+                    <a href="../About/about.html">about</a>
+                    <a href="../Resume/resume.html">resume</a>
+            </div>
+            </div>
+        </nav>
+        <main>
+            <section id="revu">
+                <div class="projectIntro">
+                    <h2>Mentor Up</h2>
+                    <h3>A mobile application to help underclassmen connect with upperclassmen mentors at Penn State. This application was 
+                        designed as a part of the Google design exercise for the Summer 2020 UX Design Internship.
+                    </h3> 
+                    <div class="projectTags">
+                        <span class="projectTag">UI/Visual</span>
+                        <span class="projectTag">UX</span>
+                        <span class="projectTag">Adobe XD</span>
+                        <span class="projectTag">Material UI</span>
+                        <span class="projectTag">User Research</span>
+                    </div>
+                </div>
+            </section>
+            <div class="introImgWrap">
+                <div class="introImg">
+                    <img src="images/mentorApp/mentorScreens@2x.png" alt="Mentor App Screens"> 
+                </div>
+            </div>
+            <section class="projectDetails">
+                <div class="addInfo">
+                    <div class="info">
+                        <h4>Context: Google Design Exercise 2020</h4>
+                        <h5>Prompt: Your school wants to strengthen the community by encouraging experienced students to 
+                            connect with new students and help them adjust to campus life. Design an experience 
+                            that allows mentors and mentees to discover each other. Consider the needs of both 
+                            mentors and mentees, including how someone may become a mentor and how to connect mentors to mentees.</h5>
+                    </div>
+                </div>
+                <div class="research">
+                    <h3>research</h3>
+                    <div class="researchImg">
+                        <img src="images/mentorApp/initialThoughts.jpg" alt="Initial Thoughts">
+                        <p>The first part of my process was jotting down some initial thoughts and questions about the prompt
+                            and considerations I should plan on making.
+                        </p>
+
+                        <p>I then moved on to sending a brief survey out to some under and upperclassmen peers, to get a starting 
+                            point in terms of users' general reactions to this application. I sent separate surveys to under/upperclassmen,
+                            both asking three questions:
+                        </p>
+                        <ol>
+                            <li>How interested are you in having an upper(under)classman as a mentor(ee)?</li>
+                            <li>Which characteristics would be important for you and your mentor(ee) to have in common?</li>
+                            <li>Are there any reasons you'd be hesitant to have a student mentor(ee)?</li>
+                        </ol>
+                        <div class="imgWrap">
+                            <img src="images/mentorApp/underResponses.jpg" alt="Underclassmen Survey Responses">
+                            <img src="images/mentorApp/upperResponses.jpg" alt="Underclassmen Survey Responses">    
+                        </div>
+                        <p>These survey results helped me outline some key goals to focus on: 
+                        </p>
+                        <ul>
+                            <li>Present relevant information to highlight compatibility.</li>
+                            <li>Increase interest in upperclassmen to become mentors.</li>
+                            <li>Provide both groups with transparent and flexible relationships.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="research">
+                    <h3>planning</h3>
+                    <div class="planningImg">
+                        <div class="imgWrap">
+                            <img src="images/mentorApp/userSpecs.JPG" alt="User Specs">
+                            <img src="images/mentorApp/featureList.JPG" alt="Potential Features">    
+                        </div>
+                        <p>My next step was organizing all the information I had about my users, which was largely info 
+                            gathered in the surveys.
+                        </p>
+                        <p>I also began brainstorming potential features for my application based on the needs and concerns 
+                            of my users. During this phase, I tried to get all my thoughts on the board, without deciding 
+                        whether or not they were the best option.</p>
+                        <img src="images/mentorApp/userJourneyMentors.JPG" alt="Mentor User Journey">
+                        <img src="images/mentorApp/userJourneyMentees.JPG" alt="Mentee User Journey">    
+                        <p>Once I narrowed features and concepts down, I created a very basic user journey for three users:</p>
+                        <ul>
+                            <li>Mentors</li>
+                            <li>Mentees (serious)</li>
+                            <li>Mentees (casual)</li>
+                        </ul>
+                        <p>Though the underclassmen I surveyed were overwhelmingly in favor of having student mentors, I still anticipate 
+                            that some will be intimidated by the process. For this group, I created a more gradual experience that would 
+                            hopefully lead them to finding a mentor at their own pace.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="research">
+                    <h3>wireframes & low fidelity</h3>
+                    <div class="planningImg">
+                        <img src="images/mentorApp/mentorSketches.JPG" alt="Mentor Wireframes">
+                        <img src="images/mentorApp/menteeSketches.JPG" alt="Mentor Wireframes">
+                        <p>My next move was sketching some wireframe flows on my (well-loved apartment) whiteboard. The flows are fairly similar 
+                            for mentors vs. mentees, but I still chose to sketch a separate flow for each so that I could distinguish them better in my 
+                            mind and get a more concrete idea of the differences.
+                        </p>
+                        <p>At this stage I settled on having four bottom navigation tabs, since this seems like the least daunting form of 
+                            navigation, and some users may be hesitant to explore. The tabs include: 
+                        </p>
+                        <ul>
+                            <li>Browse Mentors(ees)</li>
+                            <li>Quick Questions</li>
+                            <li>Messages</li>
+                            <li>Meetups & Time Log</li>
+                        </ul>
+                        <img src="images/mentorApp/lowfis@2x.png" alt="Low Fidelity Mockups" class="lowFi">
+                        <p>Next, I created a low fidelity mockups of the application's flow. At this stage I chose to mock up only the flow for 
+                            mentees. Like I said earlier, the two flows are very similar, and I got a good enough grasp on the differences 
+                            from wireframing, so making a whole other flow seemed unnecessary, and a poor use of time.
+                        </p>
+                        <p>This stage helped me establish consistency throughout the app's design, again ensuring that the learning curve 
+                            is as minimal as possible. 
+                        </p>
+                        <p>I also further developed the onboarding process and which questions would be asked of the users. In order to make this a 
+                            succinct but valuable process, I based these questions on what users deemed important in the surveys. 
+                            <br>Plus, users will sign in with their Penn State credentials, verifying that they are a student and determining whether 
+                            they are an upper or underclassmen, and therefore if they qualify to be a mentor or mentee.
+                        </p>
+                        <p>The last aspect I fleshed out in this stage is the voice of the app. By using a casual, inviting voice I hope to accomplish two things:</p>
+                        <ul>
+                            <li>Mentees will feel less intimidated, and therefore more open to reach out.</li>
+                            <li>Mentors will view it more as building relationships with people like them, instead of just another formal, school-run service.</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="research">
+                    <h3>high fidelity</h3>
+                    <div class="planningImg">
+                        <img src="images/mentorApp/visualDesign@2x.png" alt="Visual Design Elements" class="lowFi">
+                        <p>When considering the visual design of this app, my biggest priority was setting it apart from traditional school-run apps,
+                            as these tend to be a bit dated with overdone color palettes (at least at Penn State). I wanted to make this app seem separate 
+                            from the school, so that students would be more interested in it.
+                        </p>
+                        <p>I designed this Material UI using a modern color palette, rounded elements, and visually interesting, yet simple icons. These choices 
+                            mimic the way I hope students will feel when using the app: comfortable, but eager to be bold. 
+                        </p>
+                        <img src="images/mentorApp/browse@2x.png" alt="Browse Mentors Screens">
+                        <p>Students' answers in my surveys showed that some of the most important considerations to both under and upperclassmen are major and personality 
+                            when choosing a mentor(ee). So, I highlighted bios and descriptions in the browse view, allowing users to get a good idea of these aspects quickly.
+                            Users can also filter by major or interest on the browse page, if they so choose. 
+                        </p>
+                        <p>Giving users the flexibility to describe themselves in a few sentences also helps to give the app itself more personality, which moves towards 
+                            strengthening the Penn State community as a whole. 
+                        </p>
+                        <p>In profile details, a user can choose to send someone a message request, and they can also save that person, with the ability to 
+                            filter their browsing by those they've saved.
+                        </p>
+                        <img src="images/mentorApp/messages@2x.png" alt="Messages Screens">
+                        <p>Both mentees and mentors are required to request to send their first message to someone, in an effort to give the most control to the user as possible. 
+                            Once a message request has been accepted, this is where I anticipate returning users will spend the majority of their time, planning meetups, asking for 
+                            advice, etc. 
+                        </p>
+                        <img src="images/mentorApp/quickQuestions@2x.png" alt="Quick Questions Screen">
+                        <p>The main goal of the Quick Questions page is to help those who are hesitant get their feet wet before they make a commitment. For mentees, this looks
+                             like asking a question or two and seeing the benefit of connecting with upperclassmen. For mentors, it can look like testing out a mini-mentorship 
+                             and seeing that it doesn't have to be a formal, every day commitment.
+                        </p>
+                        <h4>A note on mentors:<br><br>As I mentioned earlier, there would be some slight differences in the way mentors experience the app. The main differences include the ability to:</h4>
+                        <ul>
+                            <li>View both mentor and mentee profiles</li>
+                            <li>Create meetups for a mentee they are in contact with</li>
+                            <li>Comment on Quick Questions</li>
+                            <li>Log time spent mentoring to potentially receive course credits (further ahead)</li>
+                        </ul>
+                        <h4>In this current solution, any upperclassman at Penn State is eligible to become a mentor. However, in the future, once the app has more users, there would ideally
+                            be an interview system in which current mentors evaluate potential mentors. For the time being, I chose not to apply this limitation, as there are already obstacles 
+                            for encouraging students to become mentors.
+                        </h4>
+                    </div>
+                </div>
+                <div class="research">
+                    <h3>a step further</h3>
+                    <div class="planningImg">
+                        <img src="images/mentorApp/recommend@2x.png" alt="Recommend to a Friend Feature">
+                        <p>Throughout this exercise, I had multiple brainstorming sessions on one obstacle: how to encourage college students to use this app. 
+                            With some exceptions, most college students are reluctant to do something if the benefits are not immediately clear.
+                        </p>
+                        <p>One potential solution to this dilemma is making this app more social. I mean this in the same way that when a college student hears a song or sees a 
+                            meme that reminds them of a friend, they want to share it with them. Placing a "Recommend to a Friend" option on each mentor or mentee's 
+                        profile would serve as a reminder that it could be kind of fun to look through profiles until you find one that reminds you of a friend.</p>
+                        <p>This button would allow users to share the selected profile on their external messaging app, helping to bring new users to the mentor app. Existing 
+                            users would then ideally act as a highly personalized recommendation system that reaches beyond the app's walls.
+                        </p>
+                    </div>
+                </div>  
+                <h4>Thank you for reading and for the challenge!</h4>   
+            </section>  
+        </main>
+        <footer>
+            <span><b>say hey!</b></span>
+            <span><a href="https://www.linkedin.com/in/christina-warren" target="_blank">Linkedin</a></span>
+            <span>cewarren801@gmail.com</span>
+            <span>610.389.3406</span>
+        </footer>
+    </body>
+</html>

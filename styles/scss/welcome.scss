@@ -10,6 +10,7 @@ $lpBlue: #0e68c7;
 $waPurple: #3e50c2;
 $eventTeal: #35adc4;
 $ltGray: rgba(0,0,0,.025);
+$mentorBlue: #162534;
 
 
 body{
@@ -242,6 +243,10 @@ nav{
 .eventApp{
     background: $eventTeal;
     //background: linear-gradient(135deg, rgba(70,74,87,0.75) 0%, rgba(70,74,87,1) 62%);
+}
+
+.mentorApp{
+    background: $mentorBlue;
 }
 
 .projectTitleWrap{
