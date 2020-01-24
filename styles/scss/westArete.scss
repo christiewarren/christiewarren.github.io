@@ -187,7 +187,7 @@ $ltGray: rgba(0,0,0,.025);
     h3{
         width: 100%;
         text-align: center;
-        margin: 150px 0px 40px 0px;
+        margin: 200px 0px -50px 0px;
         text-transform: lowercase;
         font-family: $barlow;
         font-size: 150%;
@@ -299,6 +299,10 @@ $ltGray: rgba(0,0,0,.025);
     img{
         width: 100%;
     }
+}
+
+.fullImg{
+    width: 100%;
 }
 
 .smScreenshot{

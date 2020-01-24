@@ -133,7 +133,7 @@
 .users h3, .features h3, .goals h3, .conclusion h3 {
   width: 100%;
   text-align: center;
-  margin: 150px 0px 40px 0px;
+  margin: 200px 0px -50px 0px;
   text-transform: lowercase;
   font-family: "Barlow", sans-serif;
   font-size: 150%;
@@ -218,6 +218,9 @@
   min-width: 550px; }
   .fullScreenshot img {
     width: 100%; }
+
+.fullImg {
+  width: 100%; }
 
 .smScreenshot {
   display: flex;

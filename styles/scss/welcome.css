@@ -175,6 +175,8 @@ nav {
 
 .mentorApp {
   background: #162534; }
+  .mentorApp .projectScreenWrap {
+    width: 52% !important; }
 
 .projectTitleWrap {
   width: 40%;
