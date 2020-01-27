@@ -16,7 +16,7 @@
       <title>Christie Warren | LionPlanner</title>
       
       <link rel="stylesheet" href="../styles/css/welcome.css">
-      <link rel="stylesheet" href="../styles/css/lp.css">
+      <link rel="stylesheet" href="../styles/scss/lp.css">
 
       <style>
             @import url('https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap');
@@ -57,10 +57,10 @@
                 </div>
             </section>
             <div class="introImgWrap">
-                <div class="introImg">
+                <div class="introImg logo">
                     <img src="images/lp/logo.png" alt="LionPlanner Logo">
                 </div>
-                <div class="introImg">
+                <div class="introImg final">
                     <img src="images/lp/final.png" alt="LionPlanner Interface"> 
                 </div>
             </div>
@@ -100,6 +100,7 @@
                         
                     </div>
                 </div>
+                
                 <div class="problem">
                     <div class="problemStatement">
                         <h4>PROBLEM STATEMENT</h4>
@@ -124,6 +125,9 @@
                             <h5>Manually testing different classes, majors, and minors is very complicated, and many students avoid 
                                 planning entirely, leaving Penn State with the bare minimum.</h3>
                         </div>
+                    </div>
+                    <div class="imgGroup">
+                        <img src="images/lp/lionplanner-resources.png" alt="Resources for Planning" class="resourceImg">
                     </div>
                 </div>
                 <div class="users">
@@ -174,19 +178,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="features">
-                    <h3>Features</h3>
+                <div class="process">
+                    <h3>Design process & progression</h3>
                     <div class="featuresList">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Search Courses</h4>
-                                <h5>Students can search the entire course catalog and view the descriptions of any course, consolidating resources, and allowing  
-                                    the <span class="userSpan">In Depth Planner</span> to <span class="problemSolved">discover courses outside their major.</span>
-                                </h5>
-                            </div>
+                        <h5 class="processText">My visual design skills grew significantly during this project, as it was my first major experience with interface design. Below 
+                            are my designs from wireframe to final prototype, with medium/hi-fi's between. During this process I grew more accustomed to the 
+                            standards of interface design, and how to best use (and not use) screen space. My sense of web typography and 
+                            color palettes also 
+                            improved, as I learned to apply my graphic design knowledge to a new medium.    
+                        </h5>
                         </div>
-                        <img src="images/lp/search.png" class="croppedScreenshot" alt="LionPlanner Search">
+                        <div class="imgGroup">
+                            <img src="images/lp/sketch.jpg" alt="LionPlanner Sketch">
+                            <img src="images/lp/wireframe.jpg" alt="LionPlanner Wireframe">
+                            <img src="images/lp/lowfi.jpg" alt="LionPlanner Lowfi">
+                            <img src="images/lp/lowfi2.png" alt="LionPlanner Lowfi 2">
+                            <img src="images/lp/final.png" alt="LionPlanner Final">
+                        </div>
                     </div>
+                <div class="features">
+                    <h3>Features & hi-fi design</h3>
                     <div class="featuresList featureHighlight">
                         <div class="smScreenshot">
                             <div class="smImgWrap">
@@ -208,6 +219,20 @@
                     <div class="featuresList">
                         <div class="featuresListItems">
                             <div class="featuresListItem">
+                                <h4>Search Courses</h4>
+                                <h5>Students can search the entire course catalog and view the descriptions of any course, consolidating resources, and allowing  
+                                    the <span class="userSpan">In Depth Planner</span> to <span class="problemSolved">discover courses outside their major.</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <img src="images/lp/search.png" class="croppedScreenshot" alt="LionPlanner Search">
+                    </div>
+                    <div class="featuresList">
+                        <div class="fullScreenshot">
+                            <img src="images/lp/stillNeeded.png" alt="LionPlanner Still Needed">
+                        </div>
+                        <div class="featuresListItems">
+                            <div class="featuresListItem">
                                 <h4>Still Needed</h4>
                                 <h5>If a student deletes a required course, it will be added to Still Needed as a reminder, 
                                     which is especially useful for the <span class="userSpan">Degree Seeker</span> to 
@@ -220,22 +245,6 @@
                                     of the missing prereq. This keeps the <span class="userSpan">Degree Seeker</span> on track to 
                                     <span class="problemSolved">take all courses on time.</span></h5>
                             </div>
-                        </div>
-                        <div class="fullScreenshot">
-                            <img src="images/lp/stillNeeded.png" alt="LionPlanner Still Needed">
-                        </div>
-                    </div>
-                    <div class="featuresList featureHighlight">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Toolbar</h4>
-                                <h5>The plan will automatically update with changes in majors and minors, and students can create, save, and export new 
-                                    plans, giving the <span class="userSpan">In Depth Planner</span> a space to <span class="problemSolved">test many scenarios.</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="tinyImgWrap">
-                            <img src="images/lp/toolBar.png" alt="LionPlanner Toolbar">
                         </div>
                     </div>
                     <div class="featuresList">
@@ -257,23 +266,20 @@
                             <img src="images/lp/similarAlts.png" alt="LionPlanner Similar and Alternatives">
                         </div>
                     </div>
-                    <div class="process">
-                        <h3>Process & progression</h3>
-                        <div class="featuresList">
-                            <h5 class="processText">My <span class="skill">visual design</span> skills grew significantly during this project, as it was my first major experience with interface design. Below 
-                                are my designs from wireframe to final prototype, with medium/hi-fi's between. During this process I grew more accustomed to the 
-                                standards of <span class="skill">interface design,</span> and how to <span class="skill"></span>best use (and not use) screen space</span>. My sense of <span class="skill">web typography</span> and 
-                                <span class="skill">color palettes</span> also 
-                                improved, as I learned to apply my graphic design knowledge to a new medium.    
-                            </h5>
-                            </div>
-                            <div class="imgGroup">
-                                <img src="images/lp/wireframe.jpg" alt="LionPlanner Wireframe">
-                                <img src="images/lp/lowfi.jpg" alt="LionPlanner Lowfi">
-                                <img src="images/lp/lowfi2.png" alt="LionPlanner Lowfi 2">
-                                <img src="images/lp/final.png" alt="LionPlanner Final">
+                    <div class="featuresList featureHighlight">
+                        <div class="tinyImgWrap">
+                            <img src="images/lp/toolBar.png" alt="LionPlanner Toolbar">
+                        </div>
+                        <div class="featuresListItems">
+                            <div class="featuresListItem">
+                                <h4>Toolbar</h4>
+                                <h5>The plan will automatically update with changes in majors and minors, and students can create, save, and export new 
+                                    plans, giving the <span class="userSpan">In Depth Planner</span> a space to <span class="problemSolved">test many scenarios.</span>
+                                </h5>
                             </div>
                         </div>
+                    </div>
+                    
                     <h3>Conclusion</h3>
                 </div>
                 <div class="conclusion">

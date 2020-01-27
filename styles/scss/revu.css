@@ -128,7 +128,7 @@
     font-size: 100%;
     font-family: "Lexend Deca", sans-serif; }
 
-.users h3, .features h3, .goals h3, .conclusion h3 {
+.users h3, .features h3, .goals h3, .conclusion h3, .research h3 {
   width: 100%;
   text-align: center;
   margin: 150px 0px 40px 0px;
@@ -136,6 +136,9 @@
   font-family: "Barlow", sans-serif;
   font-size: 150%;
   font-weight: 200; }
+
+.research {
+  width: 60%; }
 
 .userList {
   display: flex;
@@ -380,7 +383,13 @@
     justify-content: center; }
 
   .userListItem {
-    width: 80%; } }
+    width: 80%; }
+
+  .logo {
+    display: none; }
+
+  .final {
+    width: 90% !important; } }
 @media screen and (max-width: 1205px) {
   .goalsListItem {
     width: 80%; } }

@@ -479,9 +479,14 @@ $ltGray: rgba(0,0,0,.025);
     img{
         margin-top: 50px;
         min-width: 450px;
-        object-fit: cover;
-        width: 40%;
+        object-fit: contain;
+        width: 45%;
     }
+}
+
+.resourceImg{
+    width: 70%!important;
+    margin-top: 100px!important;
 }
 
 .processText{
@@ -552,6 +557,14 @@ $ltGray: rgba(0,0,0,.025);
 
     .userListItem{
         width: 80%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .final{
+        width: 90%!important;
     }
 
 }

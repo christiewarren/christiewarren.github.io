@@ -376,7 +376,10 @@
     justify-content: center; }
 
   .userListItem {
-    width: 80%; } }
+    width: 80%; }
+
+  .final {
+    width: 90% !important; } }
 @media screen and (max-width: 1205px) {
   .goalsListItem {
     width: 80%; } }

@@ -359,8 +359,12 @@
   .imgGroup img {
     margin-top: 50px;
     min-width: 450px;
-    object-fit: cover;
-    width: 40%; }
+    object-fit: contain;
+    width: 45%; }
+
+.resourceImg {
+  width: 70% !important;
+  margin-top: 100px !important; }
 
 .processText {
   width: 80%; }
@@ -406,7 +410,13 @@
     justify-content: center; }
 
   .userListItem {
-    width: 80%; } }
+    width: 80%; }
+
+  .logo {
+    display: none; }
+
+  .final {
+    width: 90% !important; } }
 @media screen and (max-width: 1205px) {
   .goalsListItem {
     width: 80%; } }
