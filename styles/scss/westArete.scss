@@ -458,7 +458,22 @@ $ltGray: rgba(0,0,0,.025);
     padding: 0px 4px;
 }
 
+.imgGroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        margin-top: 50px;
+        min-width: 450px;
+        object-fit: contain;
+        width: 45%;
+    }
+}
 
+.resourceImg{
+    width: 40%!important;
+    margin-top: 100px!important;
+}
 
 
 @media screen and (max-width: 532px){
