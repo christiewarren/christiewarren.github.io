@@ -1,0 +1,35 @@
+.fullImgWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .fullImgWrap img {
+    width: 75%;
+    margin: auto; }
+
+.captionWrap {
+  width: 60%;
+  margin-top: 50px; }
+
+h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200; }
+
+h5 {
+  font-size: 90%;
+  line-height: 1.5;
+  font-weight: 100; }
+
+hr {
+  width: 80%;
+  opacity: .25;
+  margin-top: 100px; }
+
+.projectTag {
+  background: rgba(0, 0, 0, 0.7) !important; }
+
+h2 {
+  color: rgba(0, 0, 0, 0.7) !important; }
+
+/*# sourceMappingURL=gd.css.map */
