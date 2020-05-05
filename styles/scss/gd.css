@@ -8,6 +8,28 @@
     width: 75%;
     margin: auto; }
 
+.gdCarousel{
+  width: 75%;
+  margin: auto;
+}
+
+a{
+  color: #666efd;
+}
+
+.carousel-indicators li {
+  background-color: lightgray;
+}
+
+.carousel-indicators .active {
+  background-color: #666efd;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  filter: invert(1);
+  opacity: .75;
+}
+
 .captionWrap {
   width: 60%;
   margin-top: 50px; }
