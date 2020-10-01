@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   border: 10px solid #666efd;
   margin: 0px;
@@ -8,6 +13,10 @@ body {
   width: 100%;
   box-sizing: border-box;
   min-height: 100vh; }
+
+main{
+  margin-bottom: 150px;
+}
 
 a {
   text-decoration: none; }
@@ -63,7 +72,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding-top: 180px;
+  padding-top: 140px;
   height: max-content; }
 
 .welcomeText {
@@ -79,14 +88,10 @@ nav {
   .welcomeText h4 {
     font-size: 80%; }
 
-.christie {
-  background: #666efd;
-  font-family: "Barlow", sans-serif;
-  font-weight: 100;
-  padding: 2px 5px;
-  color: white;
-  margin-left: 2px;
-  border-radius: 4px; }
+
+.me{
+  color: #666efd; 
+}
 
 .scrollBtn {
   font-family: "Barlow", sans-serif;
@@ -217,9 +222,21 @@ nav {
   float: left;
   font-size: 180%;
   padding: 4px 10px;
+  text-decoration: none;
   animation: .75s ease-in-out slideInLeft; }
   .homeLink:hover {
     color: white; }
+
+.christie {
+  background: #666efd;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 100;
+  padding: 2px 9px;
+  color: white;
+  margin-left: 2px;
+  text-decoration: none;
+  border-radius: 4px; }
+    
 
 @media screen and (max-width: 1157px) {
   .projectTitleWrap {
@@ -237,10 +254,9 @@ nav {
   align-items: center;
   flex-direction: column; }
   #resume img {
-    width: 50%;
+    width: 75%;
     margin: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.025); }
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.075); }
 
 .downloadResume {
   border-radius: 4px;
@@ -250,7 +266,7 @@ nav {
   font-weight: 400;
   border: none;
   font-size: 100%;
-  padding: 6px 12px;
+  padding: 4px 12px 6px;
   cursor: pointer;
   transition: opacity 1s; }
   .downloadResume:hover {

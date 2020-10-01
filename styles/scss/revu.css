@@ -5,6 +5,10 @@
   padding-top: 100px;
   height: max-content; }
 
+a{
+  text-decoration: none;
+}
+
 .projectIntro {
   font-family: "Lexend Deca", sans-serif;
   color: rgba(0, 0, 0, 0.7);

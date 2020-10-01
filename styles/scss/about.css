@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 #about {
   width: 100%;
   padding-top: 80px;
@@ -7,6 +10,10 @@
 
 .purple {
   color: #666efd; }
+
+  a{
+    text-decoration: none;
+  }
 
 .scrollBtn:hover:after {
   width: 140px;
@@ -85,6 +92,14 @@
 @media screen and (max-width: 834px) {
   .introText {
     width: 85%;
+    min-width: auto; }
+
+  .christieMtnWrap {
+    width: 75%; } }
+
+@media screen and (max-width: 1168px) {
+  .kittenImg {
+    width: 100%;
     min-width: auto; }
 
   .christieMtnWrap {
