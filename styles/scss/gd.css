@@ -13,6 +13,10 @@
   margin: auto;
 }
 
+.gdCarousel >video{
+  width: 100%;
+}
+
 a{
   color: #666efd;
   text-decoration: none;
@@ -65,6 +69,18 @@ h2 {
   .gdCarousel {
     width: 95%;
    }
+}
+
+@media screen and (max-width: 650px) {
+  .captionWrap{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .captionWrap{
+    width: 75%;
+  }
 }
 
 .christie {
