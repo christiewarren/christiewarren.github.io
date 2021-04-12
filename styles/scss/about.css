@@ -5,7 +5,7 @@ html{
   width: 100%;
   padding-top: 80px;
   height: max-content;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: rgba(0, 0, 0, 0.7); }
 
 .purple {
@@ -21,7 +21,7 @@ html{
 
 .intro {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 120px; }
 
@@ -30,7 +30,7 @@ html{
   padding: 0px 40px;
   min-width: 280px; }
   .introText h5 {
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: 100%;
     font-weight: 400;
     line-height: 1.6;
@@ -54,7 +54,7 @@ html{
 .loveItem h4 {
   color: #666efd; }
 .loveItem h5 {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-size: 100%;
   font-weight: 400;
   line-height: 1.6; }
@@ -71,10 +71,10 @@ html{
     border-radius: 4px; }
 
 .christieMtnWrap {
-  width: 42%;
+  width: 32%;
   padding: 0px 40px; }
   .christieMtnWrap h5 {
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: 95%;
     font-weight: 400;
     line-height: 1.6; }
@@ -95,14 +95,14 @@ html{
     min-width: auto; }
 
   .christieMtnWrap {
-    width: 75%; } }
+    width: 55%; 
+  margin-bottom: 10vh;} }
 
 @media screen and (max-width: 1168px) {
   .kittenImg {
     width: 100%;
     min-width: auto; }
 
-  .christieMtnWrap {
-    width: 75%; } }
+  }
 
 /*# sourceMappingURL=about.css.map */

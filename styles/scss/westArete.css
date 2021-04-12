@@ -6,7 +6,7 @@
   height: max-content; }
 
 .projectIntro {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 100px;
   width: 60%; }
@@ -16,13 +16,13 @@
   .projectIntro h3 {
     font-size: 100%;
     line-height: 1.6;
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-weight: 400; }
   .projectIntro h4 {
     font-size: 80%; }
 
 .title2 {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400; }
 
 .projectTags {
@@ -31,9 +31,9 @@
 
 .projectTag {
   background: #3e50c2;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
-  padding: 4px 8px;
+  padding: 2px 8px 5px;
   color: white;
   margin: 5px 10px 5px 0px;
   border-radius: 4px;
@@ -42,14 +42,14 @@
   white-space: pre; }
 
 .projectDetails {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
   .projectDetails h4 {
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: 110%;
     font-weight: 400;
     opacity: .5;
@@ -59,7 +59,7 @@
     margin-bottom: 0px;
     margin-top: 8px;
     line-height: 1.5;
-    font-family: "Lexend Deca", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-weight: 400; }
 
 .addInfo {
@@ -101,7 +101,7 @@
   background: #3e50c2;
   color: white;
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   margin-top: 150px; }
   .problemStatement h4 {
     margin-top: 0px;
@@ -120,7 +120,7 @@
   width: 20%;
   min-width: 180px; }
   .probListItem h5 {
-    font-family: "Barlow", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
   .probListItem h4 {
     opacity: 1;
     color: #3e50c2;
@@ -128,14 +128,14 @@
     border-radius: 4px;
     margin-bottom: 5px;
     font-size: 100%;
-    font-family: "Lexend Deca", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
 
 .users h3, .features h3, .goals h3, .conclusion h3 {
   width: 100%;
   text-align: center;
   margin: 200px 0px -50px 0px;
   text-transform: lowercase;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-size: 150%;
   font-weight: 200; }
 
@@ -155,12 +155,12 @@
   .userListItem h4 {
     margin-top: 0px;
     opacity: 1;
-    font-family: "Lexend Deca", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
   .userListItem h5 {
-    font-family: "Barlow", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
 
 .needs {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   padding: 20px;
   margin-top: 25px;
   color: #3e50c2;
@@ -177,7 +177,7 @@
   background: #3e50c2;
   color: white;
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 120px; }
@@ -188,9 +188,9 @@
   .goalsListItem h4 {
     margin-top: 0px;
     opacity: 1;
-    font-family: "Lexend Deca", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
   .goalsListItem h5 {
-    font-family: "Barlow", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
 
 .featuresList {
   display: flex;
@@ -241,14 +241,14 @@
   background: #3e50c2;
   color: white;
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   margin-top: 150px; }
   .question h4 {
     opacity: 1;
     margin-top: 0px;
-    font-family: "Lexend Deca", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
   .question h5 {
-    font-family: "Barlow", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
 
 .survey .featuresList {
   margin-top: 0px;
@@ -297,10 +297,10 @@
   min-width: 350px;
   height: max-content; }
   .conclusionText h5 {
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     color: white; }
   .conclusionText h4 {
-    font-family: "Lexend Deca", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     color: white;
     opacity: 1;
     margin-top: 60px;
@@ -313,7 +313,7 @@
   padding: 20px;
   margin-top: 50px; }
   .teamImg h5 {
-    font-family: "Barlow", sans-serif; }
+    font-family: "sofia-pro", sans-serif; }
   .teamImg img {
     width: 100%;
     filter: contrast(120%) saturate(0);
@@ -326,16 +326,16 @@
   width: 100%;
   margin-top: 80px;
   text-align: center;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: white; }
 
 .userSpan {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   background-color: rgba(0, 0, 0, 0.025);
   padding: 0px 4px; }
 
 .problemSolved {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   background-color: rgba(0, 0, 0, 0.025);
   padding: 0px 4px; }
 

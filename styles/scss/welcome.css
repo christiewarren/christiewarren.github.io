@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=sofia-pro:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
 
 html{
@@ -6,7 +6,7 @@ html{
 }
 
 body {
-  border: 10px solid #666efd;
+  /* border: 10px solid #666efd; */
   margin: 0px;
   padding-bottom: 200px;
   position: relative;
@@ -55,8 +55,8 @@ nav {
   justify-content: flex-end; }
   nav a {
     color: rgba(0, 0, 0, 0.7);
-    font-family: "Barlow", sans-serif;
-    margin: 45px 20px;
+    font-family: "sofia-pro", sans-serif;
+    margin: 25px 20px;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -76,14 +76,14 @@ nav {
   height: max-content; }
 
 .welcomeText {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: rgba(0, 0, 0, 0.7); }
   .welcomeText h2 {
     font-size: 120%; }
   .welcomeText h3 {
     font-size: 100%;
     line-height: 1.6;
-    font-family: "Barlow", sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-weight: 400; }
   .welcomeText h4 {
     font-size: 80%; }
@@ -94,7 +94,7 @@ nav {
 }
 
 .scrollBtn {
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
   color: #666efd;
   text-decoration: none;
@@ -129,14 +129,14 @@ nav {
 
 .project h4 {
   font-weight: 400;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-size: 75%;
   display: block;
   text-align: center;
   margin: 0px 0px 10px; }
 .project h5 {
   font-weight: 300;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-size: 65%;
   margin-top: 0px;
   display: block;
@@ -220,22 +220,21 @@ nav {
 
 .homeLink {
   float: left;
-  font-size: 180%;
   padding: 4px 10px;
   text-decoration: none;
   animation: .75s ease-in-out slideInLeft; }
-  .homeLink:hover {
-    color: white; }
+  
 
 .christie {
-  background: #666efd;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 100;
-  padding: 2px 9px;
-  color: white;
-  margin-left: 2px;
+  color: #666efd;
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 800;
+  margin-left: 0px;
+  font-size: 2.5em;
+  margin-top: 15px;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 4px; }
+  border-radius: 100px; }
     
 
 @media screen and (max-width: 1157px) {
@@ -248,7 +247,7 @@ nav {
   width: 100%;
   padding-top: 150px;
   height: max-content;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
@@ -262,7 +261,7 @@ nav {
   border-radius: 4px;
   background-color: #666efd;
   color: white;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
   border: none;
   font-size: 100%;
@@ -280,7 +279,7 @@ footer {
   position: absolute;
   width: 100%;
   color: #666efd;
-  font-family: "Barlow", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   padding: 45px 25px;
   bottom: 0;
   box-sizing: border-box;
