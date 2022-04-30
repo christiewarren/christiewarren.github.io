@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+@font-face {
+  font-family: "lark-bold";
+  src: url("../../fonts/LarkBold/font.woff") format('woff');
+}
+
+@font-face {
+  font-family: "lark-reg";
+  src: url("../../fonts/LarkRegular/font.woff") format('woff');
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   margin: 0;
+   font-family: 'DM Sans';
+   color: #030055;
+   /* background-color: #030055; */
+}
+
+nav, main, footer{
+   background-color: white;
+}
