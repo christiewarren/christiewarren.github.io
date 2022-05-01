@@ -77,6 +77,11 @@ nav {
     font-size: 3rem;
     font-family: 'lark-bold';
   }
+  .welcomeText h2::selection, .welcomeText h3::selection{
+    background-color: #D20799;
+    color:#FED02F;
+    color: white;
+  }
   .welcomeText h3 {
     font-size: 100%;
     line-height: 1.6;
