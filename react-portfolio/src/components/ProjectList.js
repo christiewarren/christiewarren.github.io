@@ -9,7 +9,7 @@ import {
 
 export default function ProjectList(){
    return(
-      <div className='proj-list-wrap'>
+      <div className='proj-list-wrap' id='work'>
          <button className='view-work-btn'>things I've worked on<img src='/assets/home/arrow-up.svg' className='button-arrow'/></button>
          {projectData.map(project =>{
             return(

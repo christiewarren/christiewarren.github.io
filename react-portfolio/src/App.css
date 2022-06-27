@@ -15,6 +15,12 @@
   src: url("../../fonts/LarkLight/font.woff") format('woff');
 }
 
+.img{
+  font-size: 2rem;
+  color: red;
+  font-weight: bold;
+}
+
 html{
    scroll-behavior: smooth;
 }
@@ -64,6 +70,7 @@ h5{
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 1.8rem;
+  display: inline-block;
 }
 
 h6{
@@ -72,6 +79,10 @@ h6{
   line-height: 1.7;
   margin-bottom: 0;
   margin-top: 0.625rem;
+  /* border: 1px solid #FED02F;
+  padding: 15px;
+  border-radius: 10px; */
+  /* background: #FFFAEA; */
 }
 
 p{
@@ -79,6 +90,10 @@ p{
   line-height: 1.7;
   margin-top: 1.25rem;
   margin-bottom: 0;
+}
+
+small{
+  font-style: italic;
 }
 
 button{
@@ -98,7 +113,7 @@ button{
   cursor: pointer;
 }
 
-a{
+a.styled{
   font-weight: 700;
   text-decoration: none;
   color: #030055;
@@ -110,7 +125,7 @@ a{
   width: max-content;
 }
 
-a::before{
+a.styled::before{
   position: absolute;
   content: '';
   width: 110%;
@@ -125,11 +140,32 @@ a::before{
   transition: all 0.25s ease-out;
 }
 
-a:hover::before{
-  top: 0%;
-  height: 110%;
-  width: 115%
+@media (hover: hover) {
+  a.styled:hover::before{
+    top: 0%;
+    height: 110%;
+    width: 115%
+  }
+
+  a.styled:hover .link-arrow{
+    animation: arrowHover 2s cubic-bezier(.6,0,.62,1) infinite;
+  }
+
+  .view-work-btn:hover{
+    box-shadow: 0px 1px 30px 0px #04055460;
+    top: -25px;
+  }
 }
+
+
+a.styled.sm{
+  font-size: 1rem;
+  display: inline-block;
+}
+/* 
+a.styled.sm::before{
+  top: 52%;
+} */
 
 .link-arrow{
   margin-left: 5px;
@@ -137,8 +173,8 @@ a:hover::before{
   transform: translateY(5%);
 }
 
-a:hover .link-arrow{
-  animation: arrowHover 2s cubic-bezier(.6,0,.62,1) infinite;
+a{
+  text-decoration: none;
 }
 
 @keyframes arrowHover {
@@ -153,6 +189,12 @@ a:hover .link-arrow{
   100% {
     transform: translateY(5%);
   }
+}
+
+.highlight{
+  background: linear-gradient(140deg, rgba(255,251,202,0.85) 0%, rgba(215,249,255,0.85) 50%, rgba(238,231,255,0.85) 100%);
+  border-radius: 5px;
+  padding: 0 5px;
 }
 
 .button-arrow{
@@ -254,11 +296,6 @@ a:hover .link-arrow{
   transition: box-shadow .25s ease-in-out, top .45s ease-in-out;
 }
 
-.view-work-btn:hover{
-  box-shadow: 0px 1px 30px 0px #04055460;
-  top: -25px;
-}
-
 .proj-wrap{
   display: flex;
   justify-content: center;
@@ -297,14 +334,11 @@ a:hover .link-arrow{
 
 
 /* project pages */
-.progress-bar-wrap{
-  
-  
-}
 
 .progress-bar-wrap div{
   border-radius: 20px;
   height: 3px!important;
+  background: #8A96FF!important;
 }
 
 .content-wrap{
@@ -352,15 +386,37 @@ a:hover .link-arrow{
   margin-top: 2.5rem;
 }
 
-.context{
+.context, .reflection{
   background: #F8F2FF;
   border-radius: 10px;
   padding: 15px;
   margin-top: 4.5rem;
 }
 
-.context h4{
+.context h4, .reflection h4{
   margin-top: 0;
+}
+
+.img-wrap{
+  width: 100%;
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.img-wrap img{
+  width: 80%;
+  min-width: 300px;
+}
+
+.img-shadow{
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.sm-img{
+  width: 65%!important;
 }
 
 .research-table{
