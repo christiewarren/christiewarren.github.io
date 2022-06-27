@@ -1,5 +1,13 @@
 import React from 'react'
 import ProgressBar from "react-scroll-progress-bar";
+import { Navigation, Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 export default function Search(){
@@ -97,7 +105,29 @@ export default function Search(){
 
             <h4>Final Designs</h4>
             <h5>Mobile</h5>
-            <p className='img'>carousel of mobile screenshots</p>
+            <Swiper
+               modules={[Navigation, Pagination]}
+               spaceBetween={50}
+               slidesPerView={1}
+               navigation
+               pagination
+               pagination={{ clickable: true }}
+               onSlideChange={() => console.log('slide change')}
+               onSwiper={(swiper) => console.log(swiper)}
+            >
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/hero1.jpeg' className='carousel-img' className='carousel-img img-shadow'/>
+                     <small>Prominent placement in nav</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/hero1.jpeg' className='carousel-img' className='carousel-img img-shadow'/>
+                     <small>Opens in full-page overlay, and empty state suggests subscription lines and popular Store items</small>
+                  </div>
+               </SwiperSlide>
+            </Swiper>
 
             <h5>Desktop</h5>
             <p className='img'>carousel of desktop screenshots</p>
