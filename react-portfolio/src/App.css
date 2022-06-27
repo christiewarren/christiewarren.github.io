@@ -23,6 +23,7 @@
 
 html{
    scroll-behavior: smooth;
+   background: white;
 }
 
 *{
@@ -33,6 +34,7 @@ body{
    margin: 0;
    font-family: 'DM Sans';
    color: #030055;
+   background: white;
 }
 
 h1{
@@ -416,11 +418,6 @@ a{
   width: 65%!important;
 }
 
-.carousel-img{
-  width: 65%!important;
-  max-width: 320px;
-}
-
 .search-placement{
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -478,4 +475,28 @@ a{
 
 .swiper-button-next:after, .swiper-button-prev:after{
   font-size: 2rem!important;
+}
+
+.carousel-img-m{
+  width: 65%!important;
+  max-width: 320px;
+}
+
+.carousel-img-d{
+  width: 90%!important;
+  /* max-width: 320px; */
+}
+
+.desktop-swiper-wrap{
+  width: 80%;
+  min-width: 345px;
+  margin: auto;
+}
+
+.desktop-swiper-wrap .swiper-button-prev{
+  margin-left: -10px!important;
+}
+
+.desktop-swiper-wrap .swiper-button-next{
+  margin-right: -15px!important;
 }

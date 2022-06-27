@@ -117,21 +117,46 @@ export default function Search(){
             >
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero1.jpeg' className='carousel-img' className='carousel-img img-shadow'/>
+                     <img src='/assets/search/hero1.jpeg' className='carousel-img-m img-shadow'/>
                      <small>Prominent placement in nav</small>
                   </div>
                </SwiperSlide>
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero1.jpeg' className='carousel-img' className='carousel-img img-shadow'/>
+                     <img src='/assets/search/hero1.jpeg' className='carousel-img-m img-shadow'/>
                      <small>Opens in full-page overlay, and empty state suggests subscription lines and popular Store items</small>
                   </div>
                </SwiperSlide>
             </Swiper>
-
             <h5>Desktop</h5>
-            <p className='img'>carousel of desktop screenshots</p>
-
+            </section>
+         </div>
+         <div className='desktop-swiper-wrap'>
+            <Swiper
+               modules={[Navigation, Pagination]}
+               spaceBetween={50}
+               slidesPerView={1}
+               navigation
+               pagination
+               pagination={{ clickable: true }}
+               onSlideChange={() => console.log('slide change')}
+               onSwiper={(swiper) => console.log(swiper)}
+            >
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/hero-desktop.png' className='carousel-img-d img-shadow'/>
+                     <small>Prominent placement in nav</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/hero-desktop.png' className='carousel-img-d img-shadow'/>
+                     <small>Opens in full-page overlay, and empty state suggests subscription lines and popular Store items</small>
+                  </div>
+               </SwiperSlide>
+            </Swiper>
+         </div>
+         <div className='content-wrap'>
             <h4>Measuring Success</h4>
             <p>It’s tough to quantify the success of this feature for a couple reasons:</p>
             <ul>
@@ -152,7 +177,7 @@ export default function Search(){
                <h5>Challenges</h5>
                <p>I also got great experience writing scripts and preparing prototypes for user tests. These tests came with their fair share of frustration and troubleshooting as I learned how to communicate to participants things as simple as what screen they should be on (without being able to talk to them in real time).<br/><br/>There were also some technical limitations in the search functionality, especially around searching for subscriptions. I had hoped to show results if a user searched for a box in a given subscription, even if that particular box wasn’t featured on the site. However, the PM and devs I worked with determined that this kind of mapping would be a lot of manual work, so we had to cut it out of the scope for the time being. (Maybe one day!)</p>
             </div>
-         </section>
+         {/* </section> */}
       </div>
       </>
    )
