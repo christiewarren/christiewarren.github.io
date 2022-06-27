@@ -32,17 +32,23 @@ export default function Search(){
                   <img src='/assets/search/kiwico-subs.png'/>
                   <small>KiwiCo subscription lines</small>
                </div>
-               <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.*</p>
+               <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
             </div>
+            <br/><small>* Baymard #934: “During mobile testing, no method was more frequently used at the earliest stages of product exploration than on-site search: 60% of the subjects immediately used search as their first strategy on a mobile website’s homepage...”</small>
 
             <h4>Research &amp; Benchmarking</h4>
             <p>Considering the importance of familiarity and the relative complexity of KiwiCo’s searchable content** I started with some extensive benchmarking. I <span className='highlight'>reviewed search features on over 20 websites and apps</span> and noted consistencies and aspects that would or wouldn’t work well for KiwiCo’s search.</p>
+            <br/><small>** subscription lines, Store products, DIY ideas, Blog posts, Help articles, and miscellaneous pages</small>
             <div className='img-wrap'>
                <img src='/assets/search/benchmarking.png'/>
                <small>I mainly benchmarked against ecommerce sites like Lego and Target</small>
             </div>
             <br/><p>I also read numerous articles from the Baymard Institute to determine best practices for search features as well as how prominent ours should be.</p>
-            <h5>Based on my findings, I made these initial decisions:</h5>
+            <div className='img-wrap search-placement'>
+               <img src='/assets/search/search-placement.png' className='sm-img'/>
+               <small>Initial exploration of placement in the mobile nav, compared to the original nav sans-search (top)<br/>I moved forward with #1 for its simplicity and better use of space.</small>
+            </div>
+            <h5>Based on my findings and early feedback, I made these initial decisions:</h5>
             <table className='research-table'>
                <tbody>
                <tr>

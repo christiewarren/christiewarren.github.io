@@ -62,6 +62,7 @@ h4{
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 4.5rem;
+  margin-bottom: 0;
 }
 
 h5{
@@ -94,6 +95,8 @@ p{
 
 small{
   font-style: italic;
+  line-height: 1.5;
+  text-align: center;
 }
 
 button{
@@ -343,7 +346,7 @@ a{
 
 .content-wrap{
   width: 50%;
-  min-width: 300px;
+  min-width: 335px;
   margin: auto;
 }
 
@@ -419,6 +422,11 @@ a{
   width: 65%!important;
 }
 
+.search-placement{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .research-table{
   border-spacing: 0;
   margin-top: 1rem;
@@ -445,3 +453,24 @@ a{
 .research-table tr:last-child td:last-child {
   border-bottom-right-radius: 12px;
 }
+
+/* 
+.source{
+  position: relative;
+}
+
+.source::before{
+  position: absolute;
+  content: '* (Baymard #934: “During mobile testing, no method was more frequently used at the earliest stages of product exploration than on-site search: 60% of the subjects immediately used search as their first strategy on a mobile website’s homepage (compared to 40% who used the main navigation). In fact, some subjects were observed to instinctively tap into the field — often before page load was complete.”)';
+  background: white;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  opacity: 0;
+  display: hidden;
+}
+
+.source:focus::before{
+  opacity: 1;
+  display: block;
+} */
