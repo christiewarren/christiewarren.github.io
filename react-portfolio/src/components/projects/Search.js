@@ -18,8 +18,8 @@ export default function Search(){
          <h1>Sitewide Search</h1>
          <h2>@KiwiCo</h2>
          <div className='search-hero-wrap'>
-            <img src={'/assets/search/hero1.jpeg'} className='search-hero'/>
-            <img src={'/assets/search/hero2.jpeg'} className='search-hero'/>
+            <img src={'/assets/search/final/mobile/empty-state.jpeg'} className='search-hero'/>
+            <img src={'/assets/search/final/mobile/results-sub.jpg'} className='search-hero'/>
          </div>
          <section id='tldr'>
             <span className='section-divider'><h3>TLDR;</h3><hr/></span>
@@ -38,7 +38,7 @@ export default function Search(){
                <p>KiwiCo is an e-commerce site with nine subscription lines and 160+ products spanning ages newborn to 100 and countless interests. Not to mention the nearly 1,600 DIY and Blog articles.</p>
                <div className='img-wrap'>
                   <img src='/assets/search/kiwico-subs.png'/>
-                  <small>KiwiCo subscription lines</small>
+                  <small class='subs-caption'>KiwiCo subscription lines</small>
                </div>
                <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
             </div>
@@ -86,7 +86,7 @@ export default function Search(){
             <h5>Round 1&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</h5>
             <a href='/assets/search/user-test-script1.pdf' target='blank' className='styled sm'>view script PDF</a>
             <h6>My main goals for Round 1 were to determine whether subscriptions and Store products were presented in an understandable way and test the hypotheses I made during research.</h6>
-            <br/><p>A whole tab for subscriptions seemed like overkill when it would only ever have a max of nine results. So, for my tests I combined subscriptions and Store products into a “Products” tab, which also meant combining them into one section in the “All” tab.</p>
+            <br/><p>A whole tab for subscriptions seemed like overkill when it would only have a max of nine results. So, for my tests I combined subscriptions and Store products into a “Products” tab, which also meant combining them into one section in the “All” tab.</p>
             <div className='img-wrap'>
                <img src='/assets/search/user-test-round1-desktop.png'/>
                <small>Subscriptions and Store items combined into a Products tab and category</small>
@@ -117,18 +117,48 @@ export default function Search(){
             >
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero1.jpeg' className='carousel-img-m img-shadow'/>
-                     <small>Prominent placement in nav</small>
+                     <img src='/assets/search/final/mobile/empty-state.jpeg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Search opens in a full-page overlay, and empty state suggests subscription lines and popular Store items</small>
                   </div>
                </SwiperSlide>
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero1.jpeg' className='carousel-img-m img-shadow'/>
-                     <small>Opens in full-page overlay, and empty state suggests subscription lines and popular Store items</small>
+                     <img src='/assets/search/final/mobile/suggestions1.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Suggestions allow user to go directly to a specific category</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/mobile/suggestions2.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>More suggestions show related subscriptions and Store items</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/mobile/results-sub.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Results feature subscriptions prominently without them occupying too much vertical space</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/mobile/results-store.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Store results feature the six most relevant products with the ability to view more in the Store tab (via a View more button not pictured)</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/mobile/results-diy-blog.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Similarly, results for DIY ideas and Blog posts feature the six most relevant articles</small>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/mobile/results-help-more.jpg' className='carousel-img-m img-shadow'/>
+                     <small className='slide-caption'>Help and More results contain relevant help articles and miscellaneous pages</small>
                   </div>
                </SwiperSlide>
             </Swiper>
-            <h5>Desktop</h5>
+            <h5 className='desktop-final'>Desktop</h5>
             </section>
          </div>
          <div className='desktop-swiper-wrap'>
@@ -144,14 +174,32 @@ export default function Search(){
             >
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero-desktop.png' className='carousel-img-d img-shadow'/>
-                     <small>Prominent placement in nav</small>
+                     <img src='/assets/search/final/desktop/empty-state.jpg' className='carousel-img-d img-shadow'/>
                   </div>
                </SwiperSlide>
                <SwiperSlide>
                   <div className='img-wrap'>
-                     <img src='/assets/search/hero-desktop.png' className='carousel-img-d img-shadow'/>
-                     <small>Opens in full-page overlay, and empty state suggests subscription lines and popular Store items</small>
+                     <img src='/assets/search/final/desktop/suggestions.jpg' className='carousel-img-d img-shadow'/>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/desktop/results-sub.jpg' className='carousel-img-d img-shadow'/>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/desktop/results-store.jpg' className='carousel-img-d img-shadow'/>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/desktop/results-diy-blog.jpg' className='carousel-img-d img-shadow'/>
+                  </div>
+               </SwiperSlide>
+               <SwiperSlide>
+                  <div className='img-wrap'>
+                     <img src='/assets/search/final/desktop/results-help-more.jpg' className='carousel-img-d img-shadow'/>
                   </div>
                </SwiperSlide>
             </Swiper>

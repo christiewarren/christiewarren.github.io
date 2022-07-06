@@ -23,7 +23,6 @@
 
 html{
    scroll-behavior: smooth;
-   background: white;
 }
 
 *{
@@ -72,7 +71,7 @@ h5{
   font-style: italic;
   font-weight: 400;
   margin-bottom: 0;
-  margin-top: 1.8rem;
+  margin-top: 2rem;
   display: inline-block;
 }
 
@@ -336,7 +335,7 @@ a{
 
 .progress-bar-wrap div{
   border-radius: 20px;
-  height: 3px!important;
+  height: 4px!important;
   background: #8A96FF!important;
 }
 
@@ -394,6 +393,10 @@ a{
 
 .context h4, .reflection h4{
   margin-top: 0;
+}
+
+.subs-caption{
+  margin-top: 1rem;
 }
 
 .img-wrap{
@@ -478,13 +481,22 @@ a{
 }
 
 .carousel-img-m{
-  width: 65%!important;
-  max-width: 320px;
+  width: 50%!important;
+  width: 300px!important;
 }
 
 .carousel-img-d{
   width: 90%!important;
   /* max-width: 320px; */
+}
+
+.slide-caption{
+  width: 60%;
+  min-width: 300px
+}
+
+.desktop-final{
+  margin-top: 4rem;
 }
 
 .desktop-swiper-wrap{
