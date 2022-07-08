@@ -341,7 +341,6 @@ a{
 
 .content-wrap{
   width: 50%;
-  min-width: 335px;
   margin: auto;
 }
 
@@ -372,7 +371,7 @@ a{
 }
 
 #tldr h6{
-  margin-top: 4.5rem;
+  margin-top: 4rem;
 }
 
 #tldr button{
@@ -407,7 +406,7 @@ a{
 }
 
 .img-wrap img{
-  width: 80%;
+  width: 90%;
   min-width: 300px;
 }
 
@@ -415,6 +414,10 @@ a{
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
   border-radius: 10px;
   margin-bottom: 2rem;
+}
+
+.back-to-back-img{
+  margin-top: 3.5rem;
 }
 
 .sm-img{
@@ -513,6 +516,17 @@ a{
   margin-right: -15px!important;
 }
 
+
+.lionplanner-hero-wrap{
+  width: 75%!important;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.lionplanner-hero-wrap img{
+  width: 100%;
+}
+
 .user-needs{
   margin-left: 2rem;
 }
@@ -526,4 +540,26 @@ a{
 .multi-img-wrap img{
   width: 45%;
   min-width: 300px;
+}
+
+.feature{
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 400px) {
+  .context, .reflection{
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .content-wrap{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-wrap{
+    width: 88%;
+  }
 }
