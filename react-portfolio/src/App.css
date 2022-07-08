@@ -512,3 +512,18 @@ a{
 .desktop-swiper-wrap .swiper-button-next{
   margin-right: -15px!important;
 }
+
+.user-needs{
+  margin-left: 2rem;
+}
+
+.multi-img-wrap{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.multi-img-wrap img{
+  width: 45%;
+  min-width: 300px;
+}

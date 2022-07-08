@@ -1,7 +1,6 @@
 import React from 'react'
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
