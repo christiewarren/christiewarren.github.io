@@ -400,7 +400,7 @@ a{
 
 .img-wrap{
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   display: grid;
   place-items: center;
 }
@@ -517,13 +517,13 @@ a{
 }
 
 
-.lionplanner-hero-wrap{
+.one-img-hero-wrap{
   width: 75%!important;
   margin: auto;
   margin-bottom: 0;
 }
 
-.lionplanner-hero-wrap img{
+.one-img-hero-wrap img{
   width: 100%;
 }
 
@@ -546,6 +546,10 @@ a{
 
 .feature{
   margin-top: 5rem;
+}
+
+.team-img{
+  margin-top: -2rem;
 }
 
 @media screen and (min-width: 400px) {
