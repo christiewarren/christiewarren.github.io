@@ -5,13 +5,18 @@ export default[
       image: 'family-archive.png'
    },
    {
-      title: 'Family History Archive',
+      title: 'Navigation Redesign @ KiwiCo',
       description: 'Quiz generation to give teachers better insight into class participation',
       image: 'family-archive.png'
    },
    {
       title: 'Revu',
       description: 'Quiz generation to give teachers better insight into class participation',
-      image: 'family-archive.png'
+      image: 'revu/edit-quiz.png'
+   },
+   {
+      title: 'LionPlanner',
+      description: 'Quiz generation to give teachers better insight into class participation',
+      image: 'lionplanner/final.jpg'
    }
 ]

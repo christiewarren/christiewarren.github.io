@@ -267,12 +267,15 @@ a{
 /* welcome */
 
 #welcome{
-  height: 88vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
   background: #7f93e9;
+  position: fixed;
+  top: 0;
+  z-index: -10;
 }
 
 .welcome-text {
@@ -307,12 +310,15 @@ a{
 /* projects */
 
 .proj-list-wrap{
+  background: #F8F2FF;
   background: white;
   box-shadow: 0px 0px 10px 0px #00000026;
   border-radius: 30px;
   padding-top: 125px;
   position: relative;
   width: 100%;
+  margin-top: 91vh;
+
 }
 
 .view-work-btn{
@@ -326,17 +332,22 @@ a{
   transition: box-shadow .25s ease-in-out, top .45s ease-in-out;
 }
 
+.view-work-btn a{
+  color: #EEE1FF!important;
+}
+
 .proj-wrap{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   margin-bottom: 8rem;
+  height: 75vh;
 }
 
 .proj-text-wrap{
-  width: 25%;
+  width: 20%;
   min-width: 300px;
+  margin-right: 4rem;
 }
 
 .proj-title{
@@ -358,10 +369,21 @@ a{
   /* letter-spacing: -0.15rem; */
 }
 
-.proj-img{
-  max-width: 100%;
+.proj-img-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  min-width: 500px;
 }
 
+.proj-img-wrap img{
+  width: 100%;
+}
+
+.sm-proj-wrap{
+  width: 350px;
+}
 
 /* project pages */
 
