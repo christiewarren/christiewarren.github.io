@@ -217,11 +217,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.nav-links-wrap{
-  display: flex;
-  flex-direction: column;
+  transform: translateX(-50vw);
 }
 
 .nav-link{
@@ -239,7 +235,7 @@ a{
   position: relative;
 }
 
-.nav-link:before{
+/* .nav-link:before{
   position: absolute;
   content: '';
   width: 100%;
@@ -255,7 +251,7 @@ a{
 .nav-link:hover:before{
   height: 100%;
   top: 0;
-}
+} */
 
 .nav-link-secondary{
   color: #F8F2FF;
@@ -267,20 +263,11 @@ a{
   font-weight: bold;
 }
 
-.nav-link:active{
-  background: #030055;
-}
-
-.nav-link:last-child{
-  margin-right: 0;
-  padding-bottom: 0;
-}
-
 
 /* welcome */
 
 #welcome{
-  height: 82vh;
+  height: 88vh;
   display: flex;
   align-items: center;
   width: 100%;
@@ -289,27 +276,31 @@ a{
 }
 
 .welcome-text {
-  width: 75vw;
-  max-width: 600px; 
-  
+  width: 85vw;
 }
 
 .welcome-text h2 {
-  font-size: 3rem;
-  font-family: 'lark-bold';
+  font-size: 4rem;
+  font-family: 'DM Sans';
   line-height: 1.25; 
-  letter-spacing: -0.1rem;
+  /* letter-spacing: -0.1rem; */
+  color: #F8F2FF;
 }
 
-.welcome-text h3{
+.asterisk{
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: #F8F2FF;
+  opacity: 1;
+  text-transform: none;
+  text-align: center;
 }
 
 .welcome-text h2::selection, .welcome-text h2 span::selection, .welcome-text h3::selection{
-  /* background-color: #D20799; */
-  /* color:#FED02F; */
-  color: white;
+  background-color: #D20799;
+  color: #F8F2FF;
+  
+  /* color: white; */
 }
 
 
@@ -364,7 +355,7 @@ a{
   font-size: 25px;
   line-height: 1.5;
   margin-top: 10px;
-  letter-spacing: -0.15rem;
+  /* letter-spacing: -0.15rem; */
 }
 
 .proj-img{
@@ -410,7 +401,7 @@ a{
 }
 
 .content-wrap{
-  width: 50%;
+  width: 65%;
   margin: auto;
 }
 
