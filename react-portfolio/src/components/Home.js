@@ -13,8 +13,9 @@ export default function Home() {
       <>
       <section id="welcome">
         <div className="welcome-text">
-            <h2>Thoughtful, clean UX design. <span style={{textDecoration: 'line-through'}}>No&nbsp;frills.</span>&nbsp;*</h2>
-            <h3 className='asterisk'>* Frills in moderation. Who doesn't love a good frill?</h3>
+         <h4>Hi! I'm Christie. I create...</h4>
+         <h2>thoughtful, clean UX design. <span style={{textDecoration: 'line-through'}}>No&nbsp;frills.</span>&nbsp;*</h2>
+         <h3 className='asterisk'>* Frills in moderation. Who doesn't love a good frill?</h3>
         </div>
       </section>
       <ProjectList />

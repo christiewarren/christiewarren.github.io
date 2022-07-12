@@ -27,7 +27,7 @@ function App() {
         <Link to="/nav-redesign" className='nav-link-secondary'>Navigation Redesign @KiwiCo</Link>
         <Link to="/lionplanner" className='nav-link-secondary'>LionPlanner</Link>
         <Link to="/revu" className='nav-link-secondary'>Revu</Link>
-        <Link to="/family-history" className='nav-link-secondary'>Family History Archive</Link>
+        <Link to="/family-archive" className='nav-link-secondary'>Family History Archive</Link>
       </div>
 
       <Routes>

@@ -15,22 +15,27 @@ export default function ProjectList(){
             return(
                   <div className='proj-wrap' key={project.title}>
                      <div className='proj-text-wrap'>
-                        <h3 className='proj-title'><Link to="/sitewide-search">{project.title}</Link></h3>
+                        <h4 className='proj-title'><Link to="/sitewide-search">{project.title}</Link></h4>
                         <h2 className='proj-description'>{project.description}</h2>
                      </div>
                      <div className='proj-img-wrap'>
-                        <img src={'/assets/' + project.image} className='proj-img img-shadow'/>
+                        <img src={'/assets/' + project.image} className={project.imgClass}/>
                      </div>
                   </div>
             )
          })}
-         <div className='sm-proj-wrap'>
-            
-            <div className='proj-img-wrap'>
-               <img src={'/assets/home/reform.png'} className='proj-img img-shadow'/>
-               <div className='proj-text-wrap'>
-                  <a href='https://christiewarren.com/reform/' className='proj-title'>Re/Form</a>
-               </div>
+         <div className='sm-proj-list'>
+            <div className='sm-proj-wrap'>
+               <a href='https://christiewarren.com/reform/'>
+               <img src={'/assets/home/reform.png'} className='sm-proj-img'/>
+               <h4 className='sm-proj-title'>Re/Form</h4>
+               </a>
+            </div>
+            <div className='sm-proj-wrap'>
+               <Link to="/family-archive">
+                  <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
+                  <h4 className='sm-proj-title'>Family History Archive</h4>
+               </Link>
             </div>
          </div>
       </div>
