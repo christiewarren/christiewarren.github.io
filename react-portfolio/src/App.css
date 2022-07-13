@@ -292,6 +292,7 @@ a{
 
 .welcome-text h2 {
   font-size: 4rem;
+  text-align: left;
   font-family: 'DM Sans';
   line-height: 1.25; 
   margin-bottom: 2rem;
@@ -303,6 +304,7 @@ a{
 .welcome-text h4{
   text-align: center;
   color: var(--light-purple);
+  text-align: left;
 }
 
 .asterisk{
@@ -314,13 +316,12 @@ a{
   text-transform: none;
   text-align: center;
   font-style: italic;
+  text-align: left;
 }
 
 .welcome-text h2::selection, .welcome-text h2 span::selection, .welcome-text h3::selection{
   background-color: #D20799;
   color: var(--light-purple);
-  
-  /* color: white; */
 }
 
 
@@ -358,7 +359,8 @@ a{
   justify-content: center;
   align-items: center;
   padding: 5rem 3rem;
-  height: 75vh;
+  height: 95vh;
+  /* border-radius: 10px; */
 }
 
 .proj-text-wrap{
@@ -399,18 +401,43 @@ a{
   width: 100%;
 }
 
+.search{
+  background-color: rgba(26, 177, 100, 0.15);
+  background-color: rgba(224, 242, 247, 1);
+}
+
+.nav{
+  background-color: rgba(66, 118, 206, 0.15);
+  background-color: rgba(119, 223, 170, 1);
+}
+
+.revu{
+  background-color: rgba(251, 205, 93, 0.18);
+  background-color: rgba(251, 205, 93, 1);
+}
+
+.lionplanner{
+  background-color: rgba(12, 90, 176, 0.15);
+  background-color: rgba(76, 151, 234, 1);
+}
+
 .sm-proj-list{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 8rem 3rem 8rem 3rem;
+  padding: 3rem 3rem 8rem 3rem;
   max-width: 100%;
   overflow-x: scroll;
 }
 
+.sm-proj-header{
+  margin-left: 3rem;
+  margin-top: 6rem;
+}
+
 .sm-proj-wrap{
   width: 350px;
-  margin-right: 30px;
+  margin-right: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,7 +451,7 @@ a{
 }
 
 .sm-proj-img{
-  height: 15rem;
+  width: 100%;
   margin-bottom: 1.5rem;
 }
 
@@ -543,7 +570,7 @@ a{
 }
 
 .content-wrap{
-  width: 65%;
+  width: 50%;
   margin: auto;
 }
 

@@ -14,7 +14,7 @@ export default function ProjectList(){
          {projectData.map(project =>{
             return(
                <Link to={project.path}>
-                  <div className='proj-wrap' key={project.title}>
+                  <div className={'proj-wrap ' + project.wrapClass} key={project.title}>
                      <div className='proj-text-wrap'>
                         <h4 className='proj-title'>{project.title}</h4>
                         <h2 className='proj-description'>{project.description}</h2>
@@ -26,7 +26,14 @@ export default function ProjectList(){
                </Link>
             )
          })}
+         <h3 className='sm-proj-header'>More projects!</h3>
          <div className='sm-proj-list'>
+            <div className='sm-proj-wrap'>
+               <Link to="/family-archive">
+                  <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
+                  <h4 className='sm-proj-title'>Family History Archive</h4>
+               </Link>
+            </div>
             <div className='sm-proj-wrap'>
                <a href='https://christiewarren.com/reform/'>
                <img src={'/assets/home/reform.png'} className='sm-proj-img'/>
@@ -34,9 +41,15 @@ export default function ProjectList(){
                </a>
             </div>
             <div className='sm-proj-wrap'>
-               <Link to="/family-archive">
-                  <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
-                  <h4 className='sm-proj-title'>Family History Archive</h4>
+               <Link to="/mentor-app">
+                  <img src={'/assets/home/mentor.png'} className='sm-proj-img'/>
+                  <h4 className='sm-proj-title'>College Mentor App</h4>
+               </Link>
+            </div>
+            <div className='sm-proj-wrap'>
+               <Link to="/mentor-app">
+                  <img src={'/assets/home/lms.png'} className='sm-proj-img img-shadow'/>
+                  <h4 className='sm-proj-title'>Research-Based LMS</h4>
                </Link>
             </div>
          </div>

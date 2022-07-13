@@ -13,7 +13,9 @@ import Search from './components/projects/Search.js'
 import NavRedesign from './components/projects/NavRedesign.js'
 import Lionplanner from './components/projects/Lionplanner.js'
 import Revu from './components/projects/Revu.js'
-import FamHistory from './components/projects/FamHistory.js'
+import FamHistory from './components/projects/small/FamHistory.js'
+import MentorApp from './components/projects/small/MentorApp.js'
+import WestArete from './components/projects/small/WestArete.js'
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path='/lionplanner' element={<Lionplanner/>} />
           <Route path='/revu' element={<Revu/>} />
           <Route path='/family-archive' element={<FamHistory/>} />
+          <Route path='/mentor-app' element={<MentorApp/>} />
+          <Route path='/west-arete' element={<WestArete/>} />
         </Routes>
       </>
     </Router>
