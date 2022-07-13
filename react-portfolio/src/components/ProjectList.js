@@ -13,15 +13,17 @@ export default function ProjectList(){
          <button className='view-work-btn'><a href='#projects'>things I've worked on</a><img src='/assets/home/arrow-up.svg' className='button-arrow'/></button>
          {projectData.map(project =>{
             return(
+               <Link to={project.path}>
                   <div className='proj-wrap' key={project.title}>
                      <div className='proj-text-wrap'>
-                        <h4 className='proj-title'><Link to="/sitewide-search">{project.title}</Link></h4>
+                        <h4 className='proj-title'>{project.title}</h4>
                         <h2 className='proj-description'>{project.description}</h2>
                      </div>
                      <div className='proj-img-wrap'>
                         <img src={'/assets/' + project.image} className={project.imgClass}/>
                      </div>
                   </div>
+               </Link>
             )
          })}
          <div className='sm-proj-list'>

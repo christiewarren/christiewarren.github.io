@@ -38,7 +38,7 @@ function App() {
           <Route path='/nav-redesign' element={<NavRedesign/>} />
           <Route path='/lionplanner' element={<Lionplanner/>} />
           <Route path='/revu' element={<Revu/>} />
-          <Route path='/family-history' element={<FamHistory/>} />
+          <Route path='/family-archive' element={<FamHistory/>} />
         </Routes>
       </>
     </Router>

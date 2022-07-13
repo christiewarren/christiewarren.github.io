@@ -223,6 +223,8 @@ a{
   flex-direction: column;
   justify-content: center;
   transform: translateX(-50vw);
+
+  display: none;
 }
 
 .nav-link{
@@ -275,7 +277,7 @@ a{
   height: 95vh;
   display: flex;
   align-items: flex-start;
-  padding-top: 15vh;
+  padding-top: 12vh;
   width: 100%;
   justify-content: center;
   background: var(--purple);
@@ -329,7 +331,7 @@ a{
   background: white;
   box-shadow: 0px 0px 10px 0px #00000026;
   border-radius: 30px;
-  padding-top: 125px;
+  padding-top: 5rem;
   position: relative;
   width: 100%;
   margin-top: 91vh;
@@ -355,15 +357,14 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding: 5rem 3rem;
   height: 75vh;
 }
 
 .proj-text-wrap{
   width: 20%;
   min-width: 300px;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 
 .proj-title, .sm-proj-title a, .sm-proj-title{
@@ -390,9 +391,6 @@ a{
 }
 
 .proj-img-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 55%;
   min-width: 500px;
 }
@@ -404,9 +402,10 @@ a{
 .sm-proj-list{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 8rem 0 8rem 0;
-  /* padding: 0 2rem 0 2rem; */
+  justify-content: flex-start;
+  padding: 8rem 3rem 8rem 3rem;
+  max-width: 100%;
+  overflow-x: scroll;
 }
 
 .sm-proj-wrap{
@@ -427,6 +426,83 @@ a{
 .sm-proj-img{
   height: 15rem;
   margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .proj-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+    height: max-content;
+  }
+
+  .proj-img-wrap{
+    width: 75%;
+    min-width: 300px;
+  }
+
+  .proj-text-wrap{
+    width: 50%;
+    min-width: 300px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .proj-list-wrap{
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #welcome{
+    /* padding-top: 8vh; */
+  }
+
+  .welcome-text {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #welcome{
+    height: 86vh;
+  }
+
+  .welcome-text {
+    width: 85%;
+  }
+
+  .welcome-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-text h4{
+    
+  }
+  
+  .asterisk{
+    font-size: 1rem;
+    white-space: break-spaces;
+  }
+
+  .proj-list-wrap{
+    margin-top: 82vh;
+  }
+  
+  .proj-wrap{
+    overflow-x: hidden;
+  }
+
+  .proj-img-wrap{
+    width: 160%;
+    align-self: flex-end;
+    padding-right: 3rem;
+  }
+
 }
 
 /* project pages */
