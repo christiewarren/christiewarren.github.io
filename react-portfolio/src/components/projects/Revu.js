@@ -22,7 +22,8 @@ export default function Revu(){
          <div className='content-wrap'>
             <section id='tldr'>
                <span className='section-divider'><h3>TLDR;</h3><hr/></span>
-               <h6>I worked as a UI/UX designer along with a full stack developer to create a web app that generates multiple choice quizzes from a passage of text.</h6>
+               <h6>I worked as a UI/UX designer along with a full stack developer to create a web app that generates multiple choice quizzes from a passage of text.
+               <br/><br/>This was yet another extremely rewarding experience competing in the NittanyAI Challenge, and my teammate, Matt, and I were so grateful to receive first place.</h6>
 
                <a href='#case-study' className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
             </section>
@@ -31,269 +32,124 @@ export default function Revu(){
                <div className='context'>
                   <h4>Context</h4>
                   <p>The Nittany AI Challenge prompt was to build an application that uses AI to solve a problem in education. Our idea stemmed from my teammate's interest in the unsolved problem of creating an algorithm to generate multiple choice questions and answers from a passage of text. </p>
-                  <div className='img-wrap'>
-                     <img src='/assets/lionplanner/resources.jpg'/>
-                     <small class='subs-caption'>Some of the resources a student would need to use to plan their college courses</small>
-                  </div>
-                  <br/><p>We proposed LionPlanner: a solution that would automate the course plan up front by fulfilling all requirements for a chosen major. The app would then provide an interactive UI where students could add, remove, and reorder courses in their plan and view warnings for any missing requirements or prerequisites.</p>
-                  <p>Our team's proposal was one of 10 given funding to build a prototype from an initial 70+ teams and we were then one of 5 given funding to develop an MVP. Over the 9 month challenge, I pitched our project to judges twice and led the writing of detailed proposals.</p>
+                  <p>With this in mind, our proposal outlined a web app called Revu (pronounced "Review") that would help students stay focused while reading by providing a multiple choice quiz to keep them engaged. While our concept evolved past this early on (more on this below), we were so excited to be one of the 20 teams selected to create a prototype.</p>
                </div>
 
-               <h4>A Closer Look at the Problem</h4>
-               <h5>Manual planning</h5>
-               <p>Students planning more than one semester ahead have to resort to using a spreadsheet or pen and paper to organize their plans, making this process unnecessarily time consuming.</p>
-               <div className="img-wrap">
-                  <img src={'/assets/lionplanner/sheet.png'} alt="LionPlanner Still Needed"/>
-                  <small>About <b>half</b> of a friend's course-planning spreadsheet</small>
+               <h4>Understanding the Problem</h4>
+               <h5>User Interviews</h5>
+               <h6>Initially our idea was to make Revu a tool for students to study with and stay focused while reading out of class assignments. After interviewing multiple students and speaking with professors, it became clear that this tool would be <span className='highlight'>much more impactful in the hands of teachers.</span></h6>
+               <p>We learned that the problem lies with students not reading out of class in the first place, not with their studying habits. This phase showed us that it would be tough to motivate students to read, unless their teachers got involved.</p>
+
+               <h5>Problem Statment</h5>
+               <h6>Based on the feedback in the user interviews, we defined the primary problem we would aim to address:</h6>
+               <p>A significant majority of students do not complete out of class reading assignments, and the options instructors have to remedy this take valuable time from them and from their class time.</p>
+
+               <h4>A Closer Look at This Problem</h4>
+               <h5>Students don't read.</h5>
+               <p>We found that studies have shown that 70% of students do not complete out of class reading assignments, causing them to miss out on course content and reading skill development.</p>
+
+               <h5>Extra teacher time required</h5>
+               <p>Teachers have to put in extra time to create quizzes or summarize readings to ensure their students are learning the material they didn't read.</p>
+
+               <h5>Class time misused</h5>
+               <p>Finite class time ends up being used to cover material from the readings, when it should be used to cover fundamental material.</p>
+
+               <h4>Defining a Solution</h4>
+               <h5>Incentivization</h5>
+               <h6>One of the biggest obstacles to designing Revu was determining how to incentivize students to do these readings.</h6>
+               <p>Extra credit is a possible incentive, but the professors and educators we spoke with didn't like the idea of rewarding students for doing what they should be expected to do (understandably).</p>
+               <p>I decided to survey some students to determine what other incentives could be effective.</p>
+               <p>The students I surveyed were nearly 70% more likely to complete an out of class reading if <span className="highlight">their professor can see whether they did it,</span> regardless of it being attached to a grade.</p>
+               <p>Using this information, we decided to include functionality for teachers to <span className="highlight">keep track of their students' participation,</span> also allowing for <span className="highlight">more insight and value</span> on their end.</p>
+               <div className='img-wrap'>
+                  <img src={'/assets/revu/student-incentive.png'} alt="graph of students' willingness to read outside of class" className='img-shadow'/>
                </div>
+
+
+               <h4>Revu's Primary Users</h4>
+               <h5>1. The Quick Quizzer</h5>
+               <p>This teacher has little time to spare, but wants to know which of their students are actually completing readings. They can tell many students aren't, but don't want to use class time to give quizzes. The reading content for this class usually reiterates content from lectures, so questions can be largely pulled from the text to test students' memory. </p>
+               <div className='user-needs'>
+                  <p><b>Needs</b></p>
+                  <ul>
+                     <li>fast, hands-off process</li>
+                     <li>quickly scan through questions</li>
+                     <li>easily check who took quiz</li>
+                  </ul>
+               </div>
+               <h5>2. The Insight Seeker</h5>
+               <p>This teacher wants to get insight on which of their students are struggling with outside reading content as well as what specific content their class is having trouble with. The reading content for their class is more in-depth content that won't be covered during class, so it's important that students demonstrate comprehension.</p>
+               <div className='user-needs'>
+                  <p><b>Needs</b></p>
+                  <ul>
+                     <li>ability to edit quiz in depth</li>
+                     <li>ask critical thinking questions</li>
+                     <li>view specific content students struggle with</li>
+                  </ul>
+               </div>      
+
+               <h4>Functionality &amp; UX Goals</h4>
+               <h6>Together, our team determined the functionality we'd aim to include in LionPlanner in order to make it an improvement on most students' course planning processes:</h6>
+               <h5><span className='highlight'>Relieve teachers of extra tasks</span></h5>
+               <p>Automate quiz generation to create a solution that doesn't take lots of time from teachers</p>   
+               <h5><span className='highlight'>Improve student participation</span></h5>
+               <p>Provide teachers with a list of students who complete the reading, incentivizing students without extra credit</p>
+               <h5><span className='highlight'>Provide teachers with insight</span></h5>
+               <p>Show teachers specific content students are struggling with so they can steer their lectures towards these areas</p>
+
+               <h4>Feature Design</h4>   
+               <h5>Passage Entry &amp; Quiz Preferences</h5>
+               <p>Teachers can easily paste a reading here from a textbook PDF, article etc., starting the <span className="highlight">fast, hands-off process.</span></p>
+               <p>Each quiz has a title and class associated with it, and teachers can choose the number of distractors per question.</p>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/input.png'} alt="passage entry page" className='img-shadow'/>
+               </div>
+
+               <h5>Editable Questions</h5>
+               <p>Easy editing is especially important, since Revu is powered by AI. This allows teachers to easily <span className="highlight">fix any small errors</span> that may occur while our algorithms are in development and is especially useful for the "Insight Seeker" to <span className="highlight">edit the quiz in depth.</span></p>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/editable-question.png'} alt="editable question" className='img-shadow sm-img'/>
+               </div>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/edit-question.png'} alt="question in edit mode" className='img-shadow sm-img'/>
+               </div>
+
+               <h5>"Where is this from?"</h5>
+               <p>A teacher can click this to highlight the text where the question is from, allowing them to <span className='highlight'>ensure the question is relevant.</span></p>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/where-from.png'} alt="where is this from highlight" className='img-shadow sm-img'/>
+               </div>
+
+               <h5>Create New Questions</h5>
+               <p>Teachers can add questions simply by filling in a blank template question. This is designed with the "Insight Seeker" in mind, allowing them to <span className="highlight">ask critical thinking questions</span> in addition to the recall-based ones Revu provides.</p>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/new-question.png'} alt="new question template" className='img-shadow sm-img'/>
+               </div>
+
+               <h5>Quiz Insights Dashboard</h5>
+               <p><b>A. Student List</b></p>
+               <p>A list of who has completed the quiz, their score, and when they completed it. Satisfying the need both teachers have to <span className="highlight">know which students are participating.</span></p>
+               <p><b>B. Frequently Incorrect Questions</b></p>
+               <p>A list of the specific questions students commonly got wrong, so the teacher knows <span className="highlight">what specific content students are struggling with.</span> (particularly useful for the "Insight Seeker")</p>
+               <p><b>C. Sharable Quiz Link</b></p>
+               <p>Simple link sharing with students is a time saver and makes Revu easy to integrate into any classroom. This UX is also familiar to teachers who use common tools like Google Docs.</p>
+               <p><b>D. Student View (Preview Mode)</b></p>
+               <p>Shows the teacher what their quiz looks like from a student's perspective.</p>
+               <div className="img-wrap">
+                  <img src={'/assets/revu/dashboard.png'} alt="insight dashboard" className='img-shadow sm-img'/>
+               </div>
+
+               <div className='reflection'>
+               <h4>Reflection</h4>
+               <h5>Next Time...</h5>
+               <p>The pivoting we did during this project emphasized to me the importance of user research, and how it can change the direction of a product. If I could redo this process, next time I would do more research sooner, to make sure the design is steered in the "right" direction from the start.</p>
+               <div className='img-wrap'>
+                  <img src={'/assets/revu/pitch.jpg'} alt="Revu team" className='img-shadow sm-img'/>
+                  <small>Matt (the dev I worked with) and me after our final presentation of Revu.</small>
+               </div>    
+            </div>
             </section>
          </div>
-                    {/* <h3>A web app that automatically generates modifiable multiple choice quizzes from readings
-                        to help teachers encourage students to complete reading assignments.
-                    </h3> 
-                    
-                </div>
-            </section>
-            
-            <section class="projectDetails">
-                <div class="addInfo">
-                    <div class="info">
-                        <h4>Context: The NittanyAI Challenge</h4>
-                        <h5>The Challenge: Build an application that uses AI to solve a problem in education.</h5>
-                        <h5>9 month challenge</h5>
-                        <h5>Initial 100+ teams</h5>
-                        <h5>20 teams selected to build prototypes</h5>
-                        <h5>10 teams selected to build MVPs</h5>
-                    </div>
-                        
-                    
-                    <div class="info">
-                        
-                    </div>
-                </div>
-                <div class="research">
-                    <h3>Research</h3>
-                    <h4>User Interviews</h4>
-                    <p>Initially our idea for Revu was to make it a tool for students to study with and stay focused while reading out 
-                        of class assignments. After interviewing multiple students and speaking with professors, it became clear that this 
-                        tool would be much more impactful if it were in the hands of teachers.
-                        <br><br>The problem lies with students not reading out of class in the first place, not with their studying habits. This phase 
-                        showed us that it would be tough to motivate students to read, unless their teachers got involved.
-                    </p>
-                    <h4>Defining a Solution</h4>
-                    <p>The biggest obstacle to designing Revu was determining how to incentivize students to do these readings. Extra credit is a 
-                        possible incentive, but the professors and educators we spoke with didn't like the idea of rewarding students for doing what they 
-                        signed up for (understandably).
-                        <br><br>
-                    </p>
-                    <div class="survey">
-                        <div class="featuresList">
-                            <div class="fullScreenshot">
-                                <img src="images/revu/studentIncentive.png" alt="Student Incentive Graph">
-                            </div>
-                            <div class="featuresListItems">
-                                <div class="featuresListItem">
-                                    <h5>The students we surveyed are nearly 70% more likely to complete an out of class reading if they 
-                                        know <span class="problemSolved">their professor can see whether they did it.</span>
-                                        <br><br>Using this information, we decided to allow teachers to keep track of their students' participation,
-                                        also allowing for more insight on their part.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="problem">
-                    <div class="problemStatement">
-                        <h4>PROBLEM STATEMENT</h4>
-                        <h3>A significant majority of students do not complete out of class reading 
-                        assignments, and the options instructors have to remedy this take valuable
-                        time from them and from their class time.</h3>
-                    </div>
-                    <div class="probList">
-                        <div class="probListItem">
-                            <h4>Students don't read.</h4>
-                            <h5>Studies have shown that 70% of students do not complete out of class reading assignments, 
-                                causing them to miss out on course content and reading skill development.</h3>
-                        </div>
-                        <div class="probListItem">
-                            <h4>Extra teacher time.</h4>
-                            <h5>Teachers have to put in extra time to create quizzes or summarize readings to ensure their 
-                                students are learning the material they didn't read.</h3>
-                        </div>
-                        <div class="probListItem">
-                            <h4>Class time misused.</h4>
-                            <h5>Finite class time ends up being used to cover material from the readings, when it should be used
-                                to cover fundamental material.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="users">
-                    <h3>Users</h3>
-                    <div class="userList">
-                        <div class="userListItem">
-                            <h4>Quick Quizzer</h4>
-                            <h5>This teacher has little time to spare, but wants to know which of their students are actually
-                                completing readings. They can tell many students aren't, but don't want to use class time to 
-                                give quizzes. The reading content for this class usually reiterates content from lectures, so 
-                                questions can be largely pulled from the text to test students' memory. 
-                            </h5>
-                            <div class="needs">
-                                <p>Needs</p>
-                                <li>fast, hands-off process</li>
-                                <li>quickly look through questions</li>
-                                <li>easily check who took quiz</li>
-                            </div>
-                        </div>
-                        <div class="userListItem">
-                            <h4>Insight Seeker</h4>
-                            <h5>This teacher wants to get insight on which of their students are struggling with outside reading content 
-                                as well as what specific content their class is having trouble with. The reading content for their 
-                                class is more in-depth content that won't be covered during class, so it's important that students
-                                demonstrate comprehension.
-                            </h5>
-                            <div class="needs">
-                                <p>Needs</p>
-                                <li>ability to edit quiz in depth</li>
-                                <li>ask critical thinking questions</li>
-                                <li>view specific content students struggle with</li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="goals">
-                    <h3>Goals</h3>
-                    <div class="goalsList">
-                        <div class="goalsListItem">
-                            <h4>Relieve Teachers of Extra Tasks</h4>
-                            <h5>Automate quiz generation to create a solution that doesn't take lots of time from teachers.</h5>
-                        </div>
-                        <div class="goalsListItem">
-                            <h4>Improve Student Participation</h4>
-                            <h5>Provide teachers with a list of students who complete the reading, incentivizing students without extra credit.</h5>
-                        </div>
-                        <div class="goalsListItem">
-                            <h4>Provide Teachers with Insight</h4>
-                            <h5>Show teachers specific content students are struggling with so they can steer their lectures towards these areas.</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="features">
-                    <h3>Features: Creating the Quiz</h3>
-                    <div class="featuresList">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Reading Text Entry</h4>
-                                <h5>Easily paste a reading here from a textbook PDF, article etc., starting the <span class="problemSolved">fast, hands-off process</span> 
-                                    the <span class="userSpan">Quick Quizzer</span> needs.
-                                </h5>
-                            </div>
-                            <div class="featuresListItem">
-                                <h4>Quiz Preferences</h4>
-                                <h5>Each quiz has a title and class, and teachers can choose 
-                                    the number of distractors per question.</h5>
-                            </div>
-                        </div>
-                        <div class="fullScreenshot">
-                            <img src="images/revu/input.png" alt="Revu Input Screen">
-                        </div>
-                    </div>
-                    <div class="featuresList featureHighlight">
-                        <div class="smScreenshot">
-                            <div class="smImgWrap">
-                                <img src="images/revu/editableQuestion.png" alt="Revu Editable Question">
-                            </div>
-                            <div class="smImgWrap">
-                                <img src="images/revu/editQuestion.png" alt="Revu Edit Question">
-                            </div>
-                        </div>
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Editable Question</h4>
-                                <h5>Easy editing is especially important, since Revu is powered by AI. This allows teachers to easily fix any small
-                                    errors that may occur while our algorithms are in development and allows the <span class="userSpan">Insight Seeker</span> 
-                                    to <span class="problemSolved">edit the quiz in depth.</span>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featuresList">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Where is this from?</h4>
-                                <h5>A teacher can click this to highlight the text where the question is from, allowing them to ensure 
-                                    the question is relevant.
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="fullScreenshot">
-                            <img src="images/revu/whereFrom.png" alt="Revu Where is this from?">
-                        </div>
-                    </div>
-                    <div class="featuresList featureHighlight">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4>Create New Question</h4>
-                                <h5>Add questions simply by filling in a blank template question. This allows the <span class="userSpan">Insight Seeker</span> 
-                                    to <span class="problemSolved">ask critical thinking questions</span> in addition to the recall-based ones Revu provides.
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="smScreenshot">
-                            <div class="smImgWrap">
-                                <img src="images/revu/newQuestion.png" alt="Revu New Question">
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Features: Quiz Insights</h3>
-                    <div class="featuresList pageFeatures">
-                        <div class="featuresListItems">
-                            <div class="featuresListItem">
-                                <h4><span class="numLabel">A</span> Student List</h4>
-                                <h5>A list of who has completed the quiz, their score, and when they completed it. Satisfying the need <span class="userSpan">both
-                                        teachers</span> have to <span class="problemSolved">know which of their students are participating.</span>
-                                </h5>
-                            </div>
-                            <div class="featuresListItem">
-                                <h4><span class="numLabel">B</span> Frequently Incorrect ?s</h4>
-                                <h5>A list of the specific questions the most students got wrong, so that the <span class="userSpan">Insight Seeker</span> 
-                                    knows <span class="problemSolved">what specific content students are struggling with.</span>
-                                </h5>
-                            </div>
-                            <div class="featuresListItem">
-                                <h4><span class="numLabel">C</span> Shareable Link</h4>
-                                <h5>Simple link sharing with students is a time saver and makes Revu easy to integrate into any classroom.
-                                </h5>
-                            </div>
-                            <div class="featuresListItem">
-                                <h4><span class="numLabel">D</span> Student View</h4>
-                                <h5>Shows the teacher what their quiz looks like from a student's perspective.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fullScreenImg">
-                        <img src="images/revu/dashboard.png" alt="Revu Dashboard">
-                    </div>
-                    <h3>Conclusion</h3>
-                </div>
-                <div class="conclusion">
-                    <div class="conclusionText">
-                        <h4>Summary</h4>
-                        <h5>Designing Revu gave me extensive experience with each part of the design process from basic user research, to ideation, 
-                                to mockups and prototypes, all while collaborating with a full stack developer. I also got to improve my public speaking and communication skills, 
-                                specifically explaining the functionality of Revu. 
-                        </h5>
-                        <h4>Next Time...</h4>
-                        <h5>This project emphasized the importance of user research, and how it can change the direction of a product. If I could redo this process, 
-                            next time I would do more research sooner, to make sure the design is steered in the "right" direction from the start. 
-                        </h5>
-                    </div>
-                    <div class="teamImg">
-                            <img src="images/revu/pitch.jpg" alt="Revu Team">
-                            <h5>Matt and I after our final presentation of Revu.</h5>
-                    </div> */}
-
       </div>
       </>
    )
