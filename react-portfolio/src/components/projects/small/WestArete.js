@@ -15,9 +15,11 @@ export default function WestArete(){
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
       <div className='under-page'></div>
       <div className='over-page'>
-         <h1>Research-Based LMS @West Arete</h1>
-         <div className='one-img-hero-wrap'>
-            <img src={'/assets/home/lms.png'} className='img-shadow' alt="LMS final design"/>
+         <div className='proj-header'>
+            <h1>Research-Based LMS @West Arete</h1>
+            <div className='one-img-hero-wrap'>
+               <img src={'/assets/home/lms.png'} className='img-shadow' alt="LMS final design"/>
+            </div>
          </div>
          <div className='content-wrap'>
             <section id='tldr'>

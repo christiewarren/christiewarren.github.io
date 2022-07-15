@@ -46,7 +46,7 @@ body{
 
 h1{
   font-size: 2rem;
-  font-family: 'lark-bold';
+  font-family: 'DM Sans';
   text-align: center;
 }
 
@@ -436,9 +436,8 @@ a{
 }
 
 .sm-proj-wrap{
-  min-width: 350px;
   width: max-content;
-  margin-right: 3rem;
+  margin-right: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,13 +446,20 @@ a{
   cursor: pointer;
 }
 
-.sm-proj-wrap:hover{
-  transform: translateY(-1rem)
+.sm-proj-wrap a{
+  width: min-content;
+}
+
+@media (hover: hover) {
+  .sm-proj-wrap:hover{
+    transform: translateY(-1rem)
+  }
 }
 
 .sm-proj-img{
   height: 15rem;
   margin-bottom: 1.5rem;
+  border-radius: 8px;
 }
 
 .sm-proj-title{
@@ -465,6 +471,12 @@ a{
   width: 90%;
   display: block;
   text-align: left;
+}
+
+.external-link{
+  width: 0.8rem;
+  display: inline;
+  margin-left: 0.2rem;
 }
 
 
@@ -563,7 +575,7 @@ a{
   background: white;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.25);
-  padding: 5rem 0 10rem 0;
+  padding: 0 0 10rem 0;
 }
 
 .under-page{
@@ -579,6 +591,25 @@ a{
 
 .over-page{
   /* margin-bottom: 50vh; */
+}
+
+.proj-header{
+  padding: 2rem 0 5rem;
+  position: relative;
+}
+
+.proj-header::before{
+  content: '';
+  background: url('../public/assets/west-arete/dashboard.png');
+  background-size: contain;
+  z-index: -1;
+  filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 .content-wrap{
@@ -760,7 +791,7 @@ a{
 
 
 .one-img-hero-wrap{
-  width: 75%!important;
+  width: 65%!important;
   margin: auto;
   margin-bottom: 0;
 }
