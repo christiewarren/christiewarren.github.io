@@ -32,24 +32,28 @@ export default function ProjectList(){
                <Link to="/family-archive">
                   <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
                   <h4 className='sm-proj-title'>Family History Archive</h4>
+                  <small className='sm-proj-description'>An interactive archive of 7+ generations of family photos etc.</small>
                </Link>
             </div>
             <div className='sm-proj-wrap'>
                <a href='https://christiewarren.com/reform/'>
                <img src={'/assets/home/reform.png'} className='sm-proj-img'/>
                <h4 className='sm-proj-title'>Re/Form</h4>
+               <small className='sm-proj-description'>The capstone exhibition for Penn State's Graphic Design Class of '21</small>
                </a>
             </div>
             <div className='sm-proj-wrap'>
                <Link to="/mentor-app">
                   <img src={'/assets/home/mentor.png'} className='sm-proj-img'/>
                   <h4 className='sm-proj-title'>College Mentor App</h4>
+                  <small className='sm-proj-description'>An app for college students to connect with mentors</small>
                </Link>
             </div>
             <div className='sm-proj-wrap'>
-               <Link to="/mentor-app">
+               <Link to="/west-arete">
                   <img src={'/assets/home/lms.png'} className='sm-proj-img img-shadow'/>
                   <h4 className='sm-proj-title'>Research-Based LMS</h4>
+                  <small className='sm-proj-description'>A Learning Management System that teaches students how to learn</small>
                </Link>
             </div>
          </div>

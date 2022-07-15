@@ -22,14 +22,14 @@ export default function FamHistory(){
             <div className='content-wrap'>
                <section id='tldr'>
                   <span className='section-divider'><h3>TLDR;</h3><hr/></span>
-                  <h6>I’m designing a website to archive ___ generations of my family’s photos, letters, documents, and the people themselves.</h6>
+                  <h6>I’m designing a website to archive 7+ generations of my family’s photos, letters, documents, and the people themselves.</h6>
                </section>
 
                <section id='case-study'>
                   <span className='section-divider'><h3>Project details</h3><hr/></span>
                   <div className='context'>
                      <h4>Context</h4>
-                     <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more for over ___ years, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
+                     <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
                      <div className='img-wrap'>
                         <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
                         <small class='subs-caption'>KiwiCo subscription lines</small>
