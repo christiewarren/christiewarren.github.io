@@ -11,7 +11,7 @@ export default[
       title: 'Navigation Redesign @ KiwiCo',
       description: 'Mobile and desktop navigation with clear hierarchy and better brand alignment',
       image: 'family-archive.png',
-      wrapClass: 'nav',
+      wrapClass: 'nav-redesign',
       imgClass: 'proj-img img-shadow nav',
       path: '/nav-redesign'
    },

@@ -21,6 +21,7 @@ function App() {
   return (
     <Router>
       <>
+      <Link to="/" className='nav-link'>Home</Link>
       <div className='nav-wrap'>
         <Link to="/" className='nav-link'>Home</Link>
         <Link to="/about-me" className='nav-link'>About</Link>
