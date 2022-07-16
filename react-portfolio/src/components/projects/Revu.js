@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 
 
 export default function Revu(){
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 
 
 export default function FamHistory(){
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -32,7 +35,7 @@ export default function FamHistory(){
                      <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
                      <div className='img-wrap'>
                         <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
-                        <small class='subs-caption'>KiwiCo subscription lines</small>
+                        <small className='subs-caption'>KiwiCo subscription lines</small>
                      </div>
                      <p className='img'>bookshelf of boxes</p>
                      <p>With all this family history sitting in boxes, rarely seeing the light of day, my dad came to me with the idea of creating a website that serves as a digital archive for our family’s photos and documents, plus an interactive family tree.</p>

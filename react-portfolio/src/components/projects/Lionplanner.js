@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 
 
 export default function Lionplanner(){
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#FED02F'/></div>
@@ -33,7 +36,7 @@ export default function Lionplanner(){
                   <p>The Nittany AI Challenge prompt was to build an application that uses AI to solve a problem in education. As students, we knew that planning which courses to take over a college career at Penn State is a <span className='highlight'>tedious and entirely manual process</span> involving <span className='highlight'>many scattered resources.</span></p>
                   <div className='img-wrap'>
                      <img src='/assets/lionplanner/resources.jpg' alt="Planning resources"/>
-                     <small class='subs-caption'>Some of the resources a student would need to use to plan their college courses</small>
+                     <small className='subs-caption'>Some of the resources a student would need to use to plan their college courses</small>
                   </div>
                   <br/><p>We proposed LionPlanner: a solution that would automate the course plan up front by fulfilling all requirements for a chosen major. The app would then provide an interactive UI where students could add, remove, and reorder courses in their plan and view warnings for any missing requirements or prerequisites.</p>
                   <p>Our team's proposal was one of 10 given funding to build a prototype from an initial 70+ teams and we were then one of 5 given funding to develop an MVP. Over the 9 month challenge, I pitched our project to judges twice and led the writing of detailed proposals.</p>

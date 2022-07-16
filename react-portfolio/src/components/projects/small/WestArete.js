@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,6 +11,9 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function WestArete(){
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -108,7 +111,7 @@ export default function WestArete(){
 
                <h5>Course Concept Map</h5>
                <h6>A visualization of students' curricula, allowing for freedom in exploration of topics</h6>
-               <p>The LMS allows for more self-directed learning aimed to <span class="highlight">make learning more enjoyable</span> for the "Lost Learner" and give the "Pro Learner" more <span className="highlight">learning independence.</span></p>
+               <p>The LMS allows for more self-directed learning aimed to <span className="highlight">make learning more enjoyable</span> for the "Lost Learner" and give the "Pro Learner" more <span className="highlight">learning independence.</span></p>
                <div className="img-wrap">
                   <img src={'/assets/west-arete/course-map.png'} alt="course map" className='img-shadow'/>
                </div>

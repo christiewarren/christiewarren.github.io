@@ -1,4 +1,4 @@
-// import Nav from './components/Nav.js'
+import React, { useEffect } from 'react';
 import ProjectList from './ProjectList.js'
 import {
   BrowserRouter as Router,
@@ -9,6 +9,9 @@ import {
 import About from './About.js'
 
 export default function Home() {
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
   return (
       <>
       <section id="welcome">

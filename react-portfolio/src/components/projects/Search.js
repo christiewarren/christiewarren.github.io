@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 
 
 export default function Search(){
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -39,7 +42,7 @@ export default function Search(){
                   <p>KiwiCo is an e-commerce site with nine subscription lines and 160+ products spanning ages newborn to 100 and countless interests. Not to mention the nearly 1,600 DIY and Blog articles.</p>
                   <div className='img-wrap'>
                      <img src='/assets/search/kiwico-subs.png'/>
-                     <small class='subs-caption'>KiwiCo subscription lines</small>
+                     <small className='subs-caption'>KiwiCo subscription lines</small>
                   </div>
                   <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
                </div>
@@ -232,3 +235,4 @@ export default function Search(){
       </>
    )
 }
+

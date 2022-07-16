@@ -21,16 +21,11 @@ function App() {
   return (
     <Router>
       <>
-      <Link to="/" className='nav-link'>Home</Link>
+      <Link to="/" className='home-nav-link'>*</Link>
+      <div className='nav-blur'/>
       <div className='nav-wrap'>
-        <Link to="/" className='nav-link'>Home</Link>
         <Link to="/about-me" className='nav-link'>About</Link>
         <Link to="/#work" className='nav-link'>Work</Link>
-        <Link to="/sitewide-search" className='nav-link-secondary'>Sitewide Search @KiwiCo</Link>
-        <Link to="/nav-redesign" className='nav-link-secondary'>Navigation Redesign @KiwiCo</Link>
-        <Link to="/lionplanner" className='nav-link-secondary'>LionPlanner</Link>
-        <Link to="/revu" className='nav-link-secondary'>Revu</Link>
-        <Link to="/family-archive" className='nav-link-secondary'>Family History Archive</Link>
       </div>
 
       <Routes>
