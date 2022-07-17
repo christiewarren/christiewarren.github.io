@@ -1,5 +1,6 @@
 import React from 'react'
 import projectData from '../ProjectData.js'
+import Footer from './Footer.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -83,6 +84,7 @@ export default function ProjectList(){
             </div>
             </ScrollAnimation>
          </div>
+         <Footer/>
       </div>
    )
 }

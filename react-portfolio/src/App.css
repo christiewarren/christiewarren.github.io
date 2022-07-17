@@ -252,6 +252,44 @@ a{
   font-size: 1.5rem;
 }
 
+/* footer */
+.footer-wrap{
+  z-index: 10;
+  /* border-top: 1px solid var(--navy); */
+  margin: 0 3rem;
+  padding: 3rem 2rem;
+}
+
+.footer-wrap img{
+  display: inline-block;
+}
+
+.help{
+  width: 1.3rem;
+  margin-bottom: -4px;
+}
+
+.smile{
+  font-size: 1.2rem;
+}
+
+.react-logo{
+  border-radius: 3px;
+  margin-bottom: -2px;
+  width: 1.1rem;
+  margin-right: 2px;
+}
+
+.footer-wrap p{
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-wrap p .highlight{
+  padding: 5px 8px 4px 8px;
+
+}
 
 /* welcome */
 
@@ -374,7 +412,7 @@ a{
   background: #F9F8F5;
   background: white;
   box-shadow: 0px 0px 10px 0px #00000026;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   /* padding-top: 5rem; */
   position: relative;
   width: 100%;
