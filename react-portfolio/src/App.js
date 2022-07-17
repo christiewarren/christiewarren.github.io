@@ -25,7 +25,7 @@ function App() {
       <div className='nav-blur'/>
       <div className='nav-wrap'>
         <Link to="/about-me" className='nav-link'>About</Link>
-        <Link to="/#work" className='nav-link'>Work</Link>
+        <Link to="/#projects" className='nav-link'>Work</Link>
       </div>
 
       <Routes>

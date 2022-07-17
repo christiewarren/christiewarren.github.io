@@ -11,20 +11,27 @@ import 'swiper/css/pagination';
 
 export default function Search(){
    useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
    }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
       <div className='under-page'></div>
          <div className='over-page'>
-         <div className='content-wrap'>
-            <h1>Sitewide Search</h1>
-            <h2>@KiwiCo</h2>
-            <div className='search-hero-wrap'>
-               <img src={'/assets/search/final/mobile/empty-state.jpeg'} className='search-hero'/>
-               <img src={'/assets/search/final/mobile/results-sub.jpg'} className='search-hero'/>
+            <div className='proj-header'>
+               <div className='proj-header-text'>
+                  <h1>Sitewide Search</h1>
+                  <h2>@KiwiCo</h2>
+                  <div className='proj-header-text-sm'>
+                        <p>UI/UX Design</p>
+                  </div>
+               </div>
+               <img src={'/assets/search/final/mobile/results-sub.jpg'} className='proj-hero'/>
             </div>
+         <div className='content-wrap'>
             <section id='tldr'>
                <span className='section-divider'><h3>TLDR;</h3><hr/></span>
                <h6>I designed the Sitewide Search feature for KiwiCo’s website, allowing users to search for subscription lines, individual products, DIY ideas, blog posts, help articles, and more. <br/><br/>The biggest challenge was providing enough — but not too much — information to clearly differentiate individual products from subscription lines in the results.<br/><br/>Today, an average of 839 people use Sitewide Search daily, compared to the combined 219 who use the search features within Store, Blog, and DIYs.</h6>

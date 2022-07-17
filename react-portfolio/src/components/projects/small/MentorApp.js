@@ -11,16 +11,21 @@ import 'swiper/css/pagination';
 
 export default function MentorApp(){
    useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
    }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
       <div className='under-page'></div>
       <div className='over-page'>
-         <h1>Mentor App</h1>
-         <div className='one-img-hero-wrap'>
-            <img src={'/assets/home/mentor.png'} alt="mentor app final design"/>
+         <div className='proj-header'>
+            <div className='proj-header-text'>
+               <h1>Mentor App</h1>
+            </div>
+            <img src={'/assets/home/mentor.png'} alt="mentor app final design" className='proj-hero'/>
          </div>
          <div className='content-wrap'>
             <section id='tldr'>

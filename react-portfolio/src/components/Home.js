@@ -10,15 +10,22 @@ import About from './About.js'
 
 export default function Home() {
    useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
    }, [])
   return (
       <>
       <section id="welcome">
         <div className="welcome-text">
-         <h4>Hi! I'm Christie. I create...</h4>
-         <h2>thoughtful, clean UX design. <span style={{textDecoration: 'line-through'}}>No&nbsp;frills.</span>&nbsp;*</h2>
+         <h2>Hi! I'm Christie.<br/><br/>I'm a UI/UX Designer creating <span className='highlight'>thoughtful, clean experiences.</span> <span style={{textDecoration: 'line-through'}}>No&nbsp;frills.</span>&nbsp;*</h2>
          <h3 className='asterisk'>* Frills in moderation. Who doesn't love a good frill?</h3>
+         <div className='currently'>
+            <p><b>Currently</b></p>
+            <p>UX Designer @ KiwiCo</p>
+            <p>Mountain View, CA</p>
+         </div>
         </div>
       </section>
       <ProjectList />

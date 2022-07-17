@@ -12,7 +12,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function WestArete(){
    useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
    }, [])
    return(
       <>
@@ -20,9 +23,11 @@ export default function WestArete(){
       <div className='under-page'></div>
       <div className='over-page'>
          <div className='proj-header'>
-            <h1>Research-Based LMS @West Arete</h1>
-            <div className='one-img-hero-wrap'>
-               <img src={'/assets/home/lms.png'} className='img-shadow' alt="LMS final design"/>
+            <div className='proj-header'>
+               <div className='proj-header-text'>
+                  <h1>Research-Based LMS @West Arete</h1>
+               </div>
+               <img src={'/assets/home/lms.png'} className='proj-hero' alt="LMS final design"/>
             </div>
          </div>
          <div className='content-wrap'>

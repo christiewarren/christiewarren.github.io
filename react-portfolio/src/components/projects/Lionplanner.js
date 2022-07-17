@@ -11,17 +11,22 @@ import 'swiper/css/pagination';
 
 export default function Lionplanner(){
    useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
    }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#FED02F'/></div>
       <div className='under-page'></div>
          <div className='over-page'>
-         <h1>LionPlanner</h1>
-            <div className='one-img-hero-wrap'>
-               <img src={'/assets/lionplanner/final.jpg'} alt="LionPlanner final design" className='img-shadow '/>
+         <div className='proj-header'>
+            <div className='proj-header-text'>
+               <h1>LionPlanner</h1>
             </div>
+            <img src={'/assets/lionplanner/final.jpg'} alt="LionPlanner final design" className='proj-hero'/>
+         </div>
          <div className='content-wrap'>
             <section id='tldr'>
                <span className='section-divider'><h3>TLDR;</h3><hr/></span>
