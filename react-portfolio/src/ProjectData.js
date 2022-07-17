@@ -5,14 +5,16 @@ export default[
       image: 'home/search.png',
       wrapClass: 'search',
       imgClass: 'proj-img no-shadow',
+      tags: ['case study'],
       path: '/sitewide-search'
    },
    {
       title: 'Navigation Redesign @ KiwiCo',
       description: 'Mobile and desktop navigation with clear hierarchy and better brand alignment',
-      image: 'family-archive.png',
+      image: 'home/nav-redesign.png',
       wrapClass: 'nav-redesign',
-      imgClass: 'proj-img img-shadow nav',
+      imgClass: 'proj-img nav',
+      tags: ['case study'],
       path: '/nav-redesign'
    },
    {
@@ -20,14 +22,25 @@ export default[
       description: 'AI-powered quiz generation to give teachers better insight into class participation',
       image: 'revu/edit-quiz.png',
       wrapClass: 'revu',
+      tags: ['case study'],
       imgClass: 'proj-img img-shadow revu',
       path: '/revu'
+   },
+   {
+      title: 'Learn This Instead',
+      description: 'A Chrome extension that redirects users from bad habits to a low-stress basics of CSS course',
+      image: 'home/learn-this-instead.png',
+      wrapClass: 'lti',
+      tags: ['case study'],
+      imgClass: 'proj-img img-shadow revu',
+      path: '/learn-this-instead'
    },
    {
       title: 'LionPlanner',
       description: 'Automatically generated interactive course plans for a full college career',
       image: 'lionplanner/final.jpg',
       wrapClass: 'lionplanner',
+      tags: ['case study', '2018'],
       imgClass: 'proj-img img-shadow lionplanner',
       path: '/lionplanner'
    }

@@ -1,5 +1,5 @@
 import './App.css';
-import Nav from './components/Nav.js'
+import Footer from './components/Footer.js'
 // import ProjectList from './components/ProjectList.js'
 import {
   BrowserRouter as Router,
@@ -16,6 +16,7 @@ import Revu from './components/projects/Revu.js'
 import FamHistory from './components/projects/small/FamHistory.js'
 import MentorApp from './components/projects/small/MentorApp.js'
 import WestArete from './components/projects/small/WestArete.js'
+import LearnThisInstead from './components/projects/LearnThisInstead.js'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='/nav-redesign' element={<NavRedesign/>} />
           <Route path='/lionplanner' element={<Lionplanner/>} />
           <Route path='/revu' element={<Revu/>} />
+          <Route path='/learn-this-instead' element={<LearnThisInstead/>} />
           <Route path='/family-archive' element={<FamHistory/>} />
           <Route path='/mentor-app' element={<MentorApp/>} />
           <Route path='/west-arete' element={<WestArete/>} />

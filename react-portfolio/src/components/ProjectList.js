@@ -21,6 +21,11 @@ export default function ProjectList(){
                      <div className='proj-text-wrap'>
                         <h4 className='proj-title'>{project.title}</h4>
                         <h2 className='proj-description'>{project.description}</h2>
+                        {project.tags.map(tag =>{
+                           return(
+                              <div className='tag'>{tag}</div>
+                           )
+                        })}
                      </div>
                      <div className='proj-img-wrap'>
                         <img src={'/assets/' + project.image} className={project.imgClass}/>
