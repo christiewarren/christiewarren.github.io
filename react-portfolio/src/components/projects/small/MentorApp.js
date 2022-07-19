@@ -26,7 +26,9 @@ export default function MentorApp(){
             <div className='proj-header-text'>
                <h1>Mentor App</h1>
             </div>
-            <img src={'/assets/home/mentor.png'} alt="mentor app final design" className='proj-hero'/>
+            <div className='proj-hero-wrap'>
+               <img src={'/assets/home/mentor.png'} alt="mentor app final design" className='proj-hero'/>
+            </div>
          </div>
          <div className='content-wrap'>
             <section id='tldr'>

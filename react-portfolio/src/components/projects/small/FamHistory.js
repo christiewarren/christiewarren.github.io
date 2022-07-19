@@ -26,7 +26,9 @@ export default function FamHistory(){
                <div className='proj-header-text'>
                   <h1>Family History Archive</h1>
                </div>
-               <img src={'/assets/home/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
+               <div className='proj-hero-wrap'>
+                  <img src={'/assets/home/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
+               </div>
             </div>
             <div className='content-wrap'>
                <section id='tldr'>

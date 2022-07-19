@@ -30,7 +30,9 @@ export default function Search(){
                         <p>UI/UX Design</p>
                   </div>
                </div>
-               <img src={'/assets/search/final/mobile/results-sub.jpg'} className='proj-hero'/>
+               <div className='proj-hero-wrap'>
+                  <img src={'/assets/search/final/mobile/results-sub.jpg'} className='proj-hero'/>
+               </div>
             </div>
          <div className='content-wrap'>
             <section id='tldr'>

@@ -28,7 +28,9 @@ export default function WestArete(){
                <div className='proj-header-text'>
                   <h1>Research-Based LMS @West Arete</h1>
                </div>
-               <img src={'/assets/home/lms.png'} className='proj-hero' alt="LMS final design"/>
+               <div className='proj-hero-wrap'>
+                  <img src={'/assets/home/lms.png'} className='proj-hero' alt="LMS final design"/>
+               </div>
             </div>
          </div>
          <div className='content-wrap'>

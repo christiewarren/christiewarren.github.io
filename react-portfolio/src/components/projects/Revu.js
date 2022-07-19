@@ -26,7 +26,9 @@ export default function Revu(){
             <div className='proj-header-text'>
                <h1>Revu</h1>
             </div>
-            <img src={'/assets/revu/edit-quiz.png'} alt="LionPlanner final design" className='proj-hero'/>
+            <div className='proj-hero-wrap'>
+               <img src={'/assets/revu/edit-quiz.png'} alt="LionPlanner final design" className='proj-hero'/>
+            </div>
          </div>
          <div className='content-wrap'>
             <section id='tldr'>
