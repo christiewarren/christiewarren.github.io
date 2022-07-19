@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Footer from '../../Footer';
 
 export default function WestArete(){
    useEffect(() => {
@@ -146,6 +147,7 @@ export default function WestArete(){
             </section>
          </div>
       </div>
+      <Footer/>
       </>
    )
 }

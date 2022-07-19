@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Footer from '../Footer';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -215,6 +216,7 @@ export default function Lionplanner(){
             </div>
          </div>
       </div>
+      <Footer/>
       </>
    )
 }
