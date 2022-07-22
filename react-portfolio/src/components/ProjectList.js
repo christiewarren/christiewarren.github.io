@@ -38,14 +38,23 @@ export default function ProjectList(){
          })}
          <h3 className='sm-proj-header'>More projects!</h3>
          <div className='sm-proj-list'>
-         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
-            <div className='sm-proj-wrap'>
-               <Link to="/family-archive">
-                  <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
-                  <h4 className='sm-proj-title'>Family History Archive</h4>
-                  <small className='sm-proj-description'>An interactive archive of 7+ generations of family photos etc.</small>
-               </Link>
-            </div>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap'>
+                  <Link to="/learn-this-instead">
+                     <img src={'/assets/home/learn-this-instead.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Learn This Instead</h4>
+                     <small className='sm-proj-description'>A Chrome extension that redirects users from bad habits to a low-stress basics of CSS course</small>
+                  </Link>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap'>
+                  <Link to="/family-archive">
+                     <img src={'/assets/home/family-archive.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Family History Archive</h4>
+                     <small className='sm-proj-description'>An interactive archive of 7+ generations of family photos etc.</small>
+                  </Link>
+               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={250}>
             <div className='sm-proj-wrap'>

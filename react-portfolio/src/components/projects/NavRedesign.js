@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 
 
 export default function NavRedesign(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -35,7 +35,16 @@ export default function NavRedesign(){
          <div className='content-wrap'>
             <section id='tldr'>
                <span className='section-divider'><h3>TLDR;</h3><hr/></span>
-               <h6>I designed a (mostly visual) redesign of KiwiCo's mobile and desktop navigation and footers. </h6>
+               <h6>I completed a full redesign of KiwiCo's mobile and desktop main navigation and footers. 
+               <br/><br/>The main goals of this project were to better align the navigation and footers with KiwiCo's brand, improve the hierarchy and visual design, and increase discoverability of certain content.
+               <br/><br/>Challenges in this project primarily revolved around the multiple A/B test variations we ran on the site. Along with my PM, I monitored the metrics from these tests and proposed changes to the design to improve pageview, etc.
+               <br/><br/>Some highlights from the improved mobile nav metrics include:
+                  <ul>
+                     <li>+ 5% in revenue and completed order </li>
+                     <li>+ 4% in product page views</li>
+                     <li>+ 23% in visits to our Blog pages</li>
+                  </ul>
+               </h6>
 
                <a href='https://www.kiwico.com/' target='blank' className='no-style-link'>
                   <button>see it live<img src='/assets/search/arrow-right.svg' className='button-arrow'/></button>
@@ -47,15 +56,18 @@ export default function NavRedesign(){
                <span className='section-divider'><h3>Case Study</h3><hr/></span>
                <div className='context'>
                   <h4>Context</h4>
-                  <p>KiwiCo is an e-commerce site with nine subscription lines and 160+ products spanning ages newborn to 100 and countless interests. Not to mention the nearly 1,600 DIY and Blog articles.</p>
+                  <p>KiwiCo's site navigation had last been updated in 2020, and the footer design had been largely the same since 2017 (though many more links were added since then).
+                  </p>
                   <div className='img-wrap'>
-                     <img src='/assets/search/kiwico-subs.png'/>
-                     <small className='subs-caption'>KiwiCo subscription lines</small>
+                     <img src='/assets/nav/old-mobile-navs.png'/>
+                     <small className='subs-caption'>Former mobile navigation</small>
                   </div>
-                  <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
+                  <div className='img-wrap'>
+                     <img src='/assets/nav/old-footers.png'/>
+                     <small className='subs-caption'>Former mobile and desktop footers</small>
+                  </div>
+                  <p>With KiwiCo's now nine subscription lines, 160+ store products, and nearly 1,600 DIY and Blog articles, discoverability and ease of navigation are essential to the business's success and users' understanding of its (somewhat complex) offerings.</p>
                </div>
-               <br/><small>* Baymard #934: “During mobile testing, no method was more frequently used at the earliest stages of product exploration than on-site search: 60% of the subjects immediately used search as their first strategy on a mobile website’s homepage...”</small>
-
                <h4>Research &amp; Benchmarking</h4>
                <p>Considering the importance of familiarity and the relative complexity of KiwiCo’s searchable content** I started with some extensive benchmarking. I <span className='highlight'>reviewed search features on over 20 websites and apps</span> and noted consistencies and aspects that would or wouldn’t work well for KiwiCo’s search.</p>
                <br/><small>** subscription lines, Store products, DIY ideas, Blog posts, Help articles, and miscellaneous pages</small>

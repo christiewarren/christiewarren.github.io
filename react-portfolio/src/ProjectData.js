@@ -27,15 +27,6 @@ export default[
       path: '/revu'
    },
    {
-      title: 'Learn This Instead',
-      description: 'A Chrome extension that redirects users from bad habits to a low-stress basics of CSS course',
-      image: 'home/learn-this-instead.png',
-      wrapClass: 'lti',
-      tags: ['case study'],
-      imgClass: 'proj-img img-shadow revu',
-      path: '/learn-this-instead'
-   },
-   {
       title: 'LionPlanner',
       description: 'Automatically generated interactive course plans for a full college career',
       image: 'lionplanner/final.jpg',
