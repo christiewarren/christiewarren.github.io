@@ -80,32 +80,17 @@ export default function NavRedesign(){
                   <img src='/assets/search/search-placement.png' className='sm-img'/>
                   <small>Initial exploration of placement in the mobile nav, compared to the original nav sans-search (top)<br/>I moved forward with #1 for its simplicity and better use of space.</small>
                </div>
-               <h5>Based on my findings and early feedback, I made these initial decisions:</h5>
-               <table className='research-table'>
-                  <tbody>
-                  <tr>
-                     <th>Decision</th>
-                     <th>Reasoning</th>
-                  </tr>
-                  <tr>
-                     <td>Prominent in the nav, but closed by default</td>
-                     <td>Some users have a particular age or interest in mind but many may not know exactly what they’re looking for</td>
-                  </tr>
-                  <tr>
-                     <td>Opens in a full width overlay</td>
-                     <td>Lend maximum space for showing product suggestions &amp; reduce busyness</td>
-                  </tr>
-                  <tr>
-                     <td>Suggestions should allow user to pick category</td>
-                     <td>Take users to what they’re looking for faster, without hindering those just browsing</td>
-                  </tr>
-                  <tr>
-                     <td>Highlight popular relevant products as suggestions, including photos</td>
-                     <td>Make for quicker navigation to desired results and offer visually engaging suggestions</td>
-                  </tr>
-                  </tbody>
-               </table>
-
+               <h4>Primary Problems in the Navs and Footers</h4>
+               <h5><b>Hierarchy:</b> Mobile Menu</h5>
+               <p>The mobile menu lacked hierarchy almost entirely, using the same size gray, regular weight font for all dropdowns and links within them. <span className='highlight'>Users weren't guided</span> towards KiwiCo's primary offerings (subscriptions and Store products).</p>
+               <h5><b>Brand Alignment:</b> All</h5>
+               <p>KiwiCo's brand is friendly, fun, playful, and caring, and none of the navigation really reflected this. All caps text in the mobile and desktop navs and unorganized links in the footers and mobile menu all contributed to an <span className='highlight'>unwelcoming, even intimidating environment,</span> which did not at all align with the content on the rest of the site.</p>
+               <h5><b>Organization</b> Footers &amp; Mobile Nav</h5>
+               <p>Many links had been added to these areas over time without reorganization, leading to <span className='highlight'>repetitiveness and unnecessary links.</span> The worst instance of this was the Quick Links section with 14 links. Rather than being what was intended — a helpful assortment of most-needed links — it had become a catch-all of random ones.</p>
+               <p>Not to mention, the mobile footer hadn't been adapted to hold this many links, so about <span className='highlight'>3/4 of the desktop links were excluded</span> (for about 70% of users).</p>
+               <h5><b>Responsiveness:</b> Desktop Nav &amp; Footer</h5>
+               <p>When resized, these areas didn't respond well with <span className='highlight'>little to no outer margins and awkward spacing and overlapping,</span> adding an unprofessional and dated feel to the site.</p>
+               
                <h4>User Testing</h4>
                <h5>Round 1&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</h5>
                <a href='/assets/search/user-test-script1.pdf' target='blank' className='styled sm'>view script PDF</a>
