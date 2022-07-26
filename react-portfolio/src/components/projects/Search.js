@@ -42,7 +42,7 @@ export default function Search(){
                   </div>
                </div>
                <div className='proj-hero-wrap'>
-                  <img src={'/assets/search/final/mobile/results-sub.jpg'} className='proj-hero'/>
+                  <img src={'/assets/home/search.png'} className='proj-hero'/>
                </div>
             </div>
          <div className='content-wrap'>

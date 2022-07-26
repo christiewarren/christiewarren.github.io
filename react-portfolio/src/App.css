@@ -690,7 +690,7 @@ a{
 }
 
 .proj-header{
-  /* height: 100vh; */
+  min-height: 95vh;
   transform: translateY(6rem);
   opacity: 0;
   display: flex;
@@ -761,7 +761,15 @@ a{
 .content-wrap{
   width: 50%;
   margin: auto;
+  /* margin-left: 35%; */
 }
+/* 
+.content-wrap h4{
+  width: 50%;
+  margin-left: -60%;
+  position: sticky;
+  top: 5rem;
+} */
 
 .section-divider{
   display: flex;
