@@ -18,7 +18,7 @@
 :root {
   --navy: #030055;
   --light-purple: #F2F8FF;
-  --medium-purple: #93C5FF;
+  --medium-purple: #ADD3FF;
   --purple: #2560A6;
   --light-gray: #EFEFEF;
   --yellow: #F5F955;
@@ -69,10 +69,12 @@ h3{
 }
 
 h4{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 4.5rem;
   margin-bottom: 0;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
 }
 
 h5{
@@ -272,9 +274,8 @@ a{
 /* footer */
 .footer-wrap{
   z-index: 10;
-  /* border-top: 1px solid var(--navy); */
-  margin: 0 3rem;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
+  width: 100%;
 }
 
 .footer-wrap img{
@@ -682,13 +683,6 @@ a{
   position: relative;
 }
 
-.over-page{
-  z-index: 1;
-  position: relative;
-  background: white;
-  padding: 0rem 0 10rem 0;
-}
-
 .proj-header{
   min-height: 95vh;
   transform: translateY(6rem);
@@ -758,29 +752,43 @@ a{
   }
 }
 
-.content-wrap{
-  width: 50%;
-  margin: auto;
-  /* margin-left: 35%; */
+main{
+  padding: 0rem 3rem;
 }
-/* 
-.content-wrap h4{
+
+.case-study-section{
+  display: grid;
+  grid-auto-columns: 100%;
+  border-radius: 10px;
+}
+
+.right{
   width: 50%;
-  margin-left: -60%;
+  justify-self: center;
+}
+
+.case-study-section h4{
+  justify-self: start;
+  width: min-content;
   position: sticky;
   top: 5rem;
-} */
-
-.section-divider{
-  display: flex;
-  align-items: center;
-  margin-top: 6.5rem;
 }
 
 .section-divider hr{
   border: 1px solid var(--light-gray);
   margin: 0;
   width: -webkit-fill-available;
+}
+
+#tldr, .section-divider{
+  width: 60%;
+  margin: auto;
+}
+
+.section-divider{
+  display: flex;
+  align-items: center;
+  padding-top: 6.5rem;
 }
 
 #tldr h6{
@@ -799,7 +807,7 @@ a{
 .context, .reflection{
   background: var(--light-purple);
   border-radius: 10px;
-  padding: 15px;
+  padding: 2.5rem 2rem;
   margin-top: 4.5rem;
 }
 
@@ -921,8 +929,8 @@ a{
 
 .desktop-swiper-wrap{
   width: 80%;
-  min-width: 345px;
-  margin: auto;
+  /* min-width: 345px; */
+  justify-self: end;
 }
 
 .desktop-swiper-wrap .swiper-button-prev{
@@ -969,21 +977,71 @@ a{
   margin-top: -2rem;
 }
 
-@media screen and (min-width: 400px) {
-  .context, .reflection{
-    padding: 30px;
+@media screen and (max-width: 1024px) {
+  .right{
+    justify-self: end;
+    width: 65%;
   }
-}
 
-@media screen and (max-width: 968px) {
-  .content-wrap{
+  #tldr, .section-divider{
     width: 75%;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .content-wrap{
-    width: 88%;
+@media screen and (max-width: 768px) {
+  #tldr, .section-divider{
+    width: 85%;
+  }
+
+  .right{
+    justify-self: center;
+    width: 85%;
+  }
+
+  .desktop-swiper-wrap{
+    justify-self: center;
+    margin: unset;
+    width: 90%;
+  }
+
+  .case-study-section h4{
+    justify-self: center;
+    position: relative;
+    top: auto;
+    width: 85%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .context, .reflection{
+    padding: 2rem 0;
+  }
+
+  .research-table td, th{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right{
+    justify-self: center;
+    width: 85%;
+  }
+
+  .case-study-section h4{
+    justify-self: center;
+    position: relative;
+    top: auto;
+    width: 85%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  main{
+    padding: 0;
+  }
+
+  .research-table td, th{
+    padding: 1rem 0.75rem;
   }
 }
 
