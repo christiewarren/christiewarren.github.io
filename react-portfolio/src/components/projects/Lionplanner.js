@@ -25,6 +25,18 @@ export default function Lionplanner(){
          <div className='proj-header'>
             <div className='proj-header-text'>
                <h1>LionPlanner</h1>
+               <div className='proj-header-text-sm'>
+                  <p>
+                  <b>Role:</b>
+                  <br/>UI/UX Designer
+                  <br/>HTML/CSS Dev
+                  </p>
+                  <p>
+                  <b>Collaborators</b>
+                  <br/>2 FE Devs
+                  <br/>3 BE Devs
+                  </p>
+               </div>
             </div>
             <div className='proj-hero-wrap'>
                <img src={'/assets/lionplanner/final.jpg'} alt="LionPlanner final design" className='proj-hero'/>
@@ -106,7 +118,6 @@ export default function Lionplanner(){
                         spaceBetween={50}
                         slidesPerView={1}
                         navigation
-                        pagination
                         pagination={{ clickable: true }}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}

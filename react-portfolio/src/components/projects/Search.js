@@ -27,7 +27,18 @@ export default function Search(){
                   <h1>Sitewide Search</h1>
                   <h2>@KiwiCo</h2>
                   <div className='proj-header-text-sm'>
-                        <p>UI/UX Design</p>
+                     <p>
+                        <b>Role:</b>
+                        <br/>UI/UX Designer</p>
+                        <p><b>Collaborators</b>
+                        <br/>Product Manager
+                        <br/>FE Dev
+                        </p>
+                        <p><b>Stakeholders</b>
+                        <br/>CEO
+                        <br/>CP(roduct)O/CG(rowth)O
+                        <br/>Director of Marketing
+                     </p>
                   </div>
                </div>
                <div className='proj-hero-wrap'>
@@ -124,7 +135,6 @@ export default function Search(){
                   spaceBetween={50}
                   slidesPerView={1}
                   navigation
-                  pagination
                   pagination={{ clickable: true }}
                   onSlideChange={() => console.log('slide change')}
                   onSwiper={(swiper) => console.log(swiper)}
@@ -181,7 +191,6 @@ export default function Search(){
                   spaceBetween={50}
                   slidesPerView={1}
                   navigation
-                  pagination
                   pagination={{ clickable: true }}
                   onSlideChange={() => console.log('slide change')}
                   onSwiper={(swiper) => console.log(swiper)}

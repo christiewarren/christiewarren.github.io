@@ -27,7 +27,19 @@ export default function NavRedesign(){
                   <h1>Navigation Redesign</h1>
                   <h2>@KiwiCo</h2>
                   <div className='proj-header-text-sm'>
-                        <p>UI/UX Design</p>
+                     <p>
+                        <b>Role:</b>
+                        <br/>UI/UX Designer</p>
+                        <p><b>Collaborators</b>
+                        <br/>Product Manager
+                        <br/>FE Dev
+                        </p>
+                        <p><b>Stakeholders</b>
+                        <br/>CEO
+                        <br/>CP(roduct)O/CG(rowth)O
+                        <br/>CRO
+                        <br/>Marketing Team
+                     </p>
                   </div>
                </div>
                <div className='proj-hero-wrap'>
@@ -70,8 +82,6 @@ export default function NavRedesign(){
                   </div>
                   <p>With KiwiCo's now nine subscription lines, 160+ store products, and nearly 1,600 DIY and Blog articles, discoverability and ease of navigation are essential to the business's success and users' understanding of its (somewhat complex) offerings.</p>
                </div>
-
-               <h4>Scope</h4>
 
                <h4>Research &amp; Benchmarking</h4>
                <p>During my Sitewide Search project, I conducted extensive benchmarking, including navigation, since I placed Search in KiwiCo's navs. So, I was able to reuse much of that, but this time focused on hierarchy, navigation options (like Shop by Age), and organization.</p>
@@ -156,7 +166,20 @@ export default function NavRedesign(){
                </div>
 
                <h5><b>Desktop Nav:</b> V2</h5>
-               <h6>V2 modifications were primarily around improving consistency in style and size of the righthand elements:</h6>
+               <h6>In my V2 I defined new designs for the dropdown menus:</h6>
+               <p>Initially, I didn't have plans to change much from the original dropdowns, but after exploring some more creative options in the mobile nav, I was inspired to go further on desktop.</p>
+               <p>With more real estate, this seemed like a great opportunity for more visually engaging options for Subscriptions. I switched from a list to a grid, added a prominent photo for each one, and designed a hover state with a colored border and blue text.</p>
+               <div className='img-wrap'>
+                  <p className='img'>sub dropdown</p>
+                  <small>Desktop nav dropdowns</small>
+               </div>
+               <p>I kept the Store and Schools &amp; Groups menus a bit simpler, but did incorporate the new styles for Shop by Age and Interest from the mobile menu.</p>
+               <div className='img-wrap'>
+                  <p className='img'>sub dropdown</p>
+                  <small>Desktop nav dropdowns</small>
+               </div>
+
+               <h6>Other V2 modifications improved consistency in style and size of the righthand elements:</h6>
                <ul>
                   <li>Made the search bar shorter and used a smaller icon inside</li>
                   <br/>
@@ -172,6 +195,10 @@ export default function NavRedesign(){
                   <br/>
                   <li>Reduced the nav's height a second time</li>
                </ul>
+               <div className='img-wrap'>
+                  <p className='img'>righthand nav</p>
+                  <small>More consistency in the nav's righthand elements</small>
+               </div>
 
                <h5><b>Footers:</b></h5>
                <p>When I first presented designs for the footer, I gave a lower lift option, in case the dev thought the ideal version wouldn't fit within the scope. But, luckily they were able to implement the ideal version with no issues!</p>
@@ -211,11 +238,61 @@ export default function NavRedesign(){
                </div>
                <p>While neither variation was actually able to produce an increase in purchase widget views from the original, variation 4 (subscription taglines) saw a 2% increase from variation 1.</p>
                <p>Compared to variation 3, variation 4 also saw a 2% higher increase in overall revenue and completed orders — also the highest among all variations — at +5.2% and +5.8%, respectively.</p>
+               
                <br/><br/><b>Winning Variation</b>
                <h6>After running A/B tests for four months, it was decided to roll out variation 4 of the mobile menu (added subscription taglines).</h6>
                <p>Unfortunately, I wasn't a part of this final decision, and I now know to make sure I have a more active roll in the future. Both my PM and I would've liked to test another variation to attempt an increase in purchase widget views, but there was a sentiment that we had too many A/B tests running on the site and needed to wrap some up.</p>
                <p>However, I hope to run another test at a better time, possibly adding a CTA into the Subscription accordion.</p>
 
+               <h5><b>Desktop Nav:</b> Variation 1</h5>
+               <h6>After running this test for 53 days, we rolled out the first (and only) variation of the desktop nav, based on a positive impact on our primary metric (completed order) and a largely neutral one on other metrics.</h6>
+               <p>The desktop nav test primarily saw only slight changes in either direction, but its highlights included a 1.4% increase in completed order and a 2.5% increase in Store product page views.</p>
+
+               <h5><b>Footers:</b> Variation 1</h5>
+               <h6>Both desktop and mobile footers saw a drop of about 1% in email capture, purchase widget view, and completed order within the firs 2 months of running the tests.</h6>
+               <div className='img-wrap'>
+                  <p className='img'>footers variation 1</p>
+               </div>
+
+               <h5><b>Mobile Footer:</b> Variation 2</h5>
+               <h6>Since the mobile footer had significantly increased in length from the original, we first tried moving the email signup to the top on mobile while we continued to let the desktop test run.</h6>
+               <p>This change was a success, improving email capture to + 2.4% from the original.</p>
+               <p>However, it still saw concerning drops in completed order and views for completed order and subscription pages.</p>
+               <div className='img-wrap'>
+                  <p className='img'>mobile footer variation 2</p>
+               </div>
+
+               <h5><b>Footers:</b> Variations 3 (mobile) &amp; 2 (desktop)</h5>
+               <p>My PM and I worked together to come up with these changes for the next footer variations:</p>
+               <ul>
+                  <li>Move Store section to be third instead of fourth</li>
+                  <br/>
+                  <li>Create a new section for Gifting (like the mobile menu) with links from Helpful Links</li>
+                  <br/>
+                  <li>Add back in subscription line logo links at the bottom</li>
+                  <br/>
+                  <li>Move email signup to the top on desktop</li>
+               </ul>
+               <div className='img-wrap'>
+                  <p className='img'>mobile variation 3 &amp; desktop variation 2</p>
+               </div>
+
+               <br/><br/><b>Mobile Footer: Winning Variation</b>
+               <h6>After running A/B tests for about four months, we decided to roll out variation 3 of the mobile footer.</h6>
+               <p>Metrics came a long way in this test, with final highlights including:</p>
+               <ul>
+                  <li>+ 2.5% and + 2% in overall revenue and completed order, respectively</li>
+                  <br/>
+                  <li>+ 2.5% in emails captured</li>
+                  <br/>
+                  <li>+ 2.4% in Store page visits</li>
+                  <br/>
+                  <li>+ 15% in gifting-related page visits</li>
+               </ul>
+
+               <h5><b>Desktop Footer:</b> Variation 3</h5>
+               <h6>Still seeing concerning numbers, specifically with a decrease of 3% in emails captured, we recently decided to run a test emphasizing email sign up more prominently.</h6>
+               <p>Although these results surprised me at first, I did realize that the original nav design was much more "clumped," and did draw the eye more to email sign up. Using this idea as inspiration, I paired email sign up with the social icons again and gave this row a craft paper background.</p>
 
                <h4>Final Designs</h4>
                <h5>Mobile Nav &amp; Menu</h5>

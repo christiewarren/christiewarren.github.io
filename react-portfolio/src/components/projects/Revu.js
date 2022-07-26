@@ -25,6 +25,17 @@ export default function Revu(){
          <div className='proj-header'>
             <div className='proj-header-text'>
                <h1>Revu</h1>
+               <div className='proj-header-text-sm'>
+                  <p>
+                  <b>Role:</b>
+                  <br/>UI/UX Designer
+                  <br/>JSX Dev
+                  </p>
+                  <p>
+                  <b>Collaborators</b>
+                  <br/>Full Stack Dev
+                  </p>
+               </div>
             </div>
             <div className='proj-hero-wrap'>
                <img src={'/assets/revu/edit-quiz.png'} alt="LionPlanner final design" className='proj-hero'/>

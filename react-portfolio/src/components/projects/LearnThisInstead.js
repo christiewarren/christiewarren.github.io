@@ -26,6 +26,13 @@ export default function LearnThisInstead(){
             <div className='proj-header-text'>
                <h1>Learn This Instead</h1>
                <h2>A Chrome Extension</h2>
+               <div className='proj-header-text-sm'>
+                  <p>
+                     <b>Role:</b>
+                     <br/>UI/UX Designer
+                     <br/>FE Dev                        
+                  </p>
+               </div>
             </div>
             <div className='proj-hero-wrap'>
                <img src={'/assets/home/learn-this-instead.png'} alt="mentor app final design" className='proj-hero'/>
