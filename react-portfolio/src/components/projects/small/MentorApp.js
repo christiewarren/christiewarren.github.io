@@ -20,33 +20,32 @@ export default function MentorApp(){
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
-      <div className='under-page'></div>
-      <div className='over-page'>
-         <div className='proj-header'>
+      <div className='proj-header'>
             <div className='proj-header-text'>
                <h1>Mentor App</h1>
             </div>
             <div className='proj-hero-wrap'>
                <img src={'/assets/home/mentor.png'} alt="mentor app final design" className='proj-hero'/>
             </div>
-         </div>
-         <div className='content-wrap'>
-            <section id='tldr'>
-               <span className='section-divider'><h3>TLDR;</h3><hr/></span>
-               <h6>I designed a mobile app to help underclassmen connect with upperclassmen mentors at Penn State as part of my application for the 2020 Google UX internship.
-               <br/><br/>I used this week-long project as an opportunity to improve my process and specifically to emphasize user research.</h6>
+      </div>
+      <main>
+         <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+         <section id='tldr'>
+            <h6>I designed a mobile app to help underclassmen connect with upperclassmen mentors at Penn State as part of my application for the 2020 Google UX internship.
+            <br/><br/>I used this week-long project as an opportunity to improve my process and specifically to emphasize user research.</h6>
+            <a href='#case-study' className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+         </section>
+         <span className='section-divider'><h3>Project Details</h3><hr/></span>
+         <section className='case-study-section context'>
+            <h4>Context</h4>
+            <div className='right'>
+               <p>Prompt: Your school wants to strengthen the community by encouraging experienced students to connect with new students and help them adjust to campus life. Design an experience that allows mentors and mentees to discover each other. Consider the needs of both mentors and mentees,including how someone may become a mentor and how to connect mentors to mentees.</p>   
+            </div>
+         </section>
 
-               <a href='#case-study' className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
-            </section>
-            <section id='case-study'>
-               <span className='section-divider'><h3>Project Details</h3><hr/></span>
-               <div className='context'>
-                  <h4>Context</h4>
-                  <p>Prompt: Your school wants to strengthen the community by encouraging experienced students to connect with new students and help them adjust to campus life. Design an experience that allows mentors and mentees to discover each other. Consider the needs of both mentors and mentees,including how someone may become a mentor and how to connect mentors to mentees.</p>
-                  
-               </div>
-
-               <h4>Research &amp; Planning</h4>
+         <section className='case-study-section'>
+            <h4>Research&nbsp;&amp; Planning</h4>
+            <div className='right'>
                <h5>Initial Thoughts</h5>
                <p>The first part of my process was jotting down some initial thoughts and questions about the prompt and considerations I should plan on making.</p>
                <div className="img-wrap">
@@ -97,8 +96,12 @@ export default function MentorApp(){
                <div className="img-wrap">
                   <img src={'/assets/mentor-app/user-journey-mentors.jpg'} alt="mentor user journey" className='img-shadow'/>
                </div>
+            </div>
+         </section>
 
-               <h4>Early Designs</h4>
+         <section className='case-study-section'>
+            <h4>Early&nbsp;Designs</h4>
+            <div className='right'>
                <h5>Sketches</h5>
                <p>My next move was sketching some wireframe flows on my (well-loved) whiteboard. The flows are fairly similar for mentors vs. mentees, but I still chose to sketch a separate flow for each so that I could distinguish them better in my mind and get a more concrete idea of the differences.</p>
                <div className="img-wrap">    
@@ -130,15 +133,23 @@ export default function MentorApp(){
                   <li>Mentees will feel less intimidated, and therefore more open to reach out.</li>
                   <li>Mentors will view it more as building relationships with people like them, instead of just another formal, school-run service.</li>
                </ul>
+            </div>
+         </section>
 
-               <h4>Visual Design</h4>
+         <section className='case-study-section'>
+            <h4>Visual&nbsp;Design</h4>
+            <div className='right'>
                <p>When considering the visual design of this app, my biggest priority was setting it apart from traditional school-run apps, as these tend to be a bit dated with overdone color palettes (at least at Penn State). I wanted to make this app seem separate from the school, so that students would be more interested in it.</p>
                <p>I designed this Material UI using a modern color palette, rounded elements, and visually interesting, yet simple icons. These choices mimic the way I hope students will feel when using the app: comfortable, but eager to be bold. </p>
                <div className="img-wrap">    
                   <img src={'/assets/mentor-app/visual-design.png'} alt="visual design system" className='img-shadow'/>
                </div>
+            </div>
+         </section>
 
-               <h4>UX Highlights</h4>
+         <section className='case-study-section'>
+            <h4>UX&nbsp;Highlights</h4>
+            <div className='right'>
                <h5>Browsing &amp; Profiles</h5>
                <p>Students' answers in my surveys showed that some of the most important considerations to both under and upperclassmen are major and personality when choosing a mentor(ee). So, I highlighted bios and descriptions in the browse view, allowing users to get a good idea of these aspects quickly. Users can also filter by major or interest on the browse page, if they so choose.</p>
                <div className="img-wrap">    
@@ -168,17 +179,21 @@ export default function MentorApp(){
                   <li>Log time spent mentoring to potentially receive course credits (further ahead)</li>
                </ul>
                <p>In this current solution, any upperclassman at Penn State is eligible to become a mentor. However, in the future, once the app has more users, there would ideallybe an interview system in which current mentors evaluate potential mentors. For the time being, I chose not to apply this limitation, as there are already obstacles for encouraging students to become mentors.</p>
+            </div>
+         </section>
 
-               <h4>Out of Scope Improvements</h4>
+         <section className='case-study-section'>
+            <h4>Out of Scope Improvements</h4>
+            <div className='right'>
                <h6>Throughout this exercise, I had multiple brainstorming sessions on one obstacle: how to encourage college students to use this app. With exceptions, many college students are reluctant to do something if the benefits are not immediately clear.</h6>
                <p>One potential solution to this dilemma is making this app more social. I mean this in the same way that when a college student hears a song or sees a meme that reminds them of a friend, they want to share it with them. Placing a "Recommend to a Friend" option on each mentor or mentee's profile would serve as a reminder that it could be kind of fun to look through profiles until you find one that reminds you of a friend.</p>
                <div className="img-wrap">    
                   <img src={'/assets/mentor-app/recommend.png'} alt="recommend to a friend screen"/>
                </div>
                <p>This button would allow users to share the selected profile on their external messaging app, helping to bring new users to the mentor app. Existing users would then ideally act as a highly personalized recommendation system that reaches beyond the app's walls.</p>
-            </section>
-         </div>
-      </div>
+            </div>
+         </section>
+      </main>
       <Footer/>
       </>
    )

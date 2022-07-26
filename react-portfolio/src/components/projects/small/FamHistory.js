@@ -20,37 +20,38 @@ export default function FamHistory(){
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
-      <div className='under-page'></div>
-         <div className='over-page'>
-            <div className='proj-header'>
-               <div className='proj-header-text'>
-                  <h1>Family History Archive</h1>
-               </div>
-               <div className='proj-hero-wrap'>
-                  <img src={'/assets/home/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
-               </div>
-            </div>
-            <div className='content-wrap'>
-               <section id='tldr'>
-                  <span className='section-divider'><h3>TLDR;</h3><hr/></span>
-                  <h6>I’m designing a website to archive 7+ generations of my family’s photos, letters, documents, and the people themselves.</h6>
-               </section>
-
-               <section id='case-study'>
-                  <span className='section-divider'><h3>Project details</h3><hr/></span>
-                  <div className='context'>
-                     <h4>Context</h4>
-                     <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
-                     <div className='img-wrap'>
-                        <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
-                        <small className='subs-caption'>KiwiCo subscription lines</small>
-                     </div>
-                     <p className='img'>bookshelf of boxes</p>
-                     <p>With all this family history sitting in boxes, rarely seeing the light of day, my dad came to me with the idea of creating a website that serves as a digital archive for our family’s photos and documents, plus an interactive family tree.</p>
-                     <p>I was <em>so</em> excited about this idea—not only would it be awesome to make our family’s history more accessible to us and our relatives, but I also knew it could be the perfect opportunity to both learn more about web development (specifically, React) and challenge myself creatively.</p>
+      <div className='proj-header'>
+         <div className='proj-header-text'>
+            <h1>Family History Archive</h1>
+         </div>
+         <div className='proj-hero-wrap'>
+            <img src={'/assets/home/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
+         </div>
+      </div>
+      <main>
+         <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+         <section id='tldr'>
+            <h6>I’m designing a website to archive 7+ generations of my family’s photos, letters, documents, and the people themselves.</h6>
+         </section>
+         
+            <span className='section-divider'><h3>Project details</h3><hr/></span>
+            <section className='case-study-section context'>
+               <h4>Context</h4>
+               <div className='right'>
+                  <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
+                  <div className='img-wrap'>
+                     <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
+                     <small className='subs-caption'>KiwiCo subscription lines</small>
                   </div>
+                  <p className='img'>bookshelf of boxes</p>
+                  <p>With all this family history sitting in boxes, rarely seeing the light of day, my dad came to me with the idea of creating a website that serves as a digital archive for our family’s photos and documents, plus an interactive family tree.</p>
+                  <p>I was <em>so</em> excited about this idea—not only would it be awesome to make our family’s history more accessible to us and our relatives, but I also knew it could be the perfect opportunity to both learn more about web development (specifically, React) and challenge myself creatively.</p>
+               </div>
+            </section>
 
-                  <h4>Look &amp; Feel</h4>
+            <section className='case-study-section'>
+               <h4>Look&nbsp;&amp;&nbsp;Feel</h4>
+               <div className='right'>
                   <p>Digitizing a traditionally very physical experience poses unique circumstances to design within. It’s important to me that the site feel nostalgic and connected to its physical counterparts, but not dated or aged.</p>
                   <div className='img-wrap'>
                      <img src='/assets/family-archive/moodboard.png' className='img-shadow'/>
@@ -66,8 +67,12 @@ export default function FamHistory(){
                      <img src='/assets/family-archive/filters.png' className='sm-img img-shadow'/>
                      <small >Filter active state references shedding light</small>
                   </div>
+               </div>
+            </section>
 
-                  <h4>Browsing Experience</h4>
+            <section className='case-study-section'>
+               <h4>Browsing Experience</h4>
+               <div className='right'>
                   <p>Although we plan to launch the site with only about 100 photos and documents, our intention is to keep adding more and more over time (which could really take years with the amount of content we have). With this in mind, we’re allowing for multiple ways to explore and discover.</p>
                   <p><b>Discovery points</b></p>
                      <ul>
@@ -77,8 +82,12 @@ export default function FamHistory(){
                         <li>Person info page includes immediate family and photos/documents they’re in</li>
                      </ul>
                   <p>With this choose-your-own-adventure experience, users can decide to either be methodical about how they browse, or go down a Wikipedia-style rabbit hole.</p>
+               </div>
+            </section>
 
-                  <h4>Early Mocks (V1ish)</h4>
+            <section className='case-study-section'>
+               <h4>Early&nbsp;Mocks (V1ish)</h4>
+               <div className='right'>
                   <Swiper
                      modules={[Navigation, Pagination]}
                      spaceBetween={50}
@@ -119,9 +128,9 @@ export default function FamHistory(){
                         </div>
                      </SwiperSlide>
                   </Swiper>
-               </section>
-         </div>
-      </div>
+               </div>
+            </section>
+      </main>
       <Footer/>
       </>
    )
