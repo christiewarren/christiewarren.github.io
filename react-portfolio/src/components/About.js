@@ -8,6 +8,7 @@ import Footer from './Footer';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default function Search(){
@@ -29,25 +30,80 @@ export default function Search(){
          </h6>
          
       </div>
-      <h4>Some things I love in no particular order:</h4>
-         <ul>
-            <li>My cat</li>
-            <small>My cat's name is Kitten (pronounced Kit-TEN — creative, I know) and I found him in a parking garage when he was 6 weeks old!</small>
-            <li>Rock climbing</li>
-            <small>I mainly boulder, and really only inside, because real rocks are sharp, and I have wimpy skin.</small>
-            <li>Puzzles (jigsaw &amp; crossword)</li>
-            <small>I do crosswords with friends on <a href='https://downforacross.com/'>Down for a Cross</a>, a genious innovation.</small>
-            <li>Eating snacks on top of mountains</li>
-            <small>Snacks not pictured, but believe me, they were there.</small>
-            <li>Other people’s dogs</li>
-            <small>Okay, these are technically my family's dogs, but I live ~3,000 miles away, so I don't think I can claim to own them. Don't be alarmed though, I would also love to have a dog of my own.</small>
-            <li>Wawa</li>
-            <small>@Wawa please expand to California</small>
-            <li>The National Treasure movies</li>
-            <small>They are true classics. NT1 is my family's go-to movie, and definitely my most watched. This is a no-judge zone, btw.</small>
-            <li>This playlist</li>
-         </ul>
-         <iframe src="https://open.spotify.com/embed/playlist/6zYfgPPCCkaBIBGmW6Ky8g?utm_source=generator" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" className='spotify'/>
+         <h3 className='sm-proj-header'>Some things I love in no particular order:</h3>
+         <div className='sm-proj-list'>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/about/kitten.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>My cat</h4>
+                     <small className='sm-proj-description'>My cat's name is Kitten (pronounced Kit-TEN — creative, I know) and I found him in a parking garage when he was 6 weeks old!</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/home/learn-this-instead.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Rock climbing</h4>
+                     <small className='sm-proj-description'>I mainly boulder, and really only inside, because real rocks are sharp, and I have wimpy skin.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/home/learn-this-instead.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Puzzles (jigsaw &amp; crossword)</h4>
+                     <small className='sm-proj-description'>I do crosswords with friends on <a href='https://downforacross.com/'>Down for a Cross</a>, a genious innovation.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/about/snack-lake.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Eating snacks in cool places</h4>
+                     <small className='sm-proj-description'>Snacks not pictured, but believe me, they were there.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/about/dogs.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Dogs</h4>
+                     <small className='sm-proj-description'>Nuff said.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/home/learn-this-instead.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>Wawa</h4>
+                     <small className='sm-proj-description'>@Wawa please expand to California.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap love'>
+                  <div className='about-me-thing'>
+                     <img src={'/assets/about/national-treasure.png'} className='sm-proj-img'/>
+                     <h4 className='sm-proj-title'>The National Treasure Movies</h4>
+                     <small className='sm-proj-description'>They are true classics. NT1 is my family's go-to movie, and definitely my most watched. This is a no-judge zone, btw.</small>
+                  </div>
+               </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+               <div className='sm-proj-wrap'>
+                  <div className='about-me-thing'>
+                     <iframe src="https://open.spotify.com/embed/playlist/6zYfgPPCCkaBIBGmW6Ky8g?utm_source=generator" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" className='spotify'/>
+                     <h4 className='sm-proj-title'>This playlist</h4>
+                  </div>
+               </div>
+            </ScrollAnimation>
+         </div>
          <Footer/>
       </>
    )

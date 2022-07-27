@@ -396,7 +396,7 @@ a{
   background: linear-gradient(90deg, rgba(255,249,170,1) 0%, rgba(192,246,255,1) 50%, rgba(222,209,255,1) 100%);  
   border-radius: 5px;
   padding: 0 5px;
-  border: 1px solid var(--navy);
+  /* border: 1px solid var(--navy); */
 }
 
 .currently{
@@ -421,6 +421,40 @@ a{
 .welcome-text h2::selection, .welcome-text h2 span::selection, .welcome-text h3::selection, .currently p::selection, .currently b::selection{
   background-color: var(--yellow);
   color: var(--navy);
+}
+
+@media screen and (max-width: 960px) {
+
+  .welcome-text {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #welcome{
+    height: 90vh;
+  }
+
+  .welcome-text {
+    width: 85%;
+  }
+
+  .welcome-text h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+ 
+  .asterisk{
+    font-size: 1rem;
+    white-space: break-spaces;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  #welcome{
+    height: 95vh;
+  }
+
 }
 
 
@@ -560,7 +594,7 @@ a{
   cursor: pointer;
 }
 
-.sm-proj-wrap a{
+.sm-proj-wrap a, .about-me-thing{
   width: min-content;
 }
 
@@ -615,47 +649,11 @@ a{
     margin-right: 2rem;
     margin-bottom: 2rem;
   }
-
-  .proj-list-wrap{
-    padding-top: 2rem;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  #welcome{
-    /* padding-top: 8vh; */
-  }
-
-  .welcome-text {
-    width: 85%;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  #welcome{
-    height: 86vh;
-  }
-
-  .welcome-text {
-    width: 85%;
-  }
-
-  .welcome-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .welcome-text h4{
-    
-  }
-  
-  .asterisk{
-    font-size: 1rem;
-    white-space: break-spaces;
-  }
-
   .proj-list-wrap{
-    margin-top: 82vh;
+    margin-top: 86vh;
   }
   
   .proj-wrap .animated{
@@ -666,6 +664,13 @@ a{
     width: 160%;
     align-self: flex-end;
     padding-right: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 686px) {
+  .proj-list-wrap{
+    margin-top: 91vh;
   }
 
 }
@@ -1074,6 +1079,6 @@ main{
 
 .spotify{
   border-radius: 12px;
-  width: 60%;
+  min-width: 330px;
   height: 380px;
 }
