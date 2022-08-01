@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import Footer from '../../Footer';
-
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
 import { HashLink as Link } from 'react-router-hash-link'
+import ScrollAnimation from 'react-animate-on-scroll'
+import Footer from '../../Footer'
 
 export default function MentorApp(){
    useEffect(() => {
@@ -31,19 +24,27 @@ export default function MentorApp(){
       </div>
       <main>
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section id='tldr'>
             <h6>I designed a mobile app to help underclassmen connect with upperclassmen mentors at Penn State as part of my application for the 2020 Google UX internship.
             <br/><br/>I used this week-long project as an opportunity to improve my process and specifically to emphasize user research.</h6>
             <Link to="/mentor-app/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
+         </ScrollAnimation>
+
          <span className='section-divider' id='case-study'><h3>Project Details</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>
                <p>Prompt: Your school wants to strengthen the community by encouraging experienced students to connect with new students and help them adjust to campus life. Design an experience that allows mentors and mentees to discover each other. Consider the needs of both mentors and mentees,including how someone may become a mentor and how to connect mentors to mentees.</p>   
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Research&nbsp;&amp; Planning</h4>
             <div className='right'>
@@ -99,7 +100,9 @@ export default function MentorApp(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Early&nbsp;Designs</h4>
             <div className='right'>
@@ -136,7 +139,9 @@ export default function MentorApp(){
                </ul>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Visual&nbsp;Design</h4>
             <div className='right'>
@@ -147,7 +152,9 @@ export default function MentorApp(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>UX&nbsp;Highlights</h4>
             <div className='right'>
@@ -182,7 +189,9 @@ export default function MentorApp(){
                <p>In this current solution, any upperclassman at Penn State is eligible to become a mentor. However, in the future, once the app has more users, there would ideallybe an interview system in which current mentors evaluate potential mentors. For the time being, I chose not to apply this limitation, as there are already obstacles for encouraging students to become mentors.</p>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Out of Scope Improvements</h4>
             <div className='right'>
@@ -194,6 +203,7 @@ export default function MentorApp(){
                <p>This button would allow users to share the selected profile on their external messaging app, helping to bring new users to the mentor app. Existing users would then ideally act as a highly personalized recommendation system that reaches beyond the app's walls.</p>
             </div>
          </section>
+         </ScrollAnimation>
       </main>
       <Footer/>
       </>

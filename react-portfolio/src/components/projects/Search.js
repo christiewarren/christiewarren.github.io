@@ -1,24 +1,19 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Footer from '../Footer';
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
+import { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Footer from '../Footer'
 import { HashLink as Link } from 'react-router-hash-link'
-
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export default function Search(){
-   // useEffect(() => {
-   //    window.scrollTo({
-   //       top: 0, 
-   //       left: 0,
-   //       behavior: 'instant'})
-   // }, [])
+   useEffect(() => {
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -47,6 +42,8 @@ export default function Search(){
       </div>
       <main>
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+         
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section id='tldr'>
             <h6>I designed the Sitewide Search feature for KiwiCo’s website, allowing users to search for subscription lines, individual products, DIY ideas, blog posts, help articles, and more. <br/><br/>The biggest challenge was providing enough — but not too much — information to clearly differentiate individual products from subscription lines in the results.<br/><br/>Today, an average of 839 people use Sitewide Search daily, compared to the combined 219 who use the search features within Store, Blog, and DIYs.</h6>
 
@@ -55,19 +52,26 @@ export default function Search(){
             </a>
             <Link to="/sitewide-search/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
+         </ScrollAnimation>
+
             <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
-            <section class='case-study-section context'>
-               <h4>Context</h4>
-               <div className='right'>
-                  <p>KiwiCo is an e-commerce site with nine subscription lines and 160+ products spanning ages newborn to 100 and countless interests. Not to mention the nearly 1,600 DIY and Blog articles.</p>
-                  <div className='img-wrap'>
-                     <img src='/assets/search/kiwico-subs.png'/>
-                     <small className='subs-caption'>KiwiCo subscription lines</small>
-                  </div>
-                  <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
-                  <br/><small>* Baymard #934: “During mobile testing, no method was more frequently used at the earliest stages of product exploration than on-site search: 60% of the subjects immediately used search as their first strategy on a mobile website’s homepage...”</small>
+         
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+         <section class='case-study-section context'>
+            <h4>Context</h4>
+            <div className='right'>
+               <p>KiwiCo is an e-commerce site with nine subscription lines and 160+ products spanning ages newborn to 100 and countless interests. Not to mention the nearly 1,600 DIY and Blog articles.</p>
+               <div className='img-wrap'>
+                  <img src='/assets/search/kiwico-subs.png'/>
+                  <small className='subs-caption'>KiwiCo subscription lines</small>
                </div>
+               <br/><p>Prior to this project, users could search the Store (individually sold products), DIY ideas, and Blog posts each individually. But, considering that subscriptions are actually KiwiCo’s primary revenue source and that products and content are often marketed together, our team wanted to create a feature for searching everything KiwiCo has to offer at once — a Sitewide Search feature.<br/><br/>Not only would Sitewide Search be a better (and more familiar) browsing experience, it would also help the business by featuring subscriptions more prominently. Making subscription lines searchable could be a huge opportunity, considering how likely users are to interact with Search.<span className='source'>*</span></p>
+               <br/><small>* Baymard #934: “During mobile testing, no method was more frequently used at the earliest stages of product exploration than on-site search: 60% of the subjects immediately used search as their first strategy on a mobile website’s homepage...”</small>
+            </div>
          </section>
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section class='case-study-section'>
 
             <h4>Research &amp; Benchmarking</h4>
@@ -110,7 +114,9 @@ export default function Search(){
             </table>
             </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section class='case-study-section'>
             <h4>User Testing</h4>
             <div className='right'>
@@ -135,7 +141,9 @@ export default function Search(){
             <br/><p>However, this extra info had the opposite effect, raising more questions and hesitancy and distracting participants from other results. Instead, they voiced that <span className='highlight'>price, images, and quick view</span> would be much more helpful to their understanding of each subscription.<br/><br/>These rounds also confirmed that giving subscriptions their own category but only displaying it at the top of the “All” tab would give them sufficient prominence, without dedicating a whole tab to them.</p>
             </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section class='case-study-section'>
                <h4>Final&nbsp;Designs</h4>
                <div className='right'>
@@ -238,6 +246,9 @@ export default function Search(){
                      </Swiper>
                   </div>
             </section>
+            </ScrollAnimation>
+
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section class='case-study-section'>
             <h4>Measuring Success</h4>
             <div className='right'>
@@ -253,7 +264,9 @@ export default function Search(){
             </div>
             </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section reflection'>
                <h4>Reflection</h4>
                <div className='right'>
@@ -264,6 +277,7 @@ export default function Search(){
                   <p>I also got great experience writing scripts and preparing prototypes for user tests. These tests came with their fair share of frustration and troubleshooting as I learned how to communicate to participants things as simple as what screen they should be on (without being able to talk to them in real time).<br/><br/>There were also some technical limitations in the search functionality, especially around searching for subscriptions. I had hoped to show results if a user searched for a box in a given subscription, even if that particular box wasn’t featured on the site. However, the PM and devs I worked with determined that this kind of mapping would be a lot of manual work, so we had to cut it out of the scope for the time being. (Maybe one day!)</p>
                </div>
             </section>
+            </ScrollAnimation>
          </main>
       <Footer/>
       </>

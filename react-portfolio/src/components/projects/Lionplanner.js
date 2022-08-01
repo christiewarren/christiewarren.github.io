@@ -1,23 +1,19 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Footer from '../Footer';
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
+import { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Footer from '../Footer'
 import { HashLink as Link } from 'react-router-hash-link'
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export default function Lionplanner(){
-   // useEffect(() => {
-   //    window.scrollTo({
-   //       top: 0, 
-   //       left: 0,
-   //       behavior: 'instant'})
-   // }, [])
+   useEffect(() => {
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#FED02F'/></div>
@@ -43,11 +39,17 @@ export default function Lionplanner(){
          </div>
          <main>
             <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section id='tldr'>
                <h6>I worked as the sole designer on a team of front and backend developers to build a web application for students to plan their long-term (multi-year) college course schedules. The app generated interactive course plans for chosen major(s) and eliminated the risk of of missing requirements or prerequisites.<br/><br/>The largest design challenge with LionPlanner was consolidating the many scattered resources students need to consult during their planning process within the UI, while still making it easy to navigate.<br/><br/>We completed this project as a part of a 9-month long competition at Penn State called the NittanyAI Challenge. While our team ultimately didn't pursue this project after the competition, we were so excited to receive first place, and it was the project that inspired me to go into UX.</h6>
                <Link to="/lionplanner/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
             </section>
+            </ScrollAnimation>
+
             <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
+
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section context'>
                <h4>Context</h4>
                <div className='right'>
@@ -60,6 +62,9 @@ export default function Lionplanner(){
                   <p>Our team's proposal was one of 10 given funding to build a prototype from an initial 70+ teams and we were then one of 5 given funding to develop an MVP. Over the 9 month challenge, I pitched our project to judges twice and led the writing of detailed proposals.</p>
                </div>
             </section>
+            </ScrollAnimation>
+            
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section'>
                <h4>A&nbsp;Closer&nbsp;Look at&nbsp;the&nbsp;Problem</h4>
                <div className='right'>
@@ -75,7 +80,9 @@ export default function Lionplanner(){
                   <p>Manually testing different classes, majors, and minors is very complicated, and many students avoid planning anything more than the bare minimum for their majors.</p>
                </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section'>
                <h4>LionPlanner's Primary&nbsp;Users</h4>
                <div className='right'>
@@ -102,7 +109,9 @@ export default function Lionplanner(){
                   </div>
                </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section'>
                <h4>Functionality &amp; UX Goals</h4>
                <div className='right'>
@@ -115,7 +124,9 @@ export default function Lionplanner(){
                   <p>Allow major, minor, and course exploration, and suggest similar courses to ones in the plan</p>
                </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section'>
                <h4>Design&nbsp;Process &amp; Progression</h4>
                <div className='right'>
@@ -133,40 +144,42 @@ export default function Lionplanner(){
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                      >
-                           <SwiperSlide>
-                           <div className='img-wrap'>
-                              <img src='/assets/lionplanner/sketch.jpg' className='carousel-img-d img-shadow' alt="initial sketch"/>
-                              <small className='slide-caption'>Initial sketch I drew in our early discussions of LionPlanner's functionality (beautiful, I know)</small>
-                           </div>
-                        </SwiperSlide>
                         <SwiperSlide>
-                           <div className='img-wrap'>
-                              <img src='/assets/lionplanner/wireframe.jpg' className='carousel-img-d img-shadow' alt="wireframe"/>
-                              <small className='slide-caption'>A wireframe I made based on the sketch</small>
-                           </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                           <div className='img-wrap'>
-                              <img src='/assets/lionplanner/lowfi.jpg' className='carousel-img-d img-shadow' alt="lofi design V1"/>
-                              <small className='slide-caption'>Color applied to the wireframe—the final design before I started working in HTML/CSS</small>
-                           </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                           <div className='img-wrap'>
-                              <img src='/assets/lionplanner/lowfi2.png' className='carousel-img-d img-shadow' alt="lofi design v2"/>
-                              <small className='slide-caption'>The first HTML/CSS prototype of our app and, I believe, my first time writing HTML/CSS</small>
-                           </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                           <div className='img-wrap'>
-                              <img src='/assets/lionplanner/final.jpg' className='carousel-img-d img-shadow' alt="final design"/>
-                              <small className='slide-caption'>Our final MVP that we presented at the end of the challenge; many things changed from the initial sketch, but some stayed surprisingly the same. More on that below.</small>
-                           </div>
-                        </SwiperSlide>
-                     </Swiper>
-                  </div>
+                        <div className='img-wrap'>
+                           <img src='/assets/lionplanner/sketch.jpg' className='carousel-img-d img-shadow' alt="initial sketch"/>
+                           <small className='slide-caption'>Initial sketch I drew in our early discussions of LionPlanner's functionality (beautiful, I know)</small>
+                        </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
+                        <div className='img-wrap'>
+                           <img src='/assets/lionplanner/wireframe.jpg' className='carousel-img-d img-shadow' alt="wireframe"/>
+                           <small className='slide-caption'>A wireframe I made based on the sketch</small>
+                        </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
+                        <div className='img-wrap'>
+                           <img src='/assets/lionplanner/lowfi.jpg' className='carousel-img-d img-shadow' alt="lofi design V1"/>
+                           <small className='slide-caption'>Color applied to the wireframe—the final design before I started working in HTML/CSS</small>
+                        </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
+                        <div className='img-wrap'>
+                           <img src='/assets/lionplanner/lowfi2.png' className='carousel-img-d img-shadow' alt="lofi design v2"/>
+                           <small className='slide-caption'>The first HTML/CSS prototype of our app and, I believe, my first time writing HTML/CSS</small>
+                        </div>
+                     </SwiperSlide>
+                     <SwiperSlide>
+                        <div className='img-wrap'>
+                           <img src='/assets/lionplanner/final.jpg' className='carousel-img-d img-shadow' alt="final design"/>
+                           <small className='slide-caption'>Our final MVP that we presented at the end of the challenge; many things changed from the initial sketch, but some stayed surprisingly the same. More on that below.</small>
+                        </div>
+                     </SwiperSlide>
+                  </Swiper>
+               </div>
             </section>
+            </ScrollAnimation>
 
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
             <section className='case-study-section'>
                <h4>Feature&nbsp;Design</h4>   
                <div className='right'>
@@ -226,7 +239,9 @@ export default function Lionplanner(){
                   </div>
                </div>
             </section>
-               
+            </ScrollAnimation>
+
+            <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>   
             <section className='case-study-section reflection'>
                <h4>Reflection</h4>
                <div className='right'>
@@ -244,6 +259,7 @@ export default function Lionplanner(){
                   </div>  
                </div>  
             </section>
+            </ScrollAnimation>
          </main>
       <Footer/>
       </>

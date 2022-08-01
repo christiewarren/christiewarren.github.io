@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
-import Footer from '../../Footer';
-
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
+import ScrollAnimation from 'react-animate-on-scroll'
+import Footer from '../../Footer'
 import { HashLink as Link } from 'react-router-hash-link'
 
 
 export default function WestArete(){
-   // useEffect(() => {
-   //    window.scrollTo({
-   //       top: 0, 
-   //       left: 0,
-   //       behavior: 'instant'})
-   // }, [])
+   useEffect(() => {
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -44,11 +37,17 @@ export default function WestArete(){
          </div>
          <main>
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section id='tldr'>
             <h6>I designed a learning management system (LMS) to help students learn better based on their personal learning style and the research behind how to learn best. This project was part of my internship at West Arete in 2019.</h6>
             <Link to="/west-arete/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
+         </ScrollAnimation>
+
          <span className='section-divider' id='case-study'><h3>Project Details</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>
@@ -56,6 +55,9 @@ export default function WestArete(){
                <p>I worked alongside a project manager for three weeks to organize our clients' research and goals into a tangible concept for an LMS with specific features and hi-fi designs.</p>
             </div>
          </section>
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Defining&nbsp;the Problems</h4>
             <div className='right'>
@@ -74,7 +76,9 @@ export default function WestArete(){
                <p>It is difficult for self-directed learners to know how much they have learned on the topic they are learning, and how much they have left to go.</p>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Primary&nbsp;Users</h4>
             <div className='right'>
@@ -101,7 +105,9 @@ export default function WestArete(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Goals&nbsp;for Our&nbsp;LMS</h4>
             <div className='right'>
@@ -114,7 +120,9 @@ export default function WestArete(){
                <p>Make this LMS valuable through providing research-based techniques and lessons</p>
             </div>
          </section>
-         
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Scope&nbsp;&amp;&nbsp;Feature Definition</h4>
             <div className='right'>
@@ -153,7 +161,9 @@ export default function WestArete(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Design Progression</h4>
             <div className='right'>
@@ -164,6 +174,9 @@ export default function WestArete(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className=' case-study-section reflection'>
             <h4>Reflection</h4>
                <div className='right'>
@@ -173,6 +186,7 @@ export default function WestArete(){
                   <p>This being my first client project, I learned how important it is to be responsive to clients. Our clients were particularly enthusiastic and would complete the "homework" we asked them to do and then some, so at a point our team wasn't keeping up with the clients' updated documents. If I were to do this over, I'd reign in the design process until I was completely certain of the clients' expectations in order to make better usage of everyone's time.</p>
             </div>
          </section>
+         </ScrollAnimation>
       </main>
       <Footer/>
       </>

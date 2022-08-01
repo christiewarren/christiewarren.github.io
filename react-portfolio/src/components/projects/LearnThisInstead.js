@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-import Footer from '../Footer';
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
+import Footer from '../Footer'
 import { HashLink as Link } from 'react-router-hash-link'
+import ScrollAnimation from 'react-animate-on-scroll'
+
 
 export default function LearnThisInstead(){
-   // useEffect(() => {
-   //    window.scrollTo({
-   //       top: 0, 
-   //       left: 0,
-   //       behavior: 'instant'})
-   // }, [])
+   useEffect(() => {
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -31,6 +33,8 @@ export default function LearnThisInstead(){
       </div>
       <main>
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section id='tldr'>
             <h6>I designed and built a Chrome extension that redirects users from websites of their choice to a low-stress Basics of CSS course.
             <br/><br/>To build the course, I wrote 26 prompts, each covering a CSS property, over 4 chapters. I built the extension using Javascript, HTML, and CSS.
@@ -42,6 +46,9 @@ export default function LearnThisInstead(){
             </a>
             <Link to="/learn-this-instead/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section' id='case-study'>
             <h4>Niche</h4>
             <div className='right'>
@@ -53,7 +60,9 @@ export default function LearnThisInstead(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Brand</h4>
             <div className='right'>
@@ -77,7 +86,9 @@ export default function LearnThisInstead(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Course Materials</h4>
             <div className='right'>
@@ -93,7 +104,9 @@ export default function LearnThisInstead(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section reflection'>
             <h4>Reflection</h4>
             <div className='right'>
@@ -101,6 +114,7 @@ export default function LearnThisInstead(){
                <p>I had to limit some aspects of this project for scope including the number of prompts and copy I wrote and the responsiveness of the site. If I were to publish the extension, I'd want to include an intro on the syntax and general usage of CSS and HTML as well as additional prompts and chapters. And, of course, responsiveness would be as crucial as on any site.</p>
             </div>
          </section>
+         </ScrollAnimation>
       </main>
       <Footer/>
       </>

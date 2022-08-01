@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react';
-import ProgressBar from "react-scroll-progress-bar";
-import Footer from '../Footer';
+import React, { useEffect } from 'react'
+import ProgressBar from "react-scroll-progress-bar"
+import Footer from '../Footer'
 import { HashLink as Link } from 'react-router-hash-link'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export default function Revu(){
-   // useEffect(() => {
-   //    window.scrollTo({
-   //       top: 0, 
-   //       left: 0,
-   //       behavior: 'instant'})
-   // }, [])
+   useEffect(() => {
+      window.scrollTo({
+         top: 0, 
+         left: 0,
+         behavior: 'instant'})
+   }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -35,13 +36,19 @@ export default function Revu(){
          </div>
          <main>
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section id='tldr'>
             <h6>I worked as a UI/UX designer along with a full stack developer to create a web app that generates multiple choice quizzes from a passage of text.
             <br/><br/>This was yet another extremely rewarding experience competing in the NittanyAI Challenge, and my teammate, Matt, and I were so grateful to receive first place.</h6>
 
             <Link to="/revu/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
+         </ScrollAnimation>
+
          <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
+         
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>
@@ -49,6 +56,9 @@ export default function Revu(){
                <p>With this in mind, our proposal outlined a web app called Revu (pronounced "Review") that would help students stay focused while reading by providing a multiple choice quiz to keep them engaged. While our concept evolved past this early on (more on this below), we were so excited to be one of the 20 teams selected to create a prototype.</p>
             </div>
          </section>
+         </ScrollAnimation>
+
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Understanding the Problem</h4>
             <div className='right'>
@@ -71,7 +81,9 @@ export default function Revu(){
                <p>Finite class time ends up being used to cover material from the readings, when it should be used to cover fundamental material.</p>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Defining&nbsp;a Solution</h4>
             <div className='right'>
@@ -86,7 +98,9 @@ export default function Revu(){
                </div>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Revu's&nbsp;Primary Users</h4>
             <div className='right'>
@@ -111,8 +125,10 @@ export default function Revu(){
                   </ul>
                </div>
             </div>
-         </section>      
+         </section> 
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Functionality &amp; UX Goals</h4>
             <div className='right'>
@@ -125,7 +141,9 @@ export default function Revu(){
                <p>Show teachers specific content students are struggling with so they can steer their lectures towards these areas</p>
             </div>
          </section>
+         </ScrollAnimation>
 
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
          <section className='case-study-section'>
             <h4>Feature&nbsp;Design</h4> 
             <div className='right'>
@@ -170,9 +188,11 @@ export default function Revu(){
                   <img src={'/assets/revu/dashboard.jpg'} alt="insight dashboard" className='img-shadow'/>
                </div>
             </div>
-         </section>   
+         </section> 
+         </ScrollAnimation>  
 
-            <section className='case-study-section reflection'>
+         <ScrollAnimation animateIn="animate__fadeInUp-New" duration={1} animateOnce={true} delay={0}>
+         <section className='case-study-section reflection'>
             <h4>Reflection</h4>
             <div className='right'>
                <h5>Next Time...</h5>
@@ -183,6 +203,7 @@ export default function Revu(){
                </div> 
             </div>   
          </section>
+         </ScrollAnimation>
       </main>
       <Footer/>
       </>
