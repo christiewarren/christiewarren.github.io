@@ -211,8 +211,8 @@ export default function Lionplanner(){
                   <p>We included Similar Courses for students like the "In Depth Planner" who want to <span className='highlight'>add classes based on their interest,</span> regardless of whether they meet a requirement.</p>
                   <p>Suggested Alternatives are courses that meet the same requirements as the selected course and can be swapped with a simple click. These are great for students like the "Degree Seeker," who want to <span className='highlight'>know their options within major requirements.</span></p>
                   <div className='multi-img-wrap img-wrap'>
-                     <img src={'/assets/lionplanner/similar-courses.jpg'} alt="similar courses panel" className='sm-img img-shadow'/>
-                     <img src={'/assets/lionplanner/suggested-alts.jpg'} alt="suggested alternatives panel" className='sm-img img-shadow'/>
+                     <img src={'/assets/lionplanner/similar-courses.jpg'} alt="similar courses panel" className='sm-img img-shadow two'/>
+                     <img src={'/assets/lionplanner/suggested-alts.jpg'} alt="suggested alternatives panel" className='sm-img img-shadow two'/>
                   </div>
 
                   <h5 className='feature'>Toolbar</h5>

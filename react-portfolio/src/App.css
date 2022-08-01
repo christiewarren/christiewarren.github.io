@@ -858,6 +858,13 @@ main{
   justify-self: center;
 }
 
+.live-caption{
+  width: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
 .case-study-section h4{
   justify-self: start;
   width: min-content;
@@ -1055,9 +1062,14 @@ main{
   align-items: flex-start;
 }
 
-.multi-img-wrap img{
-  width: 40%!important;
-  min-width: 300px;
+.multi-img-wrap .two{
+  width: 45%!important;
+  min-width: unset;
+}
+
+.multi-img-wrap .three{
+  width: 30%!important;
+  min-width: unset;
 }
 
 .feature{
@@ -1111,6 +1123,10 @@ main{
   .research-table td, th{
     padding: 1rem;
   }
+
+  .live-caption{
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1133,6 +1149,10 @@ main{
 
   .research-table td, th{
     padding: 1rem 0.75rem;
+  }
+
+  .live-caption{
+    width: 100%;
   }
 }
 

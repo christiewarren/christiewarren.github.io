@@ -137,7 +137,7 @@ export default function Search(){
             </section>
 
             <section class='case-study-section'>
-               <h4>Final Designs</h4>
+               <h4>Final&nbsp;Designs</h4>
                <div className='right'>
                   <h5>Mobile</h5>
                   <Swiper
