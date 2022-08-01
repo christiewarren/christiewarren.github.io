@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@font-face {
+/* @font-face {
   font-family: "lark-bold";
   src: url("../../fonts/LarkBold/font.woff") format('woff');
-}
+} */
 
 :root {
   --navy: #030055;
