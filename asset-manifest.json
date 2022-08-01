@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/christiewarren/christiewarren.github.io/static/css/main.648a4c93.css",
+    "main.js": "/christiewarren/christiewarren.github.io/static/js/main.9ba1ba19.js",
+    "static/js/787.a2cb61a6.chunk.js": "/christiewarren/christiewarren.github.io/static/js/787.a2cb61a6.chunk.js",
+    "index.html": "/christiewarren/christiewarren.github.io/index.html",
+    "main.648a4c93.css.map": "/christiewarren/christiewarren.github.io/static/css/main.648a4c93.css.map",
+    "main.9ba1ba19.js.map": "/christiewarren/christiewarren.github.io/static/js/main.9ba1ba19.js.map",
+    "787.a2cb61a6.chunk.js.map": "/christiewarren/christiewarren.github.io/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.648a4c93.css",
+    "static/js/main.9ba1ba19.js"
+  ]
+}
