@@ -31,7 +31,7 @@ export default function NavRedesign(){
                      </p>
                      <p><b>Stakeholders</b>
                      <br/>CEO
-                     <br/>CP(roduct)O/CG(rowth)O
+                     <br/>CPO/CGO
                      <br/>CRO
                      <br/>Marketing Team
                   </p>

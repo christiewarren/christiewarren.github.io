@@ -31,7 +31,7 @@ export default function Search(){
                   </p>
                   <p><b>Stakeholders:</b>
                   <br/>CEO
-                  <br/>CP(roduct)O/CG(rowth)O
+                  <br/>CPO/CGO
                   <br/>Director of Marketing
                </p>
             </div>

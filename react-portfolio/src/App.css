@@ -5,16 +5,6 @@
   src: url("../../fonts/LarkBold/font.woff") format('woff');
 }
 
-@font-face {
-  font-family: "lark-reg";
-  src: url("../../fonts/LarkRegular/font.woff") format('woff');
-}
-
-@font-face {
-  font-family: "lark-light";
-  src: url("../../fonts/LarkLight/font.woff") format('woff');
-}
-
 :root {
   --navy: #030055;
   --light-gray: #f8f8f6;
@@ -54,8 +44,8 @@ h1{
 
 h2{
   font-size: 1.5rem;
-  font-family: 'lark-reg';
   text-align: center;
+  font-weight: 100;
 }
 
 h3{
@@ -392,7 +382,6 @@ a{
   font-weight: normal;
   font-size: 1.1rem;
   color: var(--navy);
-  /* font-family: 'lark-reg'!important; */
   text-transform: none;
   text-align: center;
   text-align: left;
@@ -824,7 +813,7 @@ a{
   }
 
   .proj-header-text h1, .proj-header-text h2{
-    text-align: center;
+    /* text-align: center; */
   }
   
   .proj-header-text-sm{
