@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,6 +8,9 @@ import 'swiper/css/pagination';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Footer from '../../Footer';
+
+import { HashLink as Link } from 'react-router-hash-link'
+
 
 export default function WestArete(){
    // useEffect(() => {
@@ -45,9 +46,9 @@ export default function WestArete(){
          <span className='section-divider'><h3>TLDR;</h3><hr/></span>
          <section id='tldr'>
             <h6>I designed a learning management system (LMS) to help students learn better based on their personal learning style and the research behind how to learn best. This project was part of my internship at West Arete in 2019.</h6>
-            <a href='#case-study' className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+            <Link to="/west-arete/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
-         <span className='section-divider'><h3>Project Details</h3><hr/></span>
+         <span className='section-divider' id='case-study'><h3>Project Details</h3><hr/></span>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>

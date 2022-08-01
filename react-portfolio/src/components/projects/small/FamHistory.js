@@ -41,7 +41,7 @@ export default function FamHistory(){
                   <p>My dad’s side of the family has kept a vast catalogue of photos, documents, letters, and more, and his grandmother, who had an interest in genealogy, worked to create a family tree spanning ___ generations.</p>
                   <div className='img-wrap'>
                      <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
-                     <small className='subs-caption'>KiwiCo subscription lines</small>
+                     <small className='subs-caption'>A diagram of our family tree documented by my Great, Great Grandma</small>
                   </div>
                   <p>With all this family history sitting in boxes, rarely seeing the light of day, my dad came to me with the idea of creating a website that serves as a digital archive for our family’s photos and documents, plus an interactive family tree.</p>
                   <p>I was <em>so</em> excited about this idea—not only would it be awesome to make our family’s history more accessible to us and our relatives, but I also knew it could be the perfect opportunity to both learn more about web development (specifically, React) and challenge myself creatively.</p>

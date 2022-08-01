@@ -1,14 +1,7 @@
 import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Footer from '../Footer';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default function LearnThisInstead(){
    // useEffect(() => {
@@ -47,9 +40,9 @@ export default function LearnThisInstead(){
             <a href='https://www.kiwico.com/' target='blank' className='no-style-link'>
                <button>watch the presentation (11 min)<img src='/assets/search/arrow-right.svg' className='button-arrow'/></button>
             </a>
-            <a href='#case-study' className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+            <Link to="/learn-this-instead/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
-         <section className='case-study-section'>
+         <section className='case-study-section' id='case-study'>
             <h4>Niche</h4>
             <div className='right'>
                <h6>There are numerous Chrome extensions that block websites for the purpose of focus and productivity, but none that I found would actually redirect the user to something productive.</h6>

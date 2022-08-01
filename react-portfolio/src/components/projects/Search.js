@@ -3,6 +3,8 @@ import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Footer from '../Footer';
+import { HashLink as Link } from 'react-router-hash-link'
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -51,9 +53,9 @@ export default function Search(){
             <a href='https://www.kiwico.com/' target='blank' className='no-style-link'>
                <button>see it live<img src='/assets/search/arrow-right.svg' className='button-arrow'/></button>
             </a>
-            <a href='#case-study' className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+            <Link to="/sitewide-search/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
-            <span className='section-divider'><h3>Case Study</h3><hr/></span>
+            <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
             <section class='case-study-section context'>
                <h4>Context</h4>
                <div className='right'>

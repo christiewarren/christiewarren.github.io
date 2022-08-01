@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react';
 import ProgressBar from "react-scroll-progress-bar";
-import { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import Footer from '../Footer';
+import { HashLink as Link } from 'react-router-hash-link'
 
 
 export default function Revu(){
@@ -45,9 +39,9 @@ export default function Revu(){
             <h6>I worked as a UI/UX designer along with a full stack developer to create a web app that generates multiple choice quizzes from a passage of text.
             <br/><br/>This was yet another extremely rewarding experience competing in the NittanyAI Challenge, and my teammate, Matt, and I were so grateful to receive first place.</h6>
 
-            <a href='#case-study' className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+            <Link to="/revu/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
-         <span className='section-divider'><h3>Case Study</h3><hr/></span>
+         <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>

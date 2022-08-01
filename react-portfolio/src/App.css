@@ -17,10 +17,11 @@
 
 :root {
   --navy: #030055;
-  --light-purple: #F2F8FF;
-  --medium-purple: #ADD3FF;
-  --purple: #2560A6;
-  --light-gray: #EFEFEF;
+  --light-gray: #f8f8f6;
+  --light-blue: #F2F8FF;
+  --medium-blue: #ADD3FF;
+  --blue: #2560A6;
+  --lightest-gray: #EFEFEF;
   --yellow: #F5F955;
 }
 
@@ -110,7 +111,7 @@ small{
 button{
   background: var(--navy);
   font-size: 1rem;
-  color: var(--light-purple);
+  color: var(--light-blue);
   border-radius: 50px;
   border: none;
   padding: 3px 3px 3px 25px;
@@ -142,7 +143,7 @@ a.styled::before{
   width: 110%;
   height: 50%;
   top: 61%;
-  background: var(--medium-purple);
+  background: var(--medium-blue);
   display: inline-block;
   z-index: -1;
   left: 50%;
@@ -219,7 +220,7 @@ a{
   left: 0;
   top: 0;
   border-radius: 20px;
-  background: var(--medium-purple);
+  background: var(--medium-blue);
 }
 
 .button-arrow{
@@ -328,8 +329,7 @@ a{
   padding-top: 12vh;
   width: 100%;
   justify-content: center;
-  background: #2560A6;
-  background: #F4F3F0;
+  background: var(--light-gray);
   position: fixed;
   top: 0;
   z-index: -10;
@@ -403,7 +403,7 @@ a{
 
 .welcome-highlight{
   background: rgb(255,249,170);
-  background: linear-gradient(90deg, rgba(255,249,170,1) 0%, rgba(192,246,255,1) 50%, rgba(222,209,255,1) 100%);  
+  background: linear-gradient(90deg, rgba(255,249,170,0.75) 0%, rgba(192,246,255,0.75) 50%, rgba(222,209,255,0.75) 100%);  
   border-radius: 5px;
   padding: 0 5px;
   /* border: 1px solid var(--navy); */
@@ -418,7 +418,7 @@ a{
 
 .currently p{
   margin-top: 0rem;
-  color: var(--light-purple);
+  color: var(--light-blue);
   font-size: 0.8rem;
   color: var(--navy);
 }
@@ -508,7 +508,7 @@ a{
 }
 
 .view-work-btn a{
-  color: var(--light-purple)!important;
+  color: var(--light-blue)!important;
 }
 
 .proj-wrap .animated{
@@ -570,7 +570,7 @@ a{
 .tag{
   background-color: var(--navy);
   border-radius: 25px;
-  color: var(--light-purple);
+  color: var(--light-blue);
   font-size: 0.8rem;
   padding: 4px 12px;
   width: max-content;
@@ -866,7 +866,7 @@ main{
 }
 
 .section-divider hr{
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--lightest-gray);
   margin: 0;
   width: -webkit-fill-available;
 }
@@ -896,7 +896,7 @@ main{
 }
 
 .context, .reflection{
-  background: var(--light-purple);
+  background: var(--light-blue);
   border-radius: 10px;
   padding: 2.5rem 2rem;
   margin-top: 4.5rem;
@@ -951,7 +951,7 @@ main{
 }
 
 .research-table td, th{
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--lightest-gray);
   border-spacing: 0;
   padding: 1.5rem;
 }

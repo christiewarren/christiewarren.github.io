@@ -3,6 +3,7 @@ import ProgressBar from "react-scroll-progress-bar";
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Footer from '../Footer';
+import { HashLink as Link } from 'react-router-hash-link'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -44,9 +45,9 @@ export default function Lionplanner(){
             <span className='section-divider'><h3>TLDR;</h3><hr/></span>
             <section id='tldr'>
                <h6>I worked as the sole designer on a team of front and backend developers to build a web application for students to plan their long-term (multi-year) college course schedules. The app generated interactive course plans for chosen major(s) and eliminated the risk of of missing requirements or prerequisites.<br/><br/>The largest design challenge with LionPlanner was consolidating the many scattered resources students need to consult during their planning process within the UI, while still making it easy to navigate.<br/><br/>We completed this project as a part of a 9-month long competition at Penn State called the NittanyAI Challenge. While our team ultimately didn't pursue this project after the competition, we were so excited to receive first place, and it was the project that inspired me to go into UX.</h6>
-               <a href='#case-study' className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+               <Link to="/lionplanner/#case-study"><a className='styled'>read the case study<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
             </section>
-            <span className='section-divider'><h3>Case Study</h3><hr/></span>
+            <span className='section-divider' id='case-study'><h3>Case Study</h3><hr/></span>
             <section className='case-study-section context'>
                <h4>Context</h4>
                <div className='right'>

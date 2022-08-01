@@ -1,12 +1,5 @@
 import React, { useEffect } from 'react';
 import ProjectList from './ProjectList.js'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import About from './About.js'
 
 export default function Home() {
    useEffect(() => {

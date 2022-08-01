@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Footer from '../../Footer';
 
+import { HashLink as Link } from 'react-router-hash-link'
 
 export default function MentorApp(){
    useEffect(() => {
@@ -33,9 +34,9 @@ export default function MentorApp(){
          <section id='tldr'>
             <h6>I designed a mobile app to help underclassmen connect with upperclassmen mentors at Penn State as part of my application for the 2020 Google UX internship.
             <br/><br/>I used this week-long project as an opportunity to improve my process and specifically to emphasize user research.</h6>
-            <a href='#case-study' className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a>
+            <Link to="/mentor-app/#case-study"><a className='styled'>read more<img src='/assets/search/arrow-down-plain.svg' className='link-arrow'/></a></Link>
          </section>
-         <span className='section-divider'><h3>Project Details</h3><hr/></span>
+         <span className='section-divider' id='case-study'><h3>Project Details</h3><hr/></span>
          <section className='case-study-section context'>
             <h4>Context</h4>
             <div className='right'>
