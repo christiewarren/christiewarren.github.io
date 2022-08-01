@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 
 
 export default function NavRedesign(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -87,7 +87,7 @@ export default function NavRedesign(){
                   <div className='right'>
                      <p>During my Sitewide Search project, I conducted extensive benchmarking, including navigation, since I placed Search in KiwiCo's navs. So, I was able to reuse much of that, but this time focused on hierarchy, navigation options (like Shop by Age), and organization.</p>
                      <div className='img-wrap'>
-                        <img src='/assets/search/benchmarking.png'/>
+                        <img src='/assets/search/benchmarking.jpg'/>
                         <small>I mainly benchmarked against ecommerce sites like Lego and Target</small>
                      </div>
                      <br/><p>Also similar to Search, I read about best practices in Baymard Institute articles. Learnings from this are best summarized by this excerpt about hierarchy:</p>
@@ -118,7 +118,7 @@ export default function NavRedesign(){
                      <p>This change guides users to KiwiCo's primary offerings. While the other links are still important, the majority of users will be looking for products, all of which can be found in these two accordions.</p>
                      <p>I also changed the menu background from gray to white to create a more inviting, friendly feel and ensure the active states were accessible.</p>
                      <div className='img-wrap'>
-                        <p className='img'>V1</p>
+                        <img src={'/assets/nav/menu-v1.jpg'} className='sm-img img-shadow'/>
                         <small>V1 mock with no organizational changes yet</small>
                      </div>
 
@@ -144,6 +144,7 @@ export default function NavRedesign(){
                         <li>Altered the link style of Shop by Age so it could be consistent with Shop by Interest</li>
                         <br/>
                         <li>Added an icon to the Sign In link to increase its prominence</li>
+                        <br/>
                         <li>Updated the shopping cart and search icons in the nav to be consistent line weights</li>
                         <br/>
                         <li>Added a My Account dropdown when the user is logged in</li>
@@ -169,7 +170,7 @@ export default function NavRedesign(){
                         <li>Moved the Refer a Friend link ("Share KiwiCo, Get $10") to its own persistent banner below the nav</li>
                      </ul>
                      <div className='img-wrap'>
-                        <p className='img'>desktop nav V1</p>
+                        <img src={'/assets/nav/desktop-nav-v1.jpg'} className='img-shadow'/>
                         <small>Desktop nav V1</small>
                      </div>
 
@@ -178,13 +179,13 @@ export default function NavRedesign(){
                      <p>Initially, I didn't have plans to change much from the original dropdowns, but after exploring some more creative options in the mobile nav, I was inspired to go further on desktop.</p>
                      <p>With more real estate, this seemed like a great opportunity for more visually engaging options for Subscriptions. I switched from a list to a grid, added a prominent photo for each one, and designed a hover state with a colored border and blue text.</p>
                      <div className='img-wrap'>
-                        <p className='img'>sub dropdown</p>
-                        <small>Desktop nav dropdowns</small>
+                        <img src={'/assets/nav/desktop-nav-v2-subs.jpg'} className='img-shadow'/>
+                        <small>V1 mock with no organizational changes yet</small>
                      </div>
                      <p>I kept the Store and Schools &amp; Groups menus a bit simpler, but did incorporate the new styles for Shop by Age and Interest from the mobile menu.</p>
                      <div className='img-wrap'>
-                        <p className='img'>sub dropdown</p>
-                        <small>Desktop nav dropdowns</small>
+                        <img src={'/assets/nav/desktop-nav-v2-interest.jpg'} className='img-shadow'/>
+                        <small>V1 mock with no organizational changes yet</small>
                      </div>
 
                      <h6>Other V2 modifications improved consistency in style and size of the righthand elements:</h6>
@@ -204,15 +205,19 @@ export default function NavRedesign(){
                         <li>Reduced the nav's height a second time</li>
                      </ul>
                      <div className='img-wrap'>
-                        <p className='img'>righthand nav</p>
-                        <small>More consistency in the nav's righthand elements</small>
+                        <img src={'/assets/nav/desktop-nav-v2-righthand.jpg'} className='img-shadow'/>
+                        <small>Consistency in the righthand part of the nav</small>
                      </div>
 
                      <h5><b>Footers:</b></h5>
                      <p>When I first presented designs for the footer, I gave a lower lift option, in case the dev thought the ideal version wouldn't fit within the scope. But, luckily they were able to implement the ideal version with no issues!</p>
                      <div className='img-wrap'>
-                        <p className='img'>mobile &amp; desktop footers low and high lift</p>
-                        <small>Initial footer mocks</small>
+                        <img src={'/assets/nav/desktop-footer-v1-low-lift.jpg'} className='img-shadow'/>
+                        <small>V1 mock with no organizational changes yet</small>
+                     </div>
+                     <div className='img-wrap'>
+                        <img src={'/assets/nav/desktop-footer-v1-high-lift.jpg'} className='img-shadow'/>
+                        <small>V1 mock with no organizational changes yet</small>
                      </div>
                      <p>Similar to the mobile menu, the footers didn't undergo many changes during the design process. I did make some alterations later, once we started running A/B tests and had data to work with.</p>
                   </div>
@@ -265,7 +270,7 @@ export default function NavRedesign(){
                      <p>The desktop nav test primarily saw only slight changes in either direction, but its highlights included a 1.4% increase in completed order and a 2.5% increase in Store product page views.</p>
 
                      <h5><b>Footers:</b> Variation 1</h5>
-                     <h6>Both desktop and mobile footers saw a drop of about 1% in email capture, purchase widget view, and completed order within the firs 2 months of running the tests.</h6>
+                     <h6>Both desktop and mobile footers saw a drop of about 1% in email capture, purchase widget view, and completed order within the first 2 months of running the tests.</h6>
                      <div className='img-wrap'>
                         <p className='img'>footers variation 1</p>
                      </div>

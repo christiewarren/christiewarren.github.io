@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 
 
 export default function Lionplanner(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#FED02F'/></div>
@@ -120,50 +120,50 @@ export default function Lionplanner(){
                <div className='right'>
                   <h6>LionPlanner was my first experience with UI and UX design, so it was a <em>tremendous</em> experience for learning and growth.</h6> 
                   <p>During this process I gained knowledge around best practices and standards and started developing a better sense of what "good" UI design looked like. My sense of typography and color usage for web also improved, as I learned to apply my graphic design knowledge to a new medium.</p> 
-                     <div className='desktop-swiper-wrap'>
-                     <br/>
-                        <Swiper
-                           modules={[Navigation, Pagination]}
-                           spaceBetween={50}
-                           slidesPerView={1}
-                           navigation
-                           pagination={{ clickable: true }}
-                           onSlideChange={() => console.log('slide change')}
-                           onSwiper={(swiper) => console.log(swiper)}
-                        >
-                           <SwiperSlide>
-                              <div className='img-wrap'>
-                                 <img src='/assets/lionplanner/sketch.jpg' className='carousel-img-d img-shadow' alt="initial sketch"/>
-                                 <small className='slide-caption'>Initial sketch I drew in our early discussions of LionPlanner's functionality (beautiful, I know)</small>
-                              </div>
-                           </SwiperSlide>
-                           <SwiperSlide>
-                              <div className='img-wrap'>
-                                 <img src='/assets/lionplanner/wireframe.jpg' className='carousel-img-d img-shadow' alt="wireframe"/>
-                                 <small className='slide-caption'>A wireframe I made based on the sketch</small>
-                              </div>
-                           </SwiperSlide>
-                           <SwiperSlide>
-                              <div className='img-wrap'>
-                                 <img src='/assets/lionplanner/lowfi.jpg' className='carousel-img-d img-shadow' alt="lofi design V1"/>
-                                 <small className='slide-caption'>Color applied to the wireframe—the final design before I started working in HTML/CSS</small>
-                              </div>
-                           </SwiperSlide>
-                           <SwiperSlide>
-                              <div className='img-wrap'>
-                                 <img src='/assets/lionplanner/lowfi2.png' className='carousel-img-d img-shadow' alt="lofi design v2"/>
-                                 <small className='slide-caption'>The first HTML/CSS prototype of our app and, I believe, my first time writing HTML/CSS</small>
-                              </div>
-                           </SwiperSlide>
-                           <SwiperSlide>
-                              <div className='img-wrap'>
-                                 <img src='/assets/lionplanner/final.jpg' className='carousel-img-d img-shadow' alt="final design"/>
-                                 <small className='slide-caption'>Our final MVP that we presented at the end of the challenge; many things changed from the initial sketch, but some stayed surprisingly the same. More on that below.</small>
-                              </div>
-                           </SwiperSlide>
-                        </Swiper>
-                     </div>
                </div>
+               <div className='desktop-swiper-wrap'>
+                  <br/>
+                     <Swiper
+                        modules={[Navigation, Pagination]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                     >
+                           <SwiperSlide>
+                           <div className='img-wrap'>
+                              <img src='/assets/lionplanner/sketch.jpg' className='carousel-img-d img-shadow' alt="initial sketch"/>
+                              <small className='slide-caption'>Initial sketch I drew in our early discussions of LionPlanner's functionality (beautiful, I know)</small>
+                           </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                           <div className='img-wrap'>
+                              <img src='/assets/lionplanner/wireframe.jpg' className='carousel-img-d img-shadow' alt="wireframe"/>
+                              <small className='slide-caption'>A wireframe I made based on the sketch</small>
+                           </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                           <div className='img-wrap'>
+                              <img src='/assets/lionplanner/lowfi.jpg' className='carousel-img-d img-shadow' alt="lofi design V1"/>
+                              <small className='slide-caption'>Color applied to the wireframe—the final design before I started working in HTML/CSS</small>
+                           </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                           <div className='img-wrap'>
+                              <img src='/assets/lionplanner/lowfi2.png' className='carousel-img-d img-shadow' alt="lofi design v2"/>
+                              <small className='slide-caption'>The first HTML/CSS prototype of our app and, I believe, my first time writing HTML/CSS</small>
+                           </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                           <div className='img-wrap'>
+                              <img src='/assets/lionplanner/final.jpg' className='carousel-img-d img-shadow' alt="final design"/>
+                              <small className='slide-caption'>Our final MVP that we presented at the end of the challenge; many things changed from the initial sketch, but some stayed surprisingly the same. More on that below.</small>
+                           </div>
+                        </SwiperSlide>
+                     </Swiper>
+                  </div>
             </section>
 
             <section className='case-study-section'>

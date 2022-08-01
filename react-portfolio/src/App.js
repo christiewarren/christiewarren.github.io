@@ -1,12 +1,10 @@
 import './App.css';
-import Footer from './components/Footer.js'
-// import ProjectList from './components/ProjectList.js'
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link'
 import About from './components/About.js'
 import Home from './components/Home.js'
 import Search from './components/projects/Search.js'
@@ -27,6 +25,7 @@ function App() {
       <div className='nav-wrap'>
         <Link to="/about-me" className='nav-link'>About</Link>
         <Link to="/#projects" className='nav-link'>Work</Link>
+        <Link to="/#projects" className='nav-link'>Resume</Link>
       </div>
 
       <Routes>

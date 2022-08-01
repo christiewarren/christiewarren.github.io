@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 
 
 export default function LearnThisInstead(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -33,7 +33,7 @@ export default function LearnThisInstead(){
             </div>
          </div>
          <div className='proj-hero-wrap'>
-            <img src={'/assets/home/learn-this-instead.png'} alt="mentor app final design" className='proj-hero'/>
+            <img src={'/assets/home/learn-this-instead.jpg'} alt="mentor app final design" className='proj-hero'/>
          </div>
       </div>
       <main>
@@ -101,13 +101,13 @@ export default function LearnThisInstead(){
             </div>
          </section>
 
-            <section className='case-study-section reflection'>
-               <h4>Reflection</h4>
-               <div className='right'>
-                  <h5>Next Time...</h5>
-                  <p>I had to limit some aspects of this project for scope including the number of prompts and copy I wrote and the responsiveness of the site. If I were to publish the extension, I'd want to include an intro on the syntax and general usage of CSS and HTML as well as additional prompts and chapters. And, of course, responsiveness would be as crucial as on any site.</p>
-               </div>
-            </section>
+         <section className='case-study-section reflection'>
+            <h4>Reflection</h4>
+            <div className='right'>
+               <h5>Next Time...</h5>
+               <p>I had to limit some aspects of this project for scope including the number of prompts and copy I wrote and the responsiveness of the site. If I were to publish the extension, I'd want to include an intro on the syntax and general usage of CSS and HTML as well as additional prompts and chapters. And, of course, responsiveness would be as crucial as on any site.</p>
+            </div>
+         </section>
       </main>
       <Footer/>
       </>

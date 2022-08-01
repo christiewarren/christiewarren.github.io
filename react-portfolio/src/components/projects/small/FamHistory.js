@@ -25,7 +25,7 @@ export default function FamHistory(){
             <h1>Family History Archive</h1>
          </div>
          <div className='proj-hero-wrap'>
-            <img src={'/assets/home/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
+            <img src={'/assets/family-archive/family-archive.png'} alt="LionPlanner final design" className='proj-hero'/>
          </div>
       </div>
       <main>
@@ -43,7 +43,6 @@ export default function FamHistory(){
                      <img src='/assets/family-archive/family-tree.jpg' className='img-shadow'/>
                      <small className='subs-caption'>KiwiCo subscription lines</small>
                   </div>
-                  <p className='img'>bookshelf of boxes</p>
                   <p>With all this family history sitting in boxes, rarely seeing the light of day, my dad came to me with the idea of creating a website that serves as a digital archive for our family’s photos and documents, plus an interactive family tree.</p>
                   <p>I was <em>so</em> excited about this idea—not only would it be awesome to make our family’s history more accessible to us and our relatives, but I also knew it could be the perfect opportunity to both learn more about web development (specifically, React) and challenge myself creatively.</p>
                </div>
@@ -54,7 +53,7 @@ export default function FamHistory(){
                <div className='right'>
                   <p>Digitizing a traditionally very physical experience poses unique circumstances to design within. It’s important to me that the site feel nostalgic and connected to its physical counterparts, but not dated or aged.</p>
                   <div className='img-wrap'>
-                     <img src='/assets/family-archive/moodboard.png' className='img-shadow'/>
+                     <img src='/assets/family-archive/moodboard.jpg' className='img-shadow'/>
                      <small>My initial moodboard—once I started mockups, I realized I'd want to use slightly more bold colors to give our content more vibrance and life rather than emphasizing its age.</small>
                   </div>
                   <br/><p>The whole idea is bringing our history into the light, so I’m using rich, warm colors but not so bold that they detract from the content.</p>
@@ -117,7 +116,7 @@ export default function FamHistory(){
                      </SwiperSlide>
                      <SwiperSlide>
                         <div className='img-wrap'>
-                           <img src='/assets/family-archive/photo-overlay.png' className='carousel-img-m img-shadow'/>
+                           <img src='/assets/family-archive/photo-overlay.jpg' className='carousel-img-m img-shadow'/>
                            <small className='slide-caption'>Clicking an image or document will open it in a fullscreen overlay, which also lists the date, location, and people associated with it. Each person will also be linked to their own info page.</small>
                         </div>
                      </SwiperSlide>

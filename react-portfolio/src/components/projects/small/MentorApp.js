@@ -25,7 +25,7 @@ export default function MentorApp(){
                <h1>Mentor App</h1>
             </div>
             <div className='proj-hero-wrap'>
-               <img src={'/assets/home/mentor.png'} alt="mentor app final design" className='proj-hero'/>
+               <img src={'/assets/mentor-app/mentor-screens.png'} alt="mentor app final design" className='proj-hero'/>
             </div>
       </div>
       <main>
@@ -123,7 +123,7 @@ export default function MentorApp(){
                <h5>Lo-Fis</h5>
                <p>Next, I created a low fidelity mockups of the application's flow. At this stage I chose to mock up only the flow for mentees. Like I said earlier, the two flows are very similar, and I got a good enough grasp on the differences from wireframing, so making a whole other flow seemed unnecessary, and a poor use of time.</p>
                <div className="img-wrap">    
-                  <img src={'/assets/mentor-app/lowfis.png'} alt="lofi designs" className='img-shadow'/>
+                  <img src={'/assets/mentor-app/lowfis.jpg'} alt="lofi designs" className='img-shadow'/>
                </div>
                <p>This stage helped me establish consistency throughout the app's design, again ensuring that the learning curve is as minimal as possible.</p>
                <p>I also further developed the onboarding process and which questions would be asked of the users. In order to make this a succinct but valuable process, I based these questions on what users deemed important in the surveys. 
@@ -142,7 +142,7 @@ export default function MentorApp(){
                <p>When considering the visual design of this app, my biggest priority was setting it apart from traditional school-run apps, as these tend to be a bit dated with overdone color palettes (at least at Penn State). I wanted to make this app seem separate from the school, so that students would be more interested in it.</p>
                <p>I designed this Material UI using a modern color palette, rounded elements, and visually interesting, yet simple icons. These choices mimic the way I hope students will feel when using the app: comfortable, but eager to be bold. </p>
                <div className="img-wrap">    
-                  <img src={'/assets/mentor-app/visual-design.png'} alt="visual design system" className='img-shadow'/>
+                  <img src={'/assets/mentor-app/visual-design.jpg'} alt="visual design system" className='img-shadow'/>
                </div>
             </div>
          </section>

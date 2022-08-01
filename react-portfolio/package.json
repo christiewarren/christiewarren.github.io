@@ -11,6 +11,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-scroll-progress-bar": "^1.1.13",
     "swiper": "^8.2.4",

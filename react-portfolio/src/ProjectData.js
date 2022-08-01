@@ -20,7 +20,7 @@ export default[
    {
       title: 'Revu',
       description: 'AI-powered quiz generation to give teachers better insight into class participation',
-      image: 'revu/edit-quiz.png',
+      image: 'revu/edit-quiz.jpg',
       wrapClass: 'revu',
       tags: ['case study'],
       imgClass: 'proj-img img-shadow revu',
@@ -31,7 +31,7 @@ export default[
       description: 'Automatically generated interactive course plans for a full college career',
       image: 'lionplanner/final.jpg',
       wrapClass: 'lionplanner',
-      tags: ['case study', '2018'],
+      tags: ['case study'],
       imgClass: 'proj-img img-shadow lionplanner',
       path: '/lionplanner'
    }

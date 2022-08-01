@@ -11,12 +11,12 @@ import Footer from '../Footer';
 
 
 export default function Revu(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>         
@@ -36,7 +36,7 @@ export default function Revu(){
                </div>
             </div>
             <div className='proj-hero-wrap'>
-               <img src={'/assets/revu/edit-quiz.png'} alt="LionPlanner final design" className='proj-hero'/>
+               <img src={'/assets/revu/edit-quiz.jpg'} alt="LionPlanner final design" className='proj-hero'/>
             </div>
          </div>
          <main>
@@ -67,13 +67,13 @@ export default function Revu(){
                <p>A significant majority of students do not complete out of class reading assignments, and the options instructors have to remedy this take valuable time from them and from their class time.</p>
 
                <h5>A Closer Look at This Problem</h5>
-               <h5>Students don't read.</h5>
+               <p><b>Students don't read</b></p>
                <p>We found that studies have shown that 70% of students do not complete out of class reading assignments, causing them to miss out on course content and reading skill development.</p>
 
-               <h5>Extra teacher time required</h5>
+               <p><b>Extra teacher time required</b></p>
                <p>Teachers have to put in extra time to create quizzes or summarize readings to ensure their students are learning the material they didn't read.</p>
 
-               <h5>Class time misused</h5>
+               <p><b>Class time misused</b></p>
                <p>Finite class time ends up being used to cover material from the readings, when it should be used to cover fundamental material.</p>
             </div>
          </section>
@@ -88,7 +88,7 @@ export default function Revu(){
                <p>The students I surveyed were nearly 70% more likely to complete an out of class reading if <span className="highlight">their professor can see whether they did it,</span> regardless of it being attached to a grade.</p>
                <p>Using this information, we decided to include functionality for teachers to <span className="highlight">keep track of their students' participation,</span> also allowing for <span className="highlight">more insight and value</span> on their end.</p>
                <div className='img-wrap'>
-                  <img src={'/assets/revu/student-incentive.png'} alt="graph of students' willingness to read outside of class" className='img-shadow'/>
+                  <img src={'/assets/revu/student-incentive.jpg'} alt="graph of students' willingness to read outside of class" className='img-shadow'/>
                </div>
             </div>
          </section>
@@ -139,7 +139,7 @@ export default function Revu(){
                <p>Teachers can easily paste a reading here from a textbook PDF, article etc., starting the <span className="highlight">fast, hands-off process.</span></p>
                <p>Each quiz has a title and class associated with it, and teachers can choose the number of distractors per question.</p>
                <div className="img-wrap">
-                  <img src={'/assets/revu/input.png'} alt="passage entry page" className='img-shadow'/>
+                  <img src={'/assets/revu/input.jpg'} alt="passage entry page" className='img-shadow'/>
                </div>
 
                <h5>Editable Questions</h5>
@@ -154,7 +154,7 @@ export default function Revu(){
                <h5>"Where is this from?"</h5>
                <p>A teacher can click this to highlight the text where the question is from, allowing them to <span className='highlight'>ensure the question is relevant.</span></p>
                <div className="img-wrap">
-                  <img src={'/assets/revu/where-from.png'} alt="where is this from highlight" className='img-shadow sm-img'/>
+                  <img src={'/assets/revu/where-from.jpg'} alt="where is this from highlight" className='img-shadow'/>
                </div>
 
                <h5>Create New Questions</h5>
@@ -173,7 +173,7 @@ export default function Revu(){
                <p><b>D. Student View (Preview Mode)</b></p>
                <p>Shows the teacher what their quiz looks like from a student's perspective.</p>
                <div className="img-wrap">
-                  <img src={'/assets/revu/dashboard.png'} alt="insight dashboard" className='img-shadow sm-img'/>
+                  <img src={'/assets/revu/dashboard.jpg'} alt="insight dashboard" className='img-shadow'/>
                </div>
             </div>
          </section>   

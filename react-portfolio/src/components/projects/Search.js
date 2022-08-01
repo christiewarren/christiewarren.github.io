@@ -11,12 +11,12 @@ import 'swiper/css/pagination';
 
 
 export default function Search(){
-   useEffect(() => {
-      window.scrollTo({
-         top: 0, 
-         left: 0,
-         behavior: 'instant'})
-   }, [])
+   // useEffect(() => {
+   //    window.scrollTo({
+   //       top: 0, 
+   //       left: 0,
+   //       behavior: 'instant'})
+   // }, [])
    return(
       <>
       <div className='progress-bar-wrap'><ProgressBar bgcolor='#8A96FF'/></div>
@@ -28,11 +28,11 @@ export default function Search(){
                <p>
                   <b>Role:</b>
                   <br/>UI/UX Designer</p>
-                  <p><b>Collaborators</b>
+                  <p><b>Collaborators:</b>
                   <br/>Product Manager
                   <br/>FE Dev
                   </p>
-                  <p><b>Stakeholders</b>
+                  <p><b>Stakeholders:</b>
                   <br/>CEO
                   <br/>CP(roduct)O/CG(rowth)O
                   <br/>Director of Marketing
@@ -73,7 +73,7 @@ export default function Search(){
             <p>Considering the importance of familiarity and the relative complexity of KiwiCo’s searchable content** I started with some extensive benchmarking. I <span className='highlight'>reviewed search features on over 20 websites and apps</span> and noted consistencies and aspects that would or wouldn’t work well for KiwiCo’s search.</p>
             <br/><small>** subscription lines, Store products, DIY ideas, Blog posts, Help articles, and miscellaneous pages</small>
             <div className='img-wrap'>
-               <img src='/assets/search/benchmarking.png'/>
+               <img src='/assets/search/benchmarking.jpg'/>
                <small>I mainly benchmarked against ecommerce sites like Lego and Target</small>
             </div>
             <br/><p>I also read numerous articles from the Baymard Institute to determine best practices for search features as well as how prominent ours should be.</p>
@@ -117,7 +117,7 @@ export default function Search(){
             <h6>My main goals for Round 1 were to determine whether subscriptions and Store products were presented in an understandable way and test the hypotheses I made during research.</h6>
             <br/><p>A whole tab for subscriptions seemed like overkill when it would only have a max of nine results. So, for my tests I combined subscriptions and Store products into a “Products” tab, which also meant combining them into one section in the “All” tab.</p>
             <div className='img-wrap'>
-               <img src='/assets/search/user-test-round1-desktop.png'/>
+               <img src='/assets/search/user-test-round1-desktop.jpg'/>
                <small>Subscriptions and Store items combined into a Products tab and category</small>
             </div>
             <br/><p>Feedback from the tests made it clear that <span className='highlight'>this solution was far too confusing</span> and led to hesitancy around viewing more products, since participants were unsure exactly what they’d be viewing.</p>
@@ -149,7 +149,7 @@ export default function Search(){
                   >
                      <SwiperSlide>
                         <div className='img-wrap'>
-                           <img src='/assets/search/final/mobile/empty-state.jpeg' className='carousel-img-m img-shadow'/>
+                           <img src='/assets/search/final/mobile/empty-state.jpg' className='carousel-img-m img-shadow'/>
                            <small className='slide-caption'>Search opens in a full-page overlay, and empty state suggests subscription lines and popular Store items</small>
                         </div>
                      </SwiperSlide>
